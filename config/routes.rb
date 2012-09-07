@@ -1,4 +1,12 @@
 Addup::Application.routes.draw do
+  get "home/landingpage"
+
+  get "home/student_detail"
+
+  get "home/choose_your_reward"
+
+  get "home/how_it_works"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +56,7 @@ Addup::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+   root :to => 'home#landingpage'
 
   # See how all your routes lay out with "rake routes"
 
