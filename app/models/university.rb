@@ -1,6 +1,6 @@
 class University < ActiveRecord::Base
-  has_many :university_career_relationships
-  has_many :Careers, :through => :university_career_relationships
+  has_many :relationships
+  has_many :careers, :through => :relationships
   attr_accessible :name, :url_logo
 #  attr_accessor :career_ids
 #  after_save :update_careers
