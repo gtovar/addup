@@ -22,5 +22,6 @@ class CreateStudents < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :students
   end
 end
