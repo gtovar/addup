@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  verified: false
+  review: MyString
+  university: 
+
+two:
+  name: MyString
+  verified: false
+  review: MyString
+  university: 

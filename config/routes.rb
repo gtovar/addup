@@ -1,4 +1,17 @@
 Addup::Application.routes.draw do
+
+  resources :careers
+
+  resources :universities
+
+  resources :organizations
+
+  resources :teachers
+
+  resources :students
+
+  get "control_panel/index"
+
   get "home/landingpage"
 
   get "home/student_detail"

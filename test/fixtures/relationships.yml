@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  university_id: 1
+  career_id: 1
+
+two:
+  university_id: 1
+  career_id: 1

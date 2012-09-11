@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @career.name %>
+</p>
+
+<p>
+  <b>Years:</b>
+  <%= @career.years %>
+</p>
+
+
+<%= link_to 'Edit', edit_career_path(@career) %> |
+<%= link_to 'Back', careers_path %>

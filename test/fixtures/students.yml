@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  last_name: MyString
+  paternal_surname: MyString
+  maternal_surname: MyString
+  university_career_id: 1
+  teacher_id: 1
+  country: MyString
+  city: MyString
+  campaign: 1
+  question1: MyText
+  question2: MyText
+  verified: false
+  cost_per_year: 1
+  url_video: MyText
+  url_facebook: MyString
+  url_twitter: MyString
+  url_university: MyString
+  current_year: 1
+
+two:
+  name: MyString
+  last_name: MyString
+  paternal_surname: MyString
+  maternal_surname: MyString
+  university_career_id: 1
+  teacher_id: 1
+  country: MyString
+  city: MyString
+  campaign: 1
+  question1: MyText
+  question2: MyText
+  verified: false
+  cost_per_year: 1
+  url_video: MyText
+  url_facebook: MyString
+  url_twitter: MyString
+  url_university: MyString
+  current_year: 1

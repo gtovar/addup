@@ -1,0 +1,57 @@
+<h1>Listing students</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Last name</th>
+    <th>Paternal surname</th>
+    <th>Maternal surname</th>
+    <th>University career</th>
+    <th>Teacher</th>
+    <th>Country</th>
+    <th>City</th>
+    <th>Campaign</th>
+    <th>Question1</th>
+    <th>Question2</th>
+    <th>Verified</th>
+    <th>Cost per year</th>
+    <th>Url video</th>
+    <th>Url facebook</th>
+    <th>Url twitter</th>
+    <th>Url university</th>
+    <th>Current year</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @students.each do |student| %>
+  <tr>
+    <td><%= student.name %></td>
+    <td><%= student.last_name %></td>
+    <td><%= student.paternal_surname %></td>
+    <td><%= student.maternal_surname %></td>
+    <td><%= student.university_career_id %></td>
+    <td><%= student.teacher_id %></td>
+    <td><%= student.country %></td>
+    <td><%= student.city %></td>
+    <td><%= student.campaign %></td>
+    <td><%= student.question1 %></td>
+    <td><%= student.question2 %></td>
+    <td><%= student.verified %></td>
+    <td><%= student.cost_per_year %></td>
+    <td><%= student.url_video %></td>
+    <td><%= student.url_facebook %></td>
+    <td><%= student.url_twitter %></td>
+    <td><%= student.url_university %></td>
+    <td><%= student.current_year %></td>
+    <td><%= link_to 'Show', student %></td>
+    <td><%= link_to 'Edit', edit_student_path(student) %></td>
+    <td><%= link_to 'Destroy', student, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Student', new_student_path %>
