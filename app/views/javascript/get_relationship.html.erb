@@ -1,0 +1,15 @@
+<select name="university_id" id="person_university_id" class="text">
+ <% @careers.each do |c| %>
+<option value="<%= c.id %>"><%= c.name %></option><% end %>
+</select>
+<input id="student_relationship" type="text" size="30" name="student[relationship]" value = <%= @relationships.id %> >
+  <script>
+    $("select#person_career_id").change(function () {
+      var sel = $(this).val()
+      var url ='<%=  relation_url %>'
+    $.get(url.substring(0,34) + sel, function(data){
+    $("#career_field").html(data);
+    });
+    });
+  </script>
+

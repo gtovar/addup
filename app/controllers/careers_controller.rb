@@ -1,5 +1,6 @@
 class CareersController < ApplicationController
-  # GET /careers
+   layout "back_end_application"
+ # GET /careers
   # GET /careers.json
   def index
     @careers = Career.all

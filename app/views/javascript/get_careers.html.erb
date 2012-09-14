@@ -1,0 +1,4 @@
+<select name="university_id" id="person_university_id" class="text">
+ <% @careers.each do |c| %>
+<option value="<%= c.id %>"><%= c.name %></option><% end %>
+</select>

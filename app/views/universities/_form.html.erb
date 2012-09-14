@@ -19,6 +19,12 @@
     <%= f.label :url_logo %><br />
     <%= f.text_field :url_logo %>
   </div>
+  <%= fields_for (@university_career) do |uc| %>
+     <div class="field">
+       <%= uc.label "All Careers" %> <br/>
+       <%= collection_select(:careers, :id, @all_careers, :id,:name, {},{:multiple => true}) %>
+     </div>
+   <% end %>
   <div class="actions">
     <%= f.submit %>
   </div>

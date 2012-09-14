@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120910205049) do
+ActiveRecord::Schema.define(:version => 20120911193055) do
 
   create_table "careers", :force => true do |t|
     t.string   "name"
@@ -39,8 +39,9 @@ ActiveRecord::Schema.define(:version => 20120910205049) do
     t.string   "last_name"
     t.string   "paternal_surname"
     t.string   "maternal_surname"
-    t.integer  "university_career_id"
-    t.integer  "teacher_id"
+    t.integer  "relationship_id"
+    t.integer  "teacher_id_id"
+    t.integer  "organization_id_id"
     t.string   "country"
     t.string   "city"
     t.integer  "campaign"
@@ -53,9 +54,13 @@ ActiveRecord::Schema.define(:version => 20120910205049) do
     t.string   "url_twitter"
     t.string   "url_university"
     t.integer  "current_year"
-    t.datetime "created_at",           :null => false
-    t.datetime "updated_at",           :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
   end
+
+  add_index "students", ["organization_id_id"], :name => "index_students_on_organization_id_id"
+  add_index "students", ["relationship_id"], :name => "index_students_on_relationship_id"
+  add_index "students", ["teacher_id_id"], :name => "index_students_on_teacher_id_id"
 
   create_table "teachers", :force => true do |t|
     t.string   "name"
@@ -73,13 +78,6 @@ ActiveRecord::Schema.define(:version => 20120910205049) do
     t.string   "url_logo"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "university_career_relationships", :force => true do |t|
-    t.integer  "university_id"
-    t.integer  "career_id"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
   end
 
 end

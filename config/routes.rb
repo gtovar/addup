@@ -1,5 +1,7 @@
 Addup::Application.routes.draw do
 
+  resources :students
+
   resources :careers
 
   resources :universities
@@ -7,8 +9,6 @@ Addup::Application.routes.draw do
   resources :organizations
 
   resources :teachers
-
-  resources :students
 
   get "control_panel/index"
 
@@ -20,7 +20,13 @@ Addup::Application.routes.draw do
 
   get "home/how_it_works"
 
-  # The priority is based upon order of creation:
+  get "home/msg"
+
+  get "home/terms"
+
+ get "javascript/dynamic_careers"
+ match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:

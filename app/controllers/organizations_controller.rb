@@ -1,5 +1,6 @@
 class OrganizationsController < ApplicationController
-  # GET /organizations
+   layout "back_end_application"
+ # GET /organizations
   # GET /organizations.json
   def index
     @organizations = Organization.all

@@ -10,4 +10,10 @@ class HomeController < ApplicationController
 
   def how_it_works
   end
+
+  def msg
+  end
+
+  def terms
+  end
 end

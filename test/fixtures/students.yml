@@ -5,8 +5,9 @@ one:
   last_name: MyString
   paternal_surname: MyString
   maternal_surname: MyString
-  university_career_id: 1
-  teacher_id: 1
+  relationship: 
+  teacher_id: 
+  organization_id: 
   country: MyString
   city: MyString
   campaign: 1
@@ -25,8 +26,9 @@ two:
   last_name: MyString
   paternal_surname: MyString
   maternal_surname: MyString
-  university_career_id: 1
-  teacher_id: 1
+  relationship: 
+  teacher_id: 
+  organization_id: 
   country: MyString
   city: MyString
   campaign: 1

@@ -1,0 +1,27 @@
+var careers = new Array();
+<% for career in @careers %>
+<% u = career.universities %>
+<% u.each do |unis| %>
+  careers.push(new Array(<%= unis.id%>, '<%=h career.name %>', <%= career.id %>));
+<% end %>
+<% end %>
+
+function universitySelected() {
+  university_id = $('person_university_id').getValue();
+  options = $('person_career_id').options;
+  options.length = 1;
+  careers.each(function(career) {
+    if (career[0] == univerity_id) {
+      options[options.length] = new Option(career[1], career[2]);
+    }
+  });
+  if (options.length == 1) {
+    $('career_field').hide();
+  } else {
+    $('career_field').show();
+  }
+}
+
+document.observe('dom:loaded', function() {
+Event.observe('person_university_id','change',alert('cambio'));
+});

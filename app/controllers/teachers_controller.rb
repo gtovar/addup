@@ -1,5 +1,6 @@
 class TeachersController < ApplicationController
-  # GET /teachers
+   layout "back_end_application"
+ # GET /teachers
   # GET /teachers.json
   def index
     @teachers = Teacher.all
