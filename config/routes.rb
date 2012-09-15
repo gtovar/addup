@@ -24,6 +24,8 @@ Addup::Application.routes.draw do
 
   get "home/terms"
 
+  get "home/about"
+
  get "javascript/dynamic_careers"
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 # The priority is based upon order of creation:
