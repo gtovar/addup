@@ -32,6 +32,18 @@
   <div id="career_field">
     <%= select_tag :careers,options_from_collection_for_select(Career.all, :id, :name,params[:career_id]), :id => "person_career_id", :class => "text"  %>
   </div>
+
+
+
+
+<div class ="field">
+  <%= f.label :relationship_id %> <br/>
+  <% Relationship.joins
+ <%= f.collection_select :relationship_id, Relationship.joins(:university), :id, :university_id, include_blank: true %>
+</div>
+
+
+
 <!--
   <script>
     $("select#person_university_id").change(function () {
