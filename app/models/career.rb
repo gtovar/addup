@@ -1,7 +1,7 @@
 class Career < ActiveRecord::Base
   has_many :relationships
   has_many :universities, :through => :relationships
-  attr_accessible :name, :years
+  attr_accessible :career_id,:name, :years
 
 #  attr_accessor :university_ids
 #  after_save :update_university

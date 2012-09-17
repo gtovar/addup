@@ -1,7 +1,6 @@
 class StudentsController < ApplicationController
-  layout "back_end_application"
-
-  # GET /students
+    layout "back_end_application"
+# GET /students
   # GET /students.json
   def index
     @students = Student.all

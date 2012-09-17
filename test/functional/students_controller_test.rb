@@ -18,7 +18,7 @@ class StudentsControllerTest < ActionController::TestCase
 
   test "should create student" do
     assert_difference('Student.count') do
-      post :create, student: { campaign: @student.campaign, city: @student.city, cost_per_year: @student.cost_per_year, country: @student.country, current_year: @student.current_year, last_name: @student.last_name, maternal_surname: @student.maternal_surname, name: @student.name, paternal_surname: @student.paternal_surname, question1: @student.question1, question2: @student.question2, url_facebook: @student.url_facebook, url_twitter: @student.url_twitter, url_university: @student.url_university, url_video: @student.url_video, verified: @student.verified }
+      post :create, student: { campaign: @student.campaign, city: @student.city, cost_per_year: @student.cost_per_year, country: @student.country, current_year: @student.current_year, first_name: @student.first_name, last_name: @student.last_name, name: @student.name, question1: @student.question1, question2: @student.question2, url_facebook: @student.url_facebook, url_twitter: @student.url_twitter, url_university: @student.url_university, url_video: @student.url_video, verified: @student.verified }
     end
 
     assert_redirected_to student_path(assigns(:student))
@@ -35,7 +35,7 @@ class StudentsControllerTest < ActionController::TestCase
   end
 
   test "should update student" do
-    put :update, id: @student, student: { campaign: @student.campaign, city: @student.city, cost_per_year: @student.cost_per_year, country: @student.country, current_year: @student.current_year, last_name: @student.last_name, maternal_surname: @student.maternal_surname, name: @student.name, paternal_surname: @student.paternal_surname, question1: @student.question1, question2: @student.question2, url_facebook: @student.url_facebook, url_twitter: @student.url_twitter, url_university: @student.url_university, url_video: @student.url_video, verified: @student.verified }
+    put :update, id: @student, student: { campaign: @student.campaign, city: @student.city, cost_per_year: @student.cost_per_year, country: @student.country, current_year: @student.current_year, first_name: @student.first_name, last_name: @student.last_name, name: @student.name, question1: @student.question1, question2: @student.question2, url_facebook: @student.url_facebook, url_twitter: @student.url_twitter, url_university: @student.url_university, url_video: @student.url_video, verified: @student.verified }
     assert_redirected_to student_path(assigns(:student))
   end
 

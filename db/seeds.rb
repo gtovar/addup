@@ -34,3 +34,7 @@ Relationship.create(university_id: harvard.id, career_id: law_business.id )
 Relationship.create(university_id: harvard.id, career_id: law_goverment.id )
 Relationship.create(university_id: harvard.id, career_id: technology.id)
 
+#   Create new records for Teachers
+
+Teacher.create(name: 'Arnoldo Rodriguez', verified: 1, review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ante dui, tempor sit amet pretium eu, sodales id enim. Suspendisse potenti. Curabitur nibh ipsum, congue sed lacinia sit amet, condimentum id lacus. Fusce felis felis, condimentum sit amet placerat eu, blandit a enim. Nunc vel dolor lectus.', university: cambridge.id)
+

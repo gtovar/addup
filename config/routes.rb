@@ -10,7 +10,7 @@ Addup::Application.routes.draw do
 
   resources :teachers
 
-  get "control_panel/index"
+  get "control_panel/index", :as => :control_panel
 
   get "home/landingpage"
 

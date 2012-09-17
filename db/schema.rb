@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120911193055) do
+ActiveRecord::Schema.define(:version => 20120917203322) do
 
   create_table "careers", :force => true do |t|
     t.string   "name"
@@ -36,12 +36,12 @@ ActiveRecord::Schema.define(:version => 20120911193055) do
 
   create_table "students", :force => true do |t|
     t.string   "name"
+    t.string   "first_name"
     t.string   "last_name"
-    t.string   "paternal_surname"
-    t.string   "maternal_surname"
-    t.integer  "relationship_id"
-    t.integer  "teacher_id_id"
-    t.integer  "organization_id_id"
+    t.integer  "university_id"
+    t.integer  "career_id"
+    t.integer  "teacher_id"
+    t.integer  "organization_id"
     t.string   "country"
     t.string   "city"
     t.integer  "campaign"
@@ -54,13 +54,14 @@ ActiveRecord::Schema.define(:version => 20120911193055) do
     t.string   "url_twitter"
     t.string   "url_university"
     t.integer  "current_year"
-    t.datetime "created_at",         :null => false
-    t.datetime "updated_at",         :null => false
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
   end
 
-  add_index "students", ["organization_id_id"], :name => "index_students_on_organization_id_id"
-  add_index "students", ["relationship_id"], :name => "index_students_on_relationship_id"
-  add_index "students", ["teacher_id_id"], :name => "index_students_on_teacher_id_id"
+  add_index "students", ["career_id"], :name => "index_students_on_career_id"
+  add_index "students", ["organization_id"], :name => "index_students_on_organization_id"
+  add_index "students", ["teacher_id"], :name => "index_students_on_teacher_id"
+  add_index "students", ["university_id"], :name => "index_students_on_university_id"
 
   create_table "teachers", :force => true do |t|
     t.string   "name"

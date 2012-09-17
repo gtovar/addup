@@ -26,7 +26,7 @@
 
  <div class="field">
     <%= f.label :university %><br />
-    <%= f.collection_select :university_id, University.all, :id, :name, include_blank: true %>
+    <%= f.collection_select :university, University.all.collect, :id, :name, include_blank: true %>
   </div>
   <div class="actions">
     <%= f.submit %>

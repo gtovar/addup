@@ -31,10 +31,10 @@
     <td><%= student.name %></td>
     <td><%= student.first_name %></td>
     <td><%= student.last_name %></td>
-    <td><%= student.university.name %></td>
-    <td><%= student.career.name %></td>
-    <td><%= student.teacher.name %></td>
-    <td><%= student.organization.name %></td>
+    <td><%= student.university %></td>
+    <td><%= student.career %></td>
+    <td><%= student.teacher %></td>
+    <td><%= student.organization %></td>
     <td><%= student.country %></td>
     <td><%= student.city %></td>
     <td><%= student.campaign %></td>

@@ -53,9 +53,9 @@
     <%= f.label :teacher_id %><br />
     <%= f.collection_select :teacher_id, Teacher.all, :id, :name, include_blank: true %>
   </div>
- <div class="field">
-    <%= f.label :organization_id %><br />
-    <%= f.collection_select :organization_id, Organization.all, :id, :name, include_blank: true %>
+  <div class="field">
+    <%= f.label :organization %><br />
+    <%= f.text_field :organization %>
   </div>
   <div class="field">
     <%= f.label :country %><br />

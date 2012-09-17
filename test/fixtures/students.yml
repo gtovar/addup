@@ -2,12 +2,12 @@
 
 one:
   name: MyString
+  first_name: MyString
   last_name: MyString
-  paternal_surname: MyString
-  maternal_surname: MyString
-  relationship: 
-  teacher_id: 
-  organization_id: 
+  university: 
+  career: 
+  teacher: 
+  organization: 
   country: MyString
   city: MyString
   campaign: 1
@@ -23,12 +23,12 @@ one:
 
 two:
   name: MyString
+  first_name: MyString
   last_name: MyString
-  paternal_surname: MyString
-  maternal_surname: MyString
-  relationship: 
-  teacher_id: 
-  organization_id: 
+  university: 
+  career: 
+  teacher: 
+  organization: 
   country: MyString
   city: MyString
   campaign: 1
