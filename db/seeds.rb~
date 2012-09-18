@@ -40,4 +40,22 @@ teacher = Teacher.create(name: 'Arnoldo Rodriguez', verified: 1, review: 'Lorem 
 
 organization = Organization.create(name: 'Planned Parenthood', url_logo: 'plannedparenthood.jpg')
 
-Student.create(name: 'Yvonne',first_name: 'Leung',last_name: 'Chong',university_id: harvard.id,career_id: law_business.id ,teacher_id: teacher.id,organization_id: organization.id,country: 'United State of America',city: 'San Francisco',campaign: (Time.now + 10.days),question1: 'I started Cardtorial earlier this year, inspired by my desire to express myself creatively and create something truly special to share with friends and family; I really wanted to make something that would make people smile!  Ive always loved cards & written communication (heck, I even keep sweet post-its) and Cardtorial really is!',question2: 'To date, Ive prototyped and crafted my cards using the laser cutters at Techshop, a shared workspace in San Francisco.  As I grow, its important to me that the cards continue to be crafted sustainably, right here in the US. Proceeds of this Kickstarter will go towards buying a laser cutter so I can keep production in-house and know that the cards are supporting our local economy.',verified: TRUE,cost_per_year: 258963,url_video: 'http://youtu.be/sR_s8pjz8Ko',url_facebook: 'https://www.facebook.com/cardtorial',url_twitter: 'https://twitter.com/cardtorial',url_university: 'https://www.uanl.com',current_year: 9)
+Student.create(name: 'Yvonne',
+      first_name: 'Leung',
+      last_name: 'Chong',
+      university_id: harvard.id,
+      career_id: law_business.id ,
+      teacher_id: teacher.id,
+      organization_id: organization.id,
+      country: 'United State of America',
+      city: 'San Francisco',
+      campaign: (Time.now + 10.days),
+      question1: 'I started Cardtorial earlier this year, inspired by my desire to express myself creatively and create something truly special to share with friends and family; I really wanted to make something that would make people smile!  Ive always loved cards & written communication (heck, I even keep sweet post-its) and Cardtorial really is!',
+      question2: 'To date, Ive prototyped and crafted my cards using the laser cutters at Techshop, a shared workspace in San Francisco.  As I grow, its important to me that the cards continue to be crafted sustainably, right here in the US. Proceeds of this Kickstarter will go towards buying a laser cutter so I can keep production in-house and know that the cards are supporting our local economy.',
+      verified: TRUE,
+      cost_per_year: 258963,
+      url_video: 'http://youtu.be/sR_s8pjz8Ko',
+      url_facebook: 'https://www.facebook.com/cardtorial',
+      url_twitter: 'https://twitter.com/cardtorial',
+      url_university: 'https://www.uanl.com',
+      current_year: 9)

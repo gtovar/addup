@@ -28,6 +28,7 @@ Addup::Application.routes.draw do
 
  get "javascript/dynamic_careers"
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+ match 'slider' => 'home#dommie_slider', :as => :slider
 # The priority is based upon order of creation:
   # first created -> highest priority.
 

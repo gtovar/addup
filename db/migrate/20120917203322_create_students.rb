@@ -10,7 +10,7 @@ class CreateStudents < ActiveRecord::Migration
       t.references :organization
       t.string :country
       t.string :city
-      t.integer :campaign
+      t.date :campaign
       t.text :question1
       t.text :question2
       t.boolean :verified
@@ -28,4 +28,9 @@ class CreateStudents < ActiveRecord::Migration
     add_index :students, :teacher_id
     add_index :students, :organization_id
   end
-end
+
+  def down
+    drop_table
+  end
+
+  end

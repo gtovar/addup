@@ -19,7 +19,11 @@
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
   </div>
-  
+   <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
  <div class="field">
     <%= f.label :university_id %><br />
     <%= f.collection_select :university_id, University.all, :id, :name, include_blank: true %>
@@ -30,6 +34,13 @@
   </div>
   <script>
     jQuery(function() {
+
+        $(function() {
+          $( "#datepicker" ).datepicker();
+        });
+
+
+
       var careers;
       $('#student_career_id').parent().hide();
       careers = $('#student_career_id').html();
@@ -67,7 +78,7 @@
   </div>
   <div class="field">
     <%= f.label :campaign %><br />
-    <%= f.number_field :campaign %>
+    <%= f.number_field :campaign, :id => "datepicker" %>
   </div>
   <div class="field">
     <%= f.label :question1 %><br />

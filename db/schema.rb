@@ -44,7 +44,7 @@ ActiveRecord::Schema.define(:version => 20120917203322) do
     t.integer  "organization_id"
     t.string   "country"
     t.string   "city"
-    t.integer  "campaign"
+    t.date     "campaign"
     t.text     "question1"
     t.text     "question2"
     t.boolean  "verified"

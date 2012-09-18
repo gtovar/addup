@@ -1,0 +1,23 @@
+aqui el slider
+nombre del estudiante
+pais y cuidad
+nombre de la universidad
+--avances
+porcentaje que lleva (of goal)
+la lana que lleva (addep up)
+dias que faltan (days left)
+nombre de la Organization
+
+<div>
+  <% @students.each do |student| %>
+    <% if student.verified == TRUE %>
+      <%= 'verificado' %>
+    <% end %>
+  <%= student.name + '  ' + student.first_name  %>
+  <%= student.country + ', ' + student.city  %>
+  <%= student.campaign + 35 - Date.today %>
+
+  <%= image_tag student.organization.name %>
+
+<% end %>
+</div>
