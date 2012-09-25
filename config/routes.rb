@@ -1,7 +1,5 @@
 Addup::Application.routes.draw do
 
-  resources :orders
-
   resources :donations
 
   resources :addupers
