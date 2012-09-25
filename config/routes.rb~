@@ -1,5 +1,10 @@
 Addup::Application.routes.draw do
-  resources :payment_notifications
+
+  get "payment_notification/params:text"
+
+  get "payment_notification/status:string"
+
+  get "payment_notification/transaction_id:string"
 
   resources :students
 
@@ -26,14 +31,10 @@ Addup::Application.routes.draw do
   get "home/terms"
 
   get "home/about"
-match 'no' => 'payment_notification#create', :as => :notification
-  get "paypal_express/checkout"
+
  get "javascript/dynamic_careers"
-
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
-
  match 'slider' => 'home#dommie_slider', :as => :slider
-
 # The priority is based upon order of creation:
   # first created -> highest priority.
 
