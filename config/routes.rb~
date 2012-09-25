@@ -1,10 +1,18 @@
 Addup::Application.routes.draw do
 
+<<<<<<< HEAD
   resources :donations
 
   resources :addupers
 
   get "paypal_express/checkout"
+=======
+  get "payment_notification/params:text"
+
+  get "payment_notification/status:string"
+
+  get "payment_notification/transaction_id:string"
+>>>>>>> staging
 
   resources :students
 
@@ -31,6 +39,7 @@ Addup::Application.routes.draw do
   get "home/terms"
 
   get "home/about"
+<<<<<<< HEAD
   get "home/contact"
  get "javascript/dynamic_careers"
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
@@ -38,6 +47,13 @@ Addup::Application.routes.draw do
  match 'paypal' => 'home#dommie_paypal', :as => :paypal
 get "paypal_express/checkout", :as => :pay
  # The priority is based upon order of creation:
+=======
+
+ get "javascript/dynamic_careers"
+ match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+ match 'slider' => 'home#dommie_slider', :as => :slider
+# The priority is based upon order of creation:
+>>>>>>> staging
   # first created -> highest priority.
 
   # Sample of regular route:

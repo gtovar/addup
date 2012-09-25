@@ -1,4 +1,5 @@
 Addup::Application.routes.draw do
+  resources :payment_notifications
 
   resources :donations
 
@@ -33,12 +34,18 @@ Addup::Application.routes.draw do
   get "home/about"
   get "home/contact"
   get "home/thanks"
+match 'noti' => 'payment_notification#create', :as => :notification
+  get "paypal_express/checkout"
  get "javascript/dynamic_careers"
+
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+
  match 'slider' => 'home#dommie_slider', :as => :slider
  match 'paypal' => 'home#dommie_paypal', :as => :paypal
 get "paypal_express/checkout", :as => :pay
  # The priority is based upon order of creation:
+
+# The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
