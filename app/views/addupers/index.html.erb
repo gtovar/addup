@@ -1,0 +1,23 @@
+<h1>Listing addupers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @addupers.each do |adduper| %>
+  <tr>
+    <td><%= adduper.name %></td>
+    <td><%= link_to 'Show', adduper %></td>
+    <td><%= link_to 'Edit', edit_adduper_path(adduper) %></td>
+    <td><%= link_to 'Destroy', adduper, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Adduper', new_adduper_path %>

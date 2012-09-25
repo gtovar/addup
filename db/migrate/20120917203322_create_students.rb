@@ -8,6 +8,7 @@ class CreateStudents < ActiveRecord::Migration
       t.references :career
       t.references :teacher
       t.references :organization
+      t.references :donation
       t.string :country
       t.string :city
       t.date :campaign

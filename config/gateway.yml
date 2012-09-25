@@ -1,0 +1,11 @@
+development: &development
+  mode: test
+  login: rlara_1347981023_biz_api1.hotmail.com
+  password: '1347981046'
+  signature:  AvWQTfr9U.pTbmMSWcf3tVG.Hy3YAXl8dtOQF6NElla.ZiIy3YbwVvoK
+
+production:
+  <<: *development
+
+test:
+  <<: *development

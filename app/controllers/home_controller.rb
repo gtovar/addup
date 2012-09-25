@@ -22,7 +22,15 @@ class HomeController < ApplicationController
 
 def about
 end
+
 def dommie_slider
   @students = Student.all
 end
+
+def dommie_paypal
+end
+
+def contact
+end
+
 end

@@ -16,4 +16,17 @@ class HomeController < ApplicationController
 
   def terms
   end
+
+  def privacy
+  end
+
+def about
+end
+def dommie_slider
+  @students = Student.all
+end
+
+def dommie_paypal
+end
+
 end

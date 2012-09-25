@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  money: 1
+  student_id: 1
+  adduper_id: 1
+  order_id: 1
+
+two:
+  money: 1
+  student_id: 1
+  adduper_id: 1
+  order_id: 1
