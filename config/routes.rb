@@ -32,6 +32,7 @@ Addup::Application.routes.draw do
 
   get "home/about"
   get "home/contact"
+  get "home/thanks"
  get "javascript/dynamic_careers"
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
  match 'slider' => 'home#dommie_slider', :as => :slider
