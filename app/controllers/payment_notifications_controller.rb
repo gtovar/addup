@@ -40,7 +40,8 @@ class PaymentNotificationsController < ApplicationController
   # POST /payment_notifications
   # POST /payment_notifications.json
   def create
-   PaymentNotification.create!(:params => params,:status => params[:payment_status], :transaction_id => [:txn_id] )
+   notify = Paypal::Notification.new(request.raw_post)
+   PaymentNotification.create!(:params => params,:status => notify.status, :transaction_id => notify.transaction_id )
 render :nothing => true
   end
 

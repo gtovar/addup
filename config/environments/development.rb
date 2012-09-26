@@ -36,4 +36,8 @@ Addup::Application.configure do
   config.assets.debug = true
 
   # Force ActiveMerchant into test mod
+
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :test
+  end
 end

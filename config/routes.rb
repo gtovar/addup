@@ -37,7 +37,7 @@ Addup::Application.routes.draw do
 match 'noti' => 'payment_notification#create', :as => :notification
   get "paypal_express/checkout"
  get "javascript/dynamic_careers"
-
+match 'ipns' => 'payment_notification#create', :as => :ipns
  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 
  match 'slider' => 'home#dommie_slider', :as => :slider
