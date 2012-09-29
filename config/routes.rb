@@ -25,20 +25,27 @@ Addup::Application.routes.draw do
 
   get "home/choose_your_reward"
 
-  get "home/how_it_works"
+	match "home/how_it_works" => 'home#how_it_works', :as => :how
 
   get "home/msg"
 
-  get "home/terms"
+  match "home/terms" => 'home#terms', :as => :terms
 
-  get "home/about"
-  get "home/contact"
+  match "home/about" => 'home#about', :as => :about
+
+  match "home/contact" => 'home#contact', :as => :contact
+
   get "home/thanks"
-match 'noti' => 'payment_notification#create', :as => :notification
+
+	match 'noti' => 'payment_notification#create', :as => :notification
+
   get "paypal_express/checkout"
- get "javascript/dynamic_careers"
-match 'ipns' => 'paypal_express#notifications', :as => :ipns
- match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+
+	get "javascript/dynamic_careers"
+
+	match 'ipns' => 'paypal_express#notifications', :as => :ipns
+
+	match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 
  match 'slider' => 'home#dommie_slider', :as => :slider
  match 'paypal' => 'home#dommie_paypal', :as => :paypal

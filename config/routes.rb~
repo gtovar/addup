@@ -1,18 +1,11 @@
 Addup::Application.routes.draw do
+  resources :payment_notifications
 
-<<<<<<< HEAD
   resources :donations
 
   resources :addupers
 
   get "paypal_express/checkout"
-=======
-  get "payment_notification/params:text"
-
-  get "payment_notification/status:string"
-
-  get "payment_notification/transaction_id:string"
->>>>>>> staging
 
   resources :students
 
@@ -32,28 +25,34 @@ Addup::Application.routes.draw do
 
   get "home/choose_your_reward"
 
-  get "home/how_it_works"
+	match "home/how_it_works" => 'home#how_it_works', :as => :how_it_works
 
   get "home/msg"
 
-  get "home/terms"
+  match "home/terms" => 'home#terms', :as => :terms
 
-  get "home/about"
-<<<<<<< HEAD
-  get "home/contact"
- get "javascript/dynamic_careers"
- match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+  match "home/about" => 'home#about', :as => :about
+
+  match "home/contact" => 'home#contact', :as => :contact
+
+  get "home/thanks"
+
+	match 'noti' => 'payment_notification#create', :as => :notification
+
+  get "paypal_express/checkout"
+
+	get "javascript/dynamic_careers"
+
+	match 'ipns' => 'paypal_express#notifications', :as => :ipns
+
+	match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+
  match 'slider' => 'home#dommie_slider', :as => :slider
  match 'paypal' => 'home#dommie_paypal', :as => :paypal
 get "paypal_express/checkout", :as => :pay
  # The priority is based upon order of creation:
-=======
 
- get "javascript/dynamic_careers"
- match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
- match 'slider' => 'home#dommie_slider', :as => :slider
 # The priority is based upon order of creation:
->>>>>>> staging
   # first created -> highest priority.
 
   # Sample of regular route:

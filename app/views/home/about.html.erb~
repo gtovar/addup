@@ -8,19 +8,19 @@
                         <div class="team">
                                 <h5 class="bold top-space">THE ADD UP TEAM</h5>
                                 <div class="member">                                    
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div> 
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                         </div>
@@ -28,19 +28,19 @@
                         <div class="team">
                                 <h5 class="bold top-space">THE ADD UP BOARD OF ADVISORS</h5>
                                 <div class="member">                                    
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div> 
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                                 <div class="member">
-                                  <%= image_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
+                                  <%= img_tag ("./team/member1.jpg"), :alt => "Tom Villa" %>
                                         <h5>Tom Villa</h5>
                                 </div>
                         </div> 

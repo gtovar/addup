@@ -1,0 +1,16 @@
+<div class="footer">
+        	<div class="center">
+	        	<ul>
+	        		<li><%= link_to 'Contact', contact_path %> </li>
+	        		<li><%= link_to 'About', about_path %></li>
+	        		<li><%= link_to 'Terms of Use', terms_path %><a href="terms.html"></a></li>
+	        		<li><a href="privacy.html">Privacy Policy</a></li>
+	        	</ul>
+	        	<ul>
+	        		<li>Add Up media: </li>
+	        		<li><a href="http://www.facebook.com/Addup">Facebook</a></li>
+	        		<li><a href="http://www.twitter.com/addup">Twitter</a></li>
+	        	</ul>	        	
+	        	<p class="copyright">2012 CrowdScholarship LLC All rights reserved</p>
+          </div>
+        </div>

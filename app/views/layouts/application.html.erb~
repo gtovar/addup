@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 		<title>Add Up - Crowdscholarships that carry on</title>
-  <%= stylesheet_link_tag    "addup", :media => "all"%>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-<%= render 'layouts/front_end_head' %>
+<%= render 'layouts/front_end_head' %> 
 </head>
 <body>
 <%= render 'layouts/front_end_header' %>
