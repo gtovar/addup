@@ -1,12 +1,20 @@
-<html>
-<head>
-<title>Web</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<div style="position:absolute; left:0px; top:0px; width:1280px; height:1039px;">
-	 <div style="background-image:url(contact.png); position:absolute; left:4px; top:0px; width:1276px; height:1039px;" title="">
-	</div>
-</div>
-</body>
-</html>
+        <div class="center">
+        	<h3 class="info-color bold top-space">Get in touch!</h3>
+        	<p class="three-fifths">Have questions about Add Up or need customer support? We would love to hear from you! Please fill out this quick form below so we can send your inquiry to the right person of the Add Up team. We will get back to you ASAP.</p>
+        	
+        	<form accept-charset="UTF-8" action="" method="post">
+        		<label for="name">Full Name</label>
+        		<input id="name" name="name" type="text">
+        		<label for="email">Email Address</label>
+        		<input id="email" name="email" type="text">
+        		<label for="message">Message</label>
+        		<textarea id="message" name="message"></textarea>
+        		<input class="button info-bg-color" name="commit" type="submit" value="Submit">
+        	</form>
+        	<h5 class="bold">Mailing Address</h5>
+        	<h5 class="zero">CrowdScholarship LLC</h5>
+        	<h5 class="zero">200 E Yuma Apt. 7</h5>
+        	<h5 class="zero">McAllen, TX 78503</h5>
+        	<h5 class="zero">USA</h5>
+  
+        </div>

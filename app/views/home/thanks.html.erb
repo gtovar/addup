@@ -1,13 +1,63 @@
-<html>
-<head>
-<title>Web</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-</head>
-<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<div style="position:absolute; left:0px; top:0px; width:1280px; height:1039px;">
-	 
-	<div style="background-image:url('/assets/thanks.png'); position:absolute; left:4px; top:0px; width:1276px; height:1039px;" title="">
-	</div>
+<div class="center">
+
+  <div class="student-stats">
+    <h3 class="bold top-space">Cynthia White <span class="icon checkmark"> </span></h3>
+    <div class="bubble approved">
+    </div>
+    <h5>MBA Candidate (2nd year out of 4 year program)</h5>
+    <h5>Georgetown University</h5>
+    <h5>USA, Houston</h5>
+  </div>
+
+  <div class="full-page">
+    <h2 class="info-color bold top-space">Congratulations!</h2>
+    <p class="super two-thirds">
+      You are now an official AddUpper of Cynthia White. Multiply the impact of your donation by sharing her story!
+    </p>
+    <a href="#" class="button info-bg-color tweet share">tweet</a>
+    <a href="#" class="button facebook share">f <span>Share</span></a>
+    <input class="embed" type="text" value="http://addup.org/xlkso" />
+
+    <h5 class="recommended bold">Other Recommended Students</h5>
+  </div>
+
+  <div class="recomendations">
+    <div class="window">
+      <ul>
+        <% 3.times do |i| %>
+          <li>
+            <%= link_to image_tag("./team/member4.jpg", :alt => "Tom Villa", :class => "student"), root_path %>
+            <div class="recomended-stats">
+              <h6 class="bold"> Boris Wayne</h6>
+              <h6>INDIA, Mombay</h6>
+              <h6>Georgetown University</h6>
+            </div>
+            <span class="corner-check"> </span>
+            <div class="bubble approved">
+            </div>
+            <p class="blurred" >
+              I will Add Up by
+            </p>
+            <p class="info-color desc">
+              teaching Tai Chi to people in my neighborhood
+            </p>
+            <div class="progress">
+              <span class="achieved"> </span>
+            </div>
+            <p class="goals">
+              <span class="highlight bold">40%</span>of Goal
+            </p>
+            <p class="goals">
+              <span class="highlight bold">$400</span>Added Up
+            </p>
+            <p class="goals">
+              <span class="highlight bold">14</span>days left
+            </p>
+            <span class="supporting">Supporting...</span>
+            <%= image_tag ("./orgs/wikipedia.png"), :alt => "wikipedia",  :class => "sponsor" %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </div>
- </body>
-</html>

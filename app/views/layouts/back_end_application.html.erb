@@ -6,17 +6,12 @@
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/back_end_shim' %>
-
-
-
-
-
   </head>
   <body>
-       <%= render 'layouts/back_end_header' %>
-       <div class="container">
-         <%= yield %>
-            <%= render 'layouts/back_end_footer' %>
+    <%= render 'layouts/back_end_header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/back_end_footer' %>
     </div>
   </body>
 </html>
