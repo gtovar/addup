@@ -1,170 +1,17 @@
 <div class="center">
   <%= image_tag ("logo.png"), :class => "logo",  :alt => "ADD UP" %>
-
   <div class="banner">
     <div class="summary">
       <h2>Donate towards a student's tuition and see them pay it forward</h2>
       <ol>
         <li><span>1.</span><h3>Discover extraordinary students</h3></li>
         <li><span>2.</span><h3>Donate towards their tuition</h3></li>
-        <li><span>3.</span><h3>Inspire their charitable contributions</h3></li>
+        <li><span>3.</span><h3>Inspire their charitable contribution </h3></li>
       </ol>
       <a href="howitworks.html" class="button action" >Learn more</a>
     </div>
-    <div class="frame-mosaic">
-      <div class="mosaic">
-
-        <ul>
-          <li>
-            <div class="f1_container">
-              <div id="card1" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student1.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                </div>
-                   <%= image_tag("./students/student92.jpg")  %>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card2" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student2.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                    <%= image_tag("./orgs/squared/khan_14.png")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card3" class="f1_card">
-                <div class="front face">
-                   <%= link_to image_tag("./students/student3.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                     <%= image_tag("./students/student6.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card4" class="f1_card">
-                <div class="front face">
-                    <%= link_to image_tag("./students/student4.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                      <%= image_tag("./students/student8.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li>
-            <div class="f1_container">
-              <div id="card5" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student5.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student7.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card6" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student6.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student91.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card7" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student7.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student14.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card8" class="f1_card">
-                <div class="front face">
-                  <%= link_to image_tag("./students/student8.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/khan_14.png")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div id="card9" class="f1_container">
-              <div class="f1_card">
-                  <div class="front face">
-                 <%= link_to image_tag("./students/student9.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student2.jpg")  %>
-                </div>
-                </div>
-              </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card10" class="f1_card">
-                 <div class="front face">
-                 <%= link_to image_tag("./students/student91.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student1.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card11" class="f1_card">
-                 <div class="front face">
-                 <%= link_to image_tag("./students/student92.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student3.jpg")  %>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="f1_container">
-              <div id="card12" class="f1_card">
-                 <div class="front face">
-                 <%= link_to image_tag("./students/student8.jpg"), root_path %>
-                </div>
-                <div class="back face">
-                  <%= image_tag("./students/student3.jpg")  %>
-                </div>              </div>
-            </div>
-          </li>
-        </ul>
-
-      </div>
-    </div>
+    <%= render 'mosaic' %>
   </div>
-
 
   <h1 class="action-text bold start">Start Adding Up!</h1>
 
@@ -172,48 +19,7 @@
     <span class="arrow right"></span>
     <span class="arrow left"></span>
     <div class="window">
-      <div class="slider">
-           <% 5.times do %>
-       <ul>
-        <% 3.times do %>
-         <li>
-            <a href="student.html">
-              <img class="student" src="assets/students/student1.jpg" alt="" />
-              <div class="recomended-stats">
-                <h6 class="bold"> Boris Wayne</h6>
-                <h6>INDIA, Mombay</h6>
-                <h6>Georgetown University</h6>
-              </div>
-              <span class="corner-check"> </span>
-              <div class="bubble approved">
-              </div>
-              <p class="blurred" >
-                I will Add Up by
-              </p>
-              <p class="info-color desc">
-                teaching Tai Chi to people in my neighborhood
-              </p>
-              <div class="progress">
-                <span class="achieved"> </span>
-              </div>
-              <p class="goals">
-                <span class="highlight bold">40%</span>of Goal
-              </p>
-              <p class="goals">
-                <span class="highlight bold">$400</span>Added Up
-              </p>
-              <p class="goals">
-                <span class="highlight bold">14</span>days left
-              </p>
-              <span class="supporting">Supporting...</span>
-              <img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
-            </a>
-          </li>
-        <% end %>
-        </ul>
-       <% end %>
-
-      </div>
+      <%= render 'slider' %>
     </div>
   </div>
 

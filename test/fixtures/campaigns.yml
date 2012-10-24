@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  student: 
+  goal: 1
+  timer: 2012-10-09
+
+two:
+  student: 
+  goal: 1
+  timer: 2012-10-09

@@ -2,24 +2,20 @@
 
 <table>
   <tr>
-    <th>Name</th>
     <th>First name</th>
     <th>Last name</th>
     <th>University</th>
     <th>Career</th>
-    <th>Teacher</th>
-    <th>Organization</th>
+    <th>Sponsor</th>
+    <th>Partnership</th>
     <th>Country</th>
     <th>City</th>
-    <th>Campaign</th>
     <th>Question1</th>
     <th>Question2</th>
     <th>Verified</th>
-    <th>Cost per year</th>
     <th>Url video</th>
     <th>Url facebook</th>
     <th>Url twitter</th>
-    <th>Url university</th>
     <th>Current year</th>
     <th></th>
     <th></th>
@@ -28,24 +24,20 @@
 
 <% @students.each do |student| %>
   <tr>
-    <td><%= student.name %></td>
     <td><%= student.first_name %></td>
     <td><%= student.last_name %></td>
     <td><%= student.university.name %></td>
     <td><%= student.career.name %></td>
-    <td><%= student.teacher.name %></td>
-    <td><%= student.organization.name %></td>
+    <td><%= student.sponsor.name %></td>
+    <td><%= student.partnership.name %></td>
     <td><%= student.country %></td>
     <td><%= student.city %></td>
-    <td><%= student.campaign %></td>
     <td><%= student.question1 %></td>
     <td><%= student.question2 %></td>
     <td><%= student.verified %></td>
-    <td><%= student.cost_per_year %></td>
     <td><%= student.url_video %></td>
     <td><%= student.url_facebook %></td>
     <td><%= student.url_twitter %></td>
-    <td><%= student.url_university %></td>
     <td><%= student.current_year %></td>
     <td><%= link_to 'Show', student %></td>
     <td><%= link_to 'Edit', edit_student_path(student) %></td>

@@ -13,10 +13,10 @@
 
 <% @donations.each do |donation| %>
   <tr>
-    <td><%= donation.money %></td>
+    <td><%= donation.params%></td>
     <td><%= donation.student_id %></td>
-    <td><%= donation.adduper_id %></td>
-    <td><%= donation.order_id %></td>
+    <td><%= donation.status_id %></td>
+    <td><%= donation.transaction_id %></td>
     <td><%= link_to 'Show', donation %></td>
     <td><%= link_to 'Edit', edit_donation_path(donation) %></td>
     <td><%= link_to 'Destroy', donation, confirm: 'Are you sure?', method: :delete %></td>

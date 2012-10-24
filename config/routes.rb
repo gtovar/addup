@@ -1,9 +1,17 @@
 Addup::Application.routes.draw do
+match "application" => 'student_applications#new', :as => :application_new
+
+  resources :student_applications
+
+  resources :partnerships
+
+  resources :sponsors
+
+  resources :campaigns
+
   resources :payment_notifications
 
   resources :donations
-
-  resources :addupers
 
   get "paypal_express/checkout"
 
@@ -13,19 +21,15 @@ Addup::Application.routes.draw do
 
   resources :universities
 
-  resources :organizations
-
-  resources :teachers
-
   get "control_panel/index", :as => :control_panel
 
   get "home/landingpage"
 
-  get "home/student_detail"
+  match "/student_detail/:id" => 'home#student_detail', :as => :student_detail
 
   get "home/choose_your_reward"
 
-	match "home/how_it_works" => 'home#how_it_works', :as => :how
+  match "home/how_it_works" => 'home#how_it_works', :as => :how
 
   get "home/msg"
 
@@ -44,7 +48,7 @@ Addup::Application.routes.draw do
 	get "javascript/dynamic_careers"
 
 	match 'ipns' => 'paypal_express#notifications', :as => :ipns
-
+get "home/dommie"
 	match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 
  match 'slider' => 'home#dommie_slider', :as => :slider

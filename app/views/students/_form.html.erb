@@ -12,10 +12,6 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
     <%= f.label :first_name %><br />
     <%= f.text_field :first_name %>
   </div>
@@ -32,7 +28,12 @@
     <%= f.label :career_id, "Career" %><br />
     <%= f.grouped_collection_select :career_id, University.order(:name), :careers, :name, :id, :name, include_blank: true %>
   </div>
-  <script>
+  <div class="field">
+    <%= f.label :enrollment %><br />
+    <%= f.text_field :enrollment %>
+  </div>
+
+ <script>
     jQuery(function() {
 
         $(function() {
@@ -65,8 +66,8 @@
     <%= f.collection_select :teacher_id, Teacher.all, :id, :name, include_blank: true %>
   </div>
  <div class="field">
-    <%= f.label :organization_id %><br />
-    <%= f.collection_select :organization_id, Organization.all, :id, :name, include_blank: true %>
+    <%= f.label :sponsor_id %><br />
+    <%= f.collection_select :sponsor_id, Organization.all, :id, :name, include_blank: true %>
   </div>
   <div class="field">
     <%= f.label :country %><br />
@@ -76,11 +77,18 @@
     <%= f.label :city %><br />
     <%= f.text_field :city %>
   </div>
-  <div class="field">
-    <%= f.label :campaign %><br />
-    <%= f.number_field :campaign, :id => "datepicker" %>
+   <div class="field">
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
   </div>
   <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+   <div class="field">
+    <%= f.label :account %><br />
+    <%= f.text_field :account %>
+   <div class="field">
     <%= f.label :question1 %><br />
     <%= f.text_area :question1 %>
   </div>
@@ -93,10 +101,6 @@
     <%= f.check_box :verified %>
   </div>
   <div class="field">
-    <%= f.label :cost_per_year %><br />
-    <%= f.number_field :cost_per_year %>
-  </div>
-  <div class="field">
     <%= f.label :url_video %><br />
     <%= f.text_area :url_video %>
   </div>
@@ -107,10 +111,6 @@
   <div class="field">
     <%= f.label :url_twitter %><br />
     <%= f.text_field :url_twitter %>
-  </div>
-  <div class="field">
-    <%= f.label :url_university %><br />
-    <%= f.text_field :url_university %>
   </div>
   <div class="field">
     <%= f.label :current_year %><br />
