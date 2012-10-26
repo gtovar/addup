@@ -27,7 +27,7 @@
 	</head>
     <body>
     	<div class="center">
-        <img src="img/logo.png" class="logo" alt="ADD UP"/>
+        <img src="/assets/logo.png" class="logo" alt="ADD UP"/>
       
         <div class="banner">
         	<div class="summary">
@@ -48,11 +48,11 @@
 										<div id="card1" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student1.jpg"/>
+										    	<img src="/assets/students/student1.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student92.jpg"/>
+										    <img src="/assets/students/student92.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -62,11 +62,11 @@
 										<div id="card2" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student2.jpg"/>
+										    	<img src="/assets/students/student2.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/orgs/squared/khan_14.png"/>
+										    <img src="/assets/orgs/squared/khan_14.png"/>
 										  </div>
 										</div>
 									</div>
@@ -76,11 +76,11 @@
 										<div id="card3" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student3.jpg"/>
+										    	<img src="/assets/students/student3.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student6.jpg"/>
+										    <img src="/assets/students/student6.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -90,11 +90,11 @@
 										<div id="card4" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student4.jpg"/>
+										    	<img src="/assets/students/student4.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student8.jpg"/>
+										    <img src="/assets/students/student8.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -105,11 +105,11 @@
 										<div id="card5" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student5.jpg"/>
+										    	<img src="/assets/students/student5.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student7.jpg"/>
+										    <img src="/assets/students/student7.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -119,11 +119,11 @@
 										<div id="card6" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student6.jpg"/>
+										    	<img src="/assets/students/student6.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student91.jpg"/>
+										    <img src="/assets/students/student91.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -133,11 +133,11 @@
 										<div id="card7" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student7.jpg"/>
+										    	<img src="/assets/students/student7.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/orgs/squared/khan_14.png"/>
+										    <img src="/assets/orgs/squared/khan_14.png"/>
 										  </div>
 										</div>
 									</div>
@@ -147,11 +147,11 @@
 										<div id="card8" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student8.jpg"/>
+										    	<img src="/assets/students/student8.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/orgs/squared/khan_14.png"/>
+										    <img src="/assets/orgs/squared/khan_14.png"/>
 										  </div>
 										</div>
 									</div>
@@ -161,11 +161,11 @@
 										<div class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student9.jpg"/>
+										    	<img src="/assets/students/student9.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student2.jpg"/>
+										    <img src="/assets/students/student2.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -175,11 +175,11 @@
 										<div id="card10" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student91.jpg"/>
+										    	<img src="/assets/students/student91.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student1.jpg"/>
+										    <img src="/assets/students/student1.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -189,11 +189,11 @@
 										<div id="card11" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student92.jpg"/>
+										    	<img src="/assets/students/student92.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student3.jpg"/>
+										    <img src="/assets/students/student3.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -203,11 +203,11 @@
 										<div id="card12" class="f1_card">
 										  <div class="front face">
 										  	<a href="profileview.html">
-										    	<img src="img/students/student8.jpg"/>
+										    	<img src="/assets/students/student8.jpg"/>
 										    	</a>
 										  </div>
 										  <div class="back face">
-										    <img src="img/students/student3.jpg"/>
+										    <img src="/assets/students/student3.jpg"/>
 										  </div>
 										</div>
 									</div>
@@ -229,7 +229,7 @@
 						<ul>
 						<li>
 							<a href="student.html">
-							<img class="student" src="img/students/student1.jpg" alt="" />
+							<img class="student" src="/assets/students/student1.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -257,12 +257,12 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 							</a>
 						</li>
 						<li>
 							<a href="student.html">
-							<img class="student" src="img/students/student2.jpg" alt="" />
+							<img class="student" src="/assets/students/student2.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -290,11 +290,11 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 							</a>
 						</li>
 						<li><a href="student.html">
-							<img class="student" src="img/students/student3.jpg" alt="" />
+							<img class="student" src="/assets/students/student3.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -322,14 +322,14 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 						</li>
 					</ul>
 						<ul>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student4.jpg" alt="" />
+						<img class="student" src="/assets/students/student4.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -357,12 +357,12 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student5.jpg" alt="" />
+						<img class="student" src="/assets/students/student5.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -390,11 +390,11 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li><a href="student.html">
-						<img class="student" src="img/students/student6.jpg" alt="" />
+						<img class="student" src="/assets/students/student6.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -422,14 +422,14 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 					</a>
 					</li>
 				</ul>
 						<ul>
 						<li>
 							<a href="student.html">
-							<img class="student" src="img/students/student1.jpg" alt="" />
+							<img class="student" src="/assets/students/student1.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -457,12 +457,12 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 							</a>
 						</li>
 						<li>
 							<a href="student.html">
-							<img class="student" src="img/students/student2.jpg" alt="" />
+							<img class="student" src="/assets/students/student2.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -490,11 +490,11 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 							</a>
 						</li>
 						<li><a href="student.html">
-							<img class="student" src="img/students/student3.jpg" alt="" />
+							<img class="student" src="/assets/students/student3.jpg" alt="" />
 							<div class="recomended-stats">
 								<h6 class="bold"> Boris Wayne</h6>
 								<h6>INDIA, Mombay</h6>
@@ -522,14 +522,14 @@
 								<span class="highlight bold">14</span>days left
 							</p>
 							<span class="supporting">Supporting...</span>
-							<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+							<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 						</li>
 					</ul>
 											<ul>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student4.jpg" alt="" />
+						<img class="student" src="/assets/students/student4.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -557,12 +557,12 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student5.jpg" alt="" />
+						<img class="student" src="/assets/students/student5.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -590,11 +590,11 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li><a href="student.html">
-						<img class="student" src="img/students/student6.jpg" alt="" />
+						<img class="student" src="/assets/students/student6.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -622,14 +622,14 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 					</a>
 					</li>
 				</ul>
 						<ul>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student4.jpg" alt="" />
+						<img class="student" src="/assets/students/student4.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -657,12 +657,12 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li>
 						<a href="student.html">
-						<img class="student" src="img/students/student5.jpg" alt="" />
+						<img class="student" src="/assets/students/student5.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -690,11 +690,11 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 						</a>
 					</li>
 					<li><a href="student.html">
-						<img class="student" src="img/students/student6.jpg" alt="" />
+						<img class="student" src="/assets/students/student6.jpg" alt="" />
 						<div class="recomended-stats">
 							<h6 class="bold"> Boris Wayne</h6>
 							<h6>INDIA, Mombay</h6>
@@ -722,7 +722,7 @@
 							<span class="highlight bold">14</span>days left
 						</p>
 						<span class="supporting">Supporting...</span>
-						<img class="sponsor" src="img/orgs/wikipedia.png" alt="wikipedia" />
+						<img class="sponsor" src="/assets/orgs/wikipedia.png" alt="wikipedia" />
 					</a>
 					</li>
 				</ul>
