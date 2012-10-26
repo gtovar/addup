@@ -1,8 +1,12 @@
 class HomeController < ApplicationController
+
   def landingpage
+    @students = Student.first
+
   end
 
   def student_detail
+    @student = Student.find(params[:id])
   end
 
   def choose_your_reward
@@ -33,4 +37,15 @@ end
 def contact
 end
 
+def thanks
+end
+
+def dommie
+  render :layout => nil
+end
+
+def thankstransf
+end
+def companies
+end
 end

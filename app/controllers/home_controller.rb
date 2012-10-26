@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   end
 
   def student_detail
-    @student = Student.find(params[:id])
+   # @student = Student.find(params[:id])
   end
 
   def choose_your_reward
@@ -44,4 +44,8 @@ def dommie
   render :layout => nil
 end
 
+def thankstransf
+end
+def companies
+end
 end

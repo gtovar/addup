@@ -1,7 +1,19 @@
 Addup::Application.routes.draw do
+match "/student/:id" => 'home#student_detail', :as => :student_detail
+match "/student" => 'home#student_detail', :as => :student
+match "reward/:id" => "home#choose_your_reward", :as => :student_detail
+match "terms" => "home#terms", :as => :terms
+match "privacy" => "home#privacy", :as => :privacy
+match "about" => "home#about", :as => :about
+match "thanks" => "home#thanks", :as => :thanks
+match "success" => "home#thankstransf", :as => :success
 match "application" => 'student_applications#new', :as => :application_new
-
-  resources :student_applications
+match "contact" => "home#contact", :as => :contact
+match "companies" => "home#companies", :as => :companies
+match "how" => 'home#how_it_works', :as => :how
+match "howitworks" => 'home#how_it_works', :as => :how
+match "index" => 'home#landingpage', :as => :home
+resources :student_applications
 
   resources :partnerships
 
@@ -23,23 +35,11 @@ match "application" => 'student_applications#new', :as => :application_new
 
   get "control_panel/index", :as => :control_panel
 
-  get "home/landingpage"
 
-  match "/student_detail/:id" => 'home#student_detail', :as => :student_detail
 
-  get "home/choose_your_reward"
 
-  match "home/how_it_works" => 'home#how_it_works', :as => :how
 
   get "home/msg"
-
-  match "home/terms" => 'home#terms', :as => :terms
-
-  match "home/about" => 'home#about', :as => :about
-
-  match "home/contact" => 'home#contact', :as => :contact
-
-  get "home/thanks"
 
 	match 'noti' => 'payment_notification#create', :as => :notification
 

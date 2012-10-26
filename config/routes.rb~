@@ -1,9 +1,28 @@
 Addup::Application.routes.draw do
+match "/student/:id" => 'home#student_detail', :as => :student_detail
+match "/student" => 'home#student_detail', :as => :student
+match "reward/:id" => "home#choose_your_reward", :as => :student_detail
+match "terms" => "home#terms", :as => :terms
+match "privacy" => "home#privacy", :as => :privacy
+match "about" => "home#about", :as => :about
+match "thanks" => "home#thanks", :as => :thanks
+match "success" => "home#thankstransf", :as => :success
+match "application" => 'student_applications#new', :as => :application_new
+match "contact" => "home#contact", :as => :contact
+match "companies" => "home#companies", :as => :companies
+match "how" => 'home#how_it_works', :as => :how
+match "index" => 'home#landingpage', :as => :home
+resources :student_applications
+
+  resources :partnerships
+
+  resources :sponsors
+
+  resources :campaigns
+
   resources :payment_notifications
 
   resources :donations
-
-  resources :addupers
 
   get "paypal_express/checkout"
 
@@ -13,29 +32,13 @@ Addup::Application.routes.draw do
 
   resources :universities
 
-  resources :organizations
-
-  resources :teachers
-
   get "control_panel/index", :as => :control_panel
 
-  get "home/landingpage"
 
-  get "home/student_detail"
 
-  get "home/choose_your_reward"
 
-	match "home/how_it_works" => 'home#how_it_works', :as => :how_it_works
 
   get "home/msg"
-
-  match "home/terms" => 'home#terms', :as => :terms
-
-  match "home/about" => 'home#about', :as => :about
-
-  match "home/contact" => 'home#contact', :as => :contact
-
-  get "home/thanks"
 
 	match 'noti' => 'payment_notification#create', :as => :notification
 
@@ -44,7 +47,7 @@ Addup::Application.routes.draw do
 	get "javascript/dynamic_careers"
 
 	match 'ipns' => 'paypal_express#notifications', :as => :ipns
-
+get "home/dommie"
 	match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 
  match 'slider' => 'home#dommie_slider', :as => :slider
