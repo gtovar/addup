@@ -1,5 +1,4 @@
 class StudentApplicationsController < ApplicationController
-  layout "forms"
   # GET /student_applications
   # GET /student_applications.json
   def index
@@ -26,6 +25,7 @@ class StudentApplicationsController < ApplicationController
   # GET /student_applications/new.json
   def new
     @student_application = StudentApplication.new
+
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @student_application }

@@ -1,1 +1,13 @@
-<%= yield %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%= render "layouts/front_end_head" %>
+  </head>
+  <body>
+    <% if  params[:action] != "landingpage" %>
+      <%= render "layouts/front_end_header" %>
+    <% end %>
+    <%= yield %>
+    <%= render "layouts/front_end_footer" %>
+  </body>
+</html>

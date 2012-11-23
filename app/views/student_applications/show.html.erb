@@ -1,110 +1,207 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <b>Last name:</b>
-  <%= @student_application.last_name %>
-</p>
-
-<p>
-  <b>First name:</b>
-  <%= @student_application.first_name %>
-</p>
-
-<p>
-  <b>Nationality:</b>
-  <%= @student_application.nationality %>
-</p>
-
-<p>
-  <b>Email:</b>
-  <%= @student_application.email %>
-</p>
-
-<p>
-  <b>University:</b>
-  <%= @student_application.university %>
-</p>
-
-<p>
-  <b>Degree:</b>
-  <%= @student_application.degree %>
-</p>
-
-<p>
-  <b>Field of study:</b>
-  <%= @student_application.field_of_study %>
-</p>
-
-<p>
-  <b>Current year:</b>
-  <%= @student_application.current_year %>
-</p>
-
-<p>
-  <b>Length of program:</b>
-  <%= @student_application.length_of_program %>
-</p>
-
-<p>
-  <b>Crowdfundig goal usd:</b>
-  <%= @student_application.crowdfundig_goal_usd %>
-</p>
-
-<p>
-  <b>Total annual cost of attendance:</b>
-  <%= @student_application.total_annual_cost_of_attendance %>
-</p>
-
-<p>
-  <b>Time frame:</b>
-  <%= @student_application.time_frame %>
-</p>
-
-<p>
-  <b>Link or attachment of photos:</b>
-  <%= @student_application.link_or_attachment_of_photos %>
-</p>
-
-<p>
-  <b>Link of video:</b>
-  <%= @student_application.link_of_video %>
-</p>
-
-<p>
-  <b>Cause:</b>
-  <%= @student_application.cause %>
-</p>
-
-<p>
-  <b>Student sponsor for the community service project:</b>
-  <%= @student_application.student_sponsor_for_the_community_service_project %>
-</p>
-
-<p>
-  <b>Answer1:</b>
-  <%= @student_application.answer1 %>
-</p>
-
-<p>
-  <b>Answer2:</b>
-  <%= @student_application.answer2 %>
-</p>
-
-<p>
-  <b>Univesity back account:</b>
-  <%= @student_application.univesity_back_account %>
-</p>
-
-<p>
-  <b>Students university id reference:</b>
-  <%= @student_application.students_university_id_reference %>
-</p>
-
-<p>
-  <b>Answer3:</b>
-  <%= @student_application.answer3 %>
-</p>
-
+<h1> <%= @student_application.first_name %>&nbsp;<%= @student_application.last_name %></h1>
+<% if notice != nil %>
+  <p id="notice" class="alert alert-success"><%= notice %></p>
+<%end%>
+<div class="row-fluid">
+  <div class="span5">
+    <dl class="dl-horizontal">
+      <dt>Nationality:</dt>
+      <dd><%= @student_application.nationality %></dd>
+      <dt>Email:</dt>
+      <dd><%= @student_application.email %></dd>
+      <dt>University:</dt>
+      <dd><%= @student_application.university %></dd>
+      <dt>Degree:</dt>
+      <dd><%= @student_application.degree %></dd>
+      <dt>Field of study:</dt>
+      <dd><%= @student_application.field_of_study %></dd>
+      <dt>Current year:</dt>
+      <dd><%= @student_application.current_year %></dd>
+      <dt>Length of program:</dt>
+      <dd><%= @student_application.length_of_program %></dd>
+      <dt>Crowdfundig goal usd:</dt>
+      <dd><%= @student_application.crowdfundig_goal_usd %></dd>
+      <dt>Total annual cost of <br/>attendance:</dt>
+      <dd><br/><%= @student_application.total_annual_cost_of_attendance %></dd>
+      <dt>Time frame:</dt>
+      <dd><%= @student_application.time_frame %></dd>
+    </dl>
+  </div>
+  <div class="span5">
+    <dl class="dl-horizontal">
+      <dt>Link of video:</dt>
+      <dd><%= @student_application.link_of_video %></dd>
+      <dt>Cause:</dt>
+      <dd><%= @student_application.cause %></dt>
+      <dt>Name sponsr</dt>
+      <dd><%= @student_application.name_sponsor %></dd>
+      <dt>Job</dt>
+      <dd><%= @student_application.job %></dd>
+      <dt>E-mail</dt>
+      <dd><%= @student_application.email_sponsor %></dd>
+      <dt>Quote</dt>
+      <dd><%= @student_application.quote %></dd>
+    </dl>
+  </div>
+</div>
+<div class="row-fluid">
+  <div class="span10">
+    <dt>Why I need you to add up to my education...</dt>
+    <dd><%= @student_application.answer1 %></dd>
+    <dt>Why I care about adding up to my community...</dt>
+    <dd><%= @student_application.answer2 %></dd>
+  </div>
+</div>
+<div class="row-fluid">
+  <dl>
+    <dt>Univesity bank account:</dt>
+    <dd><%= @student_application.univesity_bank_account %></dd>
+    <dt>Student reference id</dt>
+    <dd><%= @student_application.student_reference_id %></dd>
+    <dt>Students university id reference:</dt>
+    <dd><%= @student_application.students_university_id_reference %></dd>
+  </dl>
+</div>
+<div class="row-fluid">
+  <h3> Check data </h3>
+  <dl>
+    <dt>Pay to the order of</dt>
+    <dd><%= @student_application.pay_of_the_order_of %></dd>
+    <dt>Send it to</dt>
+    <dd><%= @student_application.name_check %></dd>
+    <dt>Adress</dt>
+    <dd><%= @student_application.adress_check %></dd>
+    <dt>City</dt>
+    <dd><%= @student_application.city_check %></dd>
+    <dt>State</dt>
+    <dd><%= @student_application.state_check %></dd>
+    <dt>Zipcode</dt>
+    <dd><%= @student_application.zipcode_check %></dd>
+  </dl>
+</div>
+<div class="row-fluid">
+  <h3>Wire tranfer</h3>
+  <dl>
+    <dt>University bank account</dt>
+    <dd><%= @student_application.univesity_bank_account %></dd>
+    <dt>Name of university</dt>
+    <dd><%= @student_application.name_of_university %></dd>
+    <dt>Email of confirmation</dt>
+    <dd><%= @student_application.email_of_confirmation %></dd>
+    <dt>Name of the bank</dt>
+    <dd><%= @student_application.name_of_bank %></dd>
+    <dt>Bank account</dt>
+    <dd><%= @student_application.bank_account %></dd>
+    <dt>Aba routing</dt>
+    <dd><%= @student_application.abbarouting %></dd>
+    <dt>Swift</dd>
+    <dd><%= @student_application.swift %></dd>
+    <dt>Students university id reference</dt>
+    <dd><%= @student_application.students_university_id_reference %></dd>
+    <dt>Do you have family member who studied in the US before you?</dt>
+    <% if @student_application.answer3 == true %>
+      <dd>Yes</dd>
+    <%else%>
+      <dd>No</dd>
+    <%end%>
+    <dt>Student reference id</dt>
+    <dd><%= @student_application.student_reference_id %></dd>
+  </dl>
+</div>
+<div class="row-fluid">
+  <div class="span12">
+    <ul class="thumbnails">
+      <% if @student_application.p1_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p1_url %>
+            <h2>Photo 1</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p2_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p2_url %>
+            <h2>Photo 2</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p3_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p3_url %>
+            <h2>Photo 3</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p4_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p4_url %>
+            <h2>Photo 4</h2>
+          </div>
+        </li>
+      <% end %>
+    </div>
+  </div>
+ <div class="row-fluid">
+    <div class="span11">
+     <% if @student_application.p5_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p5_url %>
+            <h2>Photo 5</h2>
+          </div>
+        </li>
+      <% end %>
+        <% if @student_application.p6_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p6_url %>
+            <h2>Photo 6</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p7_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p7_url %>
+            <h2>Photo 7</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p8_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p8_url %>
+            <h2>Photo 8</h2>
+          </div>
+        </li>
+      <% end %>
+    </div>
+  </div>
+     <div class="row-fluid">
+       <div class = "span11">
+        <% if @student_application.p9_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p9_url %>
+            <h2>Photo 9</h2>
+          </div>
+        </li>
+      <% end %>
+      <% if @student_application.p10_url != nil %>
+        <li class="span3">
+          <div class="thumbnail">
+            <%= image_tag @student_application.p10_url %>
+            <h2>Photo 10</h2>
+          </div>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_student_application_path(@student_application) %> |
 <%= link_to 'Back', student_applications_path %>

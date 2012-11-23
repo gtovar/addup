@@ -1,0 +1,51 @@
+<div class="tab-pane fade" id="fs">
+  <div class="row-fluid">
+    <div class="span6">
+      <label><strong>Photos</strong>
+        <span class="help-block"> Please share 7 to 10 photos that show your family/friends,you engaging in your interests, hobbies and service activities. These will help donors get a feel for who you are. </span>
+        <label>Photo 1<br/>
+          <%= f.file_field :p1 %>
+        </label>
+        <label>Photo 2<br/>
+          <%= f.file_field :p2 %>
+        </label>
+        <label>Photo 3<br/>
+          <%= f.file_field :p3 %>
+        </label>
+        <label>Photo 4<br/>
+          <%= f.file_field :p4 %>
+        </label>
+        <label>Photo 5<br/>
+          <%= f.file_field :p5 %>
+        </label>
+         <label>Photo 6<br/>
+          <%= f.file_field :p6%>
+        </label>
+       <label>Photo 7<br/>
+          <%= f.file_field :p7 %>
+        </label>
+        <label>Photo 8<br/>
+          <%= f.file_field :p8 %>
+        </label>
+        <label>Photo 9<br/>
+          <%= f.file_field :p9 %>
+        </label>
+        <label>Photo 10<br/>
+          <%= f.file_field :p10 %>
+        </label>
+      </label>
+
+    </div>
+
+    <div class="span6">
+      <label><strong>Videos</strong>
+        <span class="help-block">
+ Please upload a 2 minute video in which you talk about your project to add up to your community. Don't worry, it can be a simple web cam video. The purpose is to explain to donors why you care about adding up to your community and why you have the ability to do so.
+        </span>
+        <%= f.file_field :link_of_video %>
+      </label>
+    </div>
+
+  </div>
+
+</div>

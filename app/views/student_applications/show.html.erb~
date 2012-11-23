@@ -1,0 +1,105 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Last name:</b>
+  <%= @student_application.last_name %>
+</p>
+
+<p>
+  <b>First name:</b>
+  <%= @student_application.first_name %>
+</p>
+
+<p>
+  <b>Nationality:</b>
+  <%= @student_application.nationality %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @student_application.email %>
+</p>
+
+<p>
+  <b>University:</b>
+  <%= @student_application.university %>
+</p>
+
+<p>
+  <b>Degree:</b>
+  <%= @student_application.degree %>
+</p>
+
+<p>
+  <b>Field of study:</b>
+  <%= @student_application.field_of_study %>
+</p>
+
+<p>
+  <b>Current year:</b>
+  <%= @student_application.current_year %>
+</p>
+
+<p>
+  <b>Length of program:</b>
+  <%= @student_application.length_of_program %>
+</p>
+
+<p>
+  <b>Crowdfundig goal usd:</b>
+  <%= @student_application.crowdfundig_goal_usd %>
+</p>
+
+<p>
+  <b>Total annual cost of attendance:</b>
+  <%= @student_application.total_annual_cost_of_attendance %>
+</p>
+
+<p>
+  <b>Time frame:</b>
+  <%= @student_application.time_frame %>
+</p>
+
+<p>
+  <b>Link or attachment of photos:</b>
+  <%= @student_application.link_or_attachment_of_photos_url %>
+</p>
+
+<p>
+  <b>Link of video:</b>
+  <%= @student_application.link_of_video %>
+</p>
+
+<p>
+  <b>Cause:</b>
+  <%= @student_application.cause %>
+</p>
+
+<p>
+  <b>Answer1:</b>
+  <%= @student_application.answer1 %>
+</p>
+
+<p>
+  <b>Answer2:</b>
+  <%= @student_application.answer2 %>
+</p>
+
+<p>
+  <b>Univesity back account:</b>
+  <%= @student_application.univesity_bank_account %>
+</p>
+
+<p>
+  <b>Students university id reference:</b>
+  <%= @student_application.students_university_id_reference %>
+</p>
+
+<p>
+  <b>Answer3:</b>
+  <%= @student_application.answer3 %>
+</p>
+
+
+<%= link_to 'Edit', edit_student_application_path(@student_application) %> |
+<%= link_to 'Back', student_applications_path %>

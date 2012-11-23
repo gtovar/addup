@@ -1,0 +1,54 @@
+<%= form_for(@student_application) do |f| %>
+  <% if @student_application.errors.any? %>
+    <div id="error_explanation" class="alert alert-error" >
+      <h2><%= pluralize(@student_application.errors.count, "error") %> prohibited this student_application from being saved:</h2>
+
+      <ul>
+        <% @student_application.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="tab-content">
+
+
+
+</div><!-- Close tab content -->
+
+
+
+
+
+<script>
+    $('#basic').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    });
+
+    $('#files').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+
+    $('#questions').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    });
+
+    $('#payment').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    });
+
+</script>
+
+
+<div class="form-actions">
+  <div class="span6">
+    <%= f.submit 'Save',:class => "btn-large btn-primary" %>
+    <span class="span8"></div>
+    <%= link_to 'Back', student_applications_path,:class => "btn btn-large " %>
+  </div>
+<%end%>

@@ -1,37 +1,21 @@
 Addup::Application.routes.draw do
-match "/student/:id" => 'home#student_detail', :as => :student_detail
-match "/student" => 'home#student_detail', :as => :student
-match "reward/:id" => "home#choose_your_reward", :as => :student_detail
-match "terms" => "home#terms", :as => :terms
-match "privacy" => "home#privacy", :as => :privacy
-match "about" => "home#about", :as => :about
-match "thanks" => "home#thanks", :as => :thanks
-match "success" => "home#thankstransf", :as => :success
-match "application" => 'student_applications#new', :as => :application_new
-match "contact" => "home#contact", :as => :contact
-match "companies" => "home#companies", :as => :companies
-match "how" => 'home#how_it_works', :as => :how
-match "howitworks" => 'home#how_it_works', :as => :how
-match "index" => 'home#landingpage', :as => :home
-resources :student_applications
-
-  resources :partnerships
-
-  resources :sponsors
-
-  resources :campaigns
-
-  resources :payment_notifications
-
-  resources :donations
+  match "/student/:id" => 'home#student_detail', :as => :student_detail
+  match "/student" => 'home#student_detail', :as => :student
+  match "reward/:id" => "home#choose_your_reward", :as => :student_detail
+  match "terms" => "home#terms", :as => :terms
+  match "privacy" => "home#privacy", :as => :privacy
+  match "about" => "home#about", :as => :about
+  match "thanks" => "home#thanks", :as => :thanks
+  match "success" => "home#thankstransf", :as => :success
+  match "application" => 'student_applications#new', :as => :application_new
+  match "contact" => "home#contact", :as => :contact
+  match "companies" => "home#companies", :as => :companies
+  match "how" => 'home#how_it_works', :as => :how
+  match "howitworks" => 'home#how_it_works', :as => :how
+  match "index" => 'home#landingpage', :as => :home
+  resources :student_applications
 
   get "paypal_express/checkout"
-
-  resources :students
-
-  resources :careers
-
-  resources :universities
 
   get "control_panel/index", :as => :control_panel
 
@@ -41,22 +25,22 @@ resources :student_applications
 
   get "home/msg"
 
-	match 'noti' => 'payment_notification#create', :as => :notification
+  match 'noti' => 'payment_notification#create', :as => :notification
 
   get "paypal_express/checkout"
 
-	get "javascript/dynamic_careers"
+  get "javascript/dynamic_careers"
 
-	match 'ipns' => 'paypal_express#notifications', :as => :ipns
-get "home/dommie"
-	match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
+  match 'ipns' => 'donation#ipn', :as => :ipn
+  get "home/dommie"
+  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
 
- match 'slider' => 'home#dommie_slider', :as => :slider
- match 'paypal' => 'home#dommie_paypal', :as => :paypal
-get "paypal_express/checkout", :as => :pay
- # The priority is based upon order of creation:
+  match 'slider' => 'home#dommie_slider', :as => :slider
+  match 'paypal' => 'home#dommie_paypal', :as => :paypal
+  get "paypal_express/checkout", :as => :pay
+  # The priority is based upon order of creation:
 
-# The priority is based upon order of creation:
+  # The priority is based upon order of creation:
   # first created -> highest priority.
 
   # Sample of regular route:
@@ -105,7 +89,7 @@ get "paypal_express/checkout", :as => :pay
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'home#landingpage'
+  root :to => 'home#landingpage'
 
   # See how all your routes lay out with "rake routes"
 

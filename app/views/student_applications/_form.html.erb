@@ -1,7 +1,7 @@
-<%= form_for(@student_application) do |f| %>
+<%= form_for @student_application, :multipart => true  do |f| %>
   <% if @student_application.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@student_application.errors.count, "error") %> prohibited this student_application from being saved:</h2>
+    <div id="error_explanation" class="alert alert-error" >
+      <h2><%= pluralize(@student_application.errors.count, "error") %> prohibited this Student application from being saved:</h2>
 
       <ul>
         <% @student_application.errors.full_messages.each do |msg| %>
@@ -11,102 +11,78 @@
     </div>
   <% end %>
 
-  <div class="span9 form-inline input-prepend">
+  <div class="tab-content">
 
-    <label><strong>Personal information:</strong><br/>
-      <%= f.text_field :last_name, :class => "input-large", :placeholder => "Last Name" %>
-      <%= f.text_field :first_name, :class => "input-large", :placeholder => "First Name" %>
-    </label>
-    <br/>
-    <br/>
-    <label><strong>Nationality</strong><br/>
-      <%= f.text_field :nationality, :class => "input-large", :placeholder => "Nationality" %>
-    </label>
-    <label><strong>Email</strong><br/>
-      <span class="add-on">@</span><%= f.text_field :email, :class => "input-large", :placeholder => "ex. boris@hotmail.com" %></label>
-    <br/>
-    <br/>
-    <label><strong>University</strong><br/>
-      <%= f.text_field :university, :class => "input-large", :placeholder => "University" %>
-    </label>
-    <label><strong>Degree</strong><br/>
-      <%= f.number_field :degree, :class => "input-large", :placeholder => "Degree" %>
-    </label>
-    <br/>
-    <br/>
-    <label><strong>Field of study</strong><br/>
-      <%= f.text_field :field_of_study,  :class => "input-large", :placeholder => "Study" %>
-    </label>
-    <label><strong>Current yeaer</strong><br/>
-      <%= f.text_field :current_year ,  :class => "input-large", :placeholder => "current year" %>
-    </label>
-    <br/>
-    <br/>
-    <label><strong>Length of program</strong><br/>
-      <%= f.text_field :length_of_program ,  :class => "input-large", :placeholder => "i.e 4 years" %>
-    </label>
-    <label><strong>Crowdfundig GOAL</strong><br/>
-      <span class="add-on">$</span><%= f.text_field :crowdfundig_goal_usd ,  :class => "input-large", :placeholder => "i.e $3,000" %>
-  </label>
-  <br/>
-  <br/>
-  <label><strong>Total Annual Cost of Attendance</strong><br/>
-    <span class="add-on">$</span><%= f.text_field :total_annual_cost_of_attendance,  :class => "input-large", :placeholder => "USD" %>
-</label>
-<label><strong>Time frame</strong><br/>
-  <%= f.text_field :time_frame ,  :id => "datepicker",:class => "input-large", :placeholder => "i.e 60 days" %>
-</label>
-<br/>
-<br/>
-<label><strong>Photos</strong><br/>
-  <small>7 to 10 photos that show your family, hobbies, friends, interests, service activities which will help donors get a feel for who you are. </small><br/>
-  <%= f.file_field :link_or_attachment_of_photos,  :class => "input-large", :placeholder => "Photos" %>
-</label>
-<br/>
-<label><strong>Videos</strong><br/>
-  <p> <small>2 min video where you describe your project to add up to your community. It can be a simple web cam video. The purpose is to explain to donors why you care about adding up to your community and why you have the ability to do so.</small></p><br/>
-  <%= f.file_field :link_of_video ,  :class => "input-large", :placeholder => "Video" %>
-</label>
-<br/>
-<br/>
-<label><strong>Student Slogan on how he/she will add up….</strong><br/>
-  <%= f.text_field :cause ,  :class => "input-large", :placeholder => "I will add up by…(20 word maximum) " %>
-</label>
-<br/>
-<br/>
-<label><strong>Student sponsor for the community service project </strong><br/>
-  <%= f.text_field  :student_sponsor_for_the_community_service_project , :class => "input-large", :placeholder => " Name, title and quote from a person from the organization / person that will be benefitted by the student’s project or who knows the student and his project first hand." %>
-</label>
-<br/>
-<br/>
-<label><strong>Why I need you to add up to my education?</strong><br/>
-  <%= f.text_area :answer1 , :rows => 10,  :class => "input-xxlarge", :placeholder => "max 800 characters" %>
-</label>
-<br/>
-<br/>
-<label><strong>Why I care about adding up?</strong><br/>
-  <%= f.text_area :answer2 , :rows => 10, :class => "input-xxlarge", :placeholder => "max 800 characters" %>
-</label>
-<br/>
-<br/>
-<label><strong>Univesity Back Account</strong><br/>
-  <%= f.text_field :univesity_back_account ,  :class => "input-large", :placeholder => "#" %>
-</label>
-<label><strong>Students University Id Reference</strong><br/>
-  <%= f.text_field :students_university_id_reference ,  :class => "input-large", :placeholder => "#" %>
-</label>
-<br/>
-<br/>
-<label><strong>Do you have family members who studied in the US before you?</strong><br/>
-  <%= f.check_box :answer3 ,  :class => "input-xxlarge", :placeholder => "#" %>
-</label>
+    <%= render :partial => "basic",:locals => {:f => f} %>
+    <%= render :partial => "files",:locals => {:f => f} %>
+    <%= render :partial => "questions",:locals => {:f => f} %>
+    <%= render :partial => "payment",:locals => {:f => f} %>
 
-<div class="form-actions">
-  <%= f.submit 'Save',:class => "btn-large btn-primary" %>
+  </div><!-- Close tab content -->
 
-  <%= link_to 'Back', student_applications_path,:class => "btn btn-large ", :style => "float:right;" %>
-</div>
 
-</div>
 
-<% end %>
+
+
+  <script>
+    $('#basic').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+
+    $('#files').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+
+    $('#questions').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+
+    $('#payment').click(function (e) {
+      e.preventDefault();
+      $(this).tab('show');
+    });
+    $('#check').hide();
+    $('#wire').hide();
+    $('#q2').hide();
+
+    $("#student_application_method_of_payment").change(function () {
+      var valor =  $(this).val();
+      if (valor == 0){
+        $('#check').fadeOut('slow');
+        $('#wire').fadeOut('slow');
+        $('#q2').fadeOut('slow');
+        }else if (valor == 1) {
+        $('#check').fadeIn('slow');
+        $('#wire').fadeOut('slow');
+        $('#q2').fadeIn('slow');
+        }else if (valor == 2){
+        $('#check').fadeOut('slow');
+        $('#wire').fadeIn('slow');
+        $('#q2').fadeIn('slow');
+      }
+
+
+    }
+    );
+
+
+    $(document).ready(function(){
+      $("#tooltip").click(function(event){
+        window.open('http://www.khanacademy.org/contribute');
+        $('#tooltip').tooltip('toggle');
+      });
+    });
+
+  </script>
+<br/><br/>
+<br/>
+<br/>
+
+<div class="row-fluid">
+  <div class="span6">
+    <%= f.submit 'SAVE & CONTINUE',:class => "btn btn-large btn-block btn-primary" %>
+</div></div>
+<%end%>

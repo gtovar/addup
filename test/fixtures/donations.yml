@@ -1,13 +1,21 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  money: 1
-  student_id: 1
-  adduper_id: 1
-  order_id: 1
+  student_application: 
+  status: MyString
+  transaction_id: MyString
+  mc_gross: 9.99
+  received_at: 2012-11-23 15:34:30
+  invoice: MyString
+  currency: MyString
+  params: MyText
 
 two:
-  money: 1
-  student_id: 1
-  adduper_id: 1
-  order_id: 1
+  student_application: 
+  status: MyString
+  transaction_id: MyString
+  mc_gross: 9.99
+  received_at: 2012-11-23 15:34:30
+  invoice: MyString
+  currency: MyString
+  params: MyText

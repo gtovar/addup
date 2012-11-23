@@ -26,7 +26,7 @@ h1{font-size: 48px;font-family: inherit}
 h2{font-size: 36px;font-family: inherit}
 h3{font-size: 24px;font-family: inherit;clear: left;}
 h4{font-size: 21px;font-family: inherit}
-h5{font-size: 18px;font-family: inherit;}
+h5{font-size: 18px;font-family: inherit;clear: both;}
 h6{font-size: 14px;font-family: inherit}
 .top-space{margin-top: 20px;}
 p{font-size: 14px;font-family: inherit;margin-top: 7px;}
@@ -275,7 +275,7 @@ form input[type='text'].super-input{
 .reward label{
     display: inline-block;
     margin: 18px 13px auto 0;
-    width: 86px;
+    width: 93px;
     vertical-align: top;
 }
 .reward strong{
@@ -290,8 +290,9 @@ input[type="radio"] {}
 .description{
     margin-top: 18px;
     display: inline-block;
-    width: 424px;
+    width: 420px;
     margin-bottom: 18px;
+    font-size: 18px;
 }
 .action{background-color: #EC1D78}
 .action:hover{background-color: #E2217E;}
@@ -356,28 +357,31 @@ li.faq{}
 p.super{font-size:18px;float: none;margin-bottom: 10px;}
 
 .social-share{
-    width: 451px;
+    width: 527px;
     height: 40px;
     display: block;
     margin: auto;
 }
+.social-share div, .social-share a{float:left;}
 .share{text-decoration:none;
-	font-size: 30px; font-weight:bold;padding: 3px 17px;margin: 0 20px 35px 0;display: inline-block;float: left;}
+	font-size: 12px; padding: 0px 6px 0px 6px;margin: 0 15px 34px 0;display: inline-block;float: left;}
 .tweet{
 }
 .share:hover{text-decoration:none}
 .facebook{background-color:#3C527D;}
 .e-mail{
-    background-color: #999999;
+    background-color: #999;
+    border-radius: 3px;
 }
 .e-mail:hover{
 	  background-color: #888;
 }
 .email-icon{
-    background: url('sprite.png') -2px -729px;
-    width: 21px;
-    height: 17px;
+    background: url('sprite.png') -2px -496px no-repeat;
+    width: 16px;
+    height: 15px;
     display: inline-block;
+    background-size: 48px;
 }
 .facebook span{font-size: 26px;}
 .embed{
@@ -401,7 +405,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 .recomendations{
     width: 960px;
 	
-    height: 335px;
+    height: 290px;
     background-color: #F7F7F7;
     position: relative;
 }
@@ -420,7 +424,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     background: white;
     box-shadow: 0 0 9px #666;
     border-radius: 6px;
-    height: 274px;
+    height: 230px;
     cursor: pointer;
     margin-left: 25px;
 }
@@ -462,14 +466,16 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     right: 0;
 }
 p.blurred{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .recomendations p{
     margin-left: 8px;
-    margin-top: 0;
+    margin-top: 3px;
 } 
 .recomendations p.desc{
-    font-size: 12px;
+    font-size: 14px;
+    margin-bottom: 10px;
 } 					 
 .progress{
     position: relative;
@@ -1310,4 +1316,19 @@ div.blurr span {
 #how8{}
 #how9{}
 
-	 
+.picture{
+    width: 500px;
+    float: left;
+    clear: right;
+}
+.picture img{
+    width: 100%;
+}
+.half{
+    width: 400px;
+	
+    float: left;
+}
+
+.twitter-share-button{}
+.left-align{float:left}

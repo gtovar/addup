@@ -24,7 +24,7 @@
 		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
 		<!-- Javascript load -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/addup.js"></script>
+		<script type="text/javascript" src="/assets/addup.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -34,12 +34,12 @@
         			<li class="li1"><a href="how.html">How it Works</a></li>
         			<li class="li2"><a href="about.html">About</a></li>
         			<li class="li3"> </li>
-        			<li class="li4"><a href="contact.html">Contact</a></li>            			
-        		</ul>       		
+        			<li class="li4"><a href="contact.html">Contact</a></li>
+        		</ul>
         	</div>
         </div>
 		<div class="center">
-			
+
 			<div class="three-fifths">
 				<div class="student-stats">
 					<h3 class="bold top-space">Cynthia White <span class="icon checkmark"></span></h3>
@@ -47,14 +47,14 @@
 					</div>
 					<h5>MBA Candidate (2nd year out of 4 year program)</h5>
 					<h5>Georgetown University</h5>
-					<h5>USA, Houston</h5>
+					<h5>Houston,USA</h5>
 				</div>
 
 				<form accept-charset="UTF-8" action="paypal.php" method="post">
 					<ol class="choose-rewards">
 						<li>
-							<h5 class="bold">Great! Every contribution Adds up!</h5>
-							<h6>Enter the amount to add up</h6>
+							<h5 class="bold">Great! Every contribution Adds Up!</h5>
+							<h6>Enter the amount to add up or select from the fixed amounts below.</h6>
 							<div class="money-input info-bg-color">
 								<span class="currency info-color">$</span>
 								<input class="super-input money" autocomplete="off" class="text" type="text" />
@@ -116,8 +116,8 @@
 								<label for="name">Full Name</label>
         				<input id="name" name="name" type="text">
         				<label for="email">Email Address</label>
-        				<input id="email" name="email" type="text">		
-        				<input class="button action shadow" name="continue" type="submit" value="Bank Transfer">						
+        				<input id="email" name="email" type="text">
+        				<input class="button action shadow" name="continue" type="submit" value="Bank Transfer">
 							</div>
 						</li>
 

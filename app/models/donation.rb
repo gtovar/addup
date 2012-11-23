@@ -1,4 +1,3 @@
 class Donation < ActiveRecord::Base
-  has_many :students
-  attr_accessible :params, :student_id, :status, :trasansaction_id
+has_one :student_application  attr_accessible :currency, :invoice, :mc_gross, :params, :received_at, :status, :student_application, :transaction_id
 end

@@ -26,7 +26,7 @@ h1{font-size: 48px;font-family: inherit}
 h2{font-size: 36px;font-family: inherit}
 h3{font-size: 24px;font-family: inherit;clear: left;}
 h4{font-size: 21px;font-family: inherit}
-h5{font-size: 18px;font-family: inherit;}
+h5{font-size: 18px;font-family: inherit;clear: both;}
 h6{font-size: 14px;font-family: inherit}
 .top-space{margin-top: 20px;}
 p{font-size: 14px;font-family: inherit;margin-top: 7px;}
@@ -54,7 +54,7 @@ a:hover{text-decoration:underline}
     padding-left: 0;
 }
 div.header div.center{
-    background: url('header.png') no-repeat left center;
+    background: url('../img/header.png') no-repeat left center;
     position: relative;
 }
 .logo-head{
@@ -76,7 +76,7 @@ ul li{
     padding: 0;
 }
 .li1{}
-.li2{}
+.li2{}       
 .li3{}
 .li4{
     text-align: right;
@@ -104,7 +104,7 @@ ul li{
 .footer a:hover{text-decoration:underline}
 .footer p{
 }
-.copyright{font-size: 12px;margin-top: 20px;}
+.copyright{font-size: 12px;margin-top: 20px;}	     
 
 
 .info-color{color: #3AA0BB}
@@ -122,7 +122,7 @@ form{
     margin-bottom: 40px;
     display: block;
     clear: both;
-}
+}     	
 label{
     display: block;
     font-size: 14px;
@@ -134,7 +134,7 @@ form input[type="text"], form input[type="password"], form select, form textarea
     display: block;
     margin-top: 3px;
     padding-left: 6px;
-}
+}   	
 input[type="text"] {
     width: 280px;
     height: 28px;
@@ -159,7 +159,7 @@ input[type="submit"] {}
     display: block;
     clear: both;
 }
-.team h5{}
+.team h5{}	 
 .member{
     float: left;
     margin: 10px 40px 10px 0;
@@ -171,7 +171,7 @@ input[type="submit"] {}
 }
 .sidebar{
     float: left;
-
+    
     width: 230px;
     height: auto;
     border: none;
@@ -199,8 +199,8 @@ input[type="submit"] {}
     padding-bottom: 7px;
     display: block;
 }
-
-
+ 			 
+ 
 .student-stats{
     position: relative;
 }
@@ -218,7 +218,7 @@ ol.choose-rewards li{
 }
 .choose-rewards h5{}
 .choose-rewards h6{
-
+   
 }
 .money-input{
     border-radius: 7px;
@@ -237,7 +237,7 @@ ol.choose-rewards li{
 }
 form input[type='text'].super-input{
     height: auto;
-
+	
     font-size: 48px;
     line-height: 1em;
     border-radius: 5px;
@@ -248,10 +248,10 @@ form input[type='text'].super-input{
 }
 .tiny-tip{
      color: white;
-
-
+    
+    
      vertical-align: middle;
-
+    
      display: inline-block;
      margin-top: -25px;
 }
@@ -275,7 +275,7 @@ form input[type='text'].super-input{
 .reward label{
     display: inline-block;
     margin: 18px 13px auto 0;
-    width: 86px;
+    width: 93px;
     vertical-align: top;
 }
 .reward strong{
@@ -290,8 +290,9 @@ input[type="radio"] {}
 .description{
     margin-top: 18px;
     display: inline-block;
-    width: 424px;
+    width: 420px;
     margin-bottom: 18px;
+    font-size: 18px;
 }
 .action{background-color: #EC1D78}
 .action:hover{background-color: #E2217E;}
@@ -320,7 +321,7 @@ input[type="radio"] {}
 .faqs{}
 h6.faqs{
     color: #999999;
-}
+} 
 ul.faqs{}
 li.faq{}
 .faq-question{}
@@ -329,12 +330,12 @@ li.faq{}
 .icon-expand{
     width: 13px;
     height: 10px;
-    display: inline-block;
+    display: inline-block;    
     vertical-align: top;
     margin-top: 6px;
 }
-.arrow-hidden{background: url('sprite.png') 0 -39px;}
-.arrow-shown{background: url('sprite.png') 0 -24px;}
+.arrow-hidden{background: url('../img/sprite.png') 0 -39px;}
+.arrow-shown{background: url('../img/sprite.png') 0 -24px;}
 .question{
     font-size: 13px;
     font-weight: bold;
@@ -356,28 +357,31 @@ li.faq{}
 p.super{font-size:18px;float: none;margin-bottom: 10px;}
 
 .social-share{
-    width: 451px;
+    width: 527px;
     height: 40px;
     display: block;
     margin: auto;
 }
+.social-share div, .social-share a{float:left;}
 .share{text-decoration:none;
-	font-size: 30px; font-weight:bold;padding: 3px 17px;margin: 0 20px 35px 0;display: inline-block;float: left;}
+	font-size: 12px; padding: 0px 6px 0px 6px;margin: 0 15px 34px 0;display: inline-block;float: left;}
 .tweet{
 }
 .share:hover{text-decoration:none}
 .facebook{background-color:#3C527D;}
 .e-mail{
-    background-color: #999999;
+    background-color: #999;
+    border-radius: 3px;
 }
 .e-mail:hover{
 	  background-color: #888;
 }
 .email-icon{
-    background: url('sprite.png') -2px -729px;
-    width: 21px;
-    height: 17px;
+    background: url('../img/sprite.png') -2px -496px no-repeat;
+    width: 16px;
+    height: 15px;
     display: inline-block;
+    background-size: 48px;
 }
 .facebook span{font-size: 26px;}
 .embed{
@@ -400,8 +404,8 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 }
 .recomendations{
     width: 960px;
-
-    height: 335px;
+	
+    height: 290px;
     background-color: #F7F7F7;
     position: relative;
 }
@@ -420,7 +424,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     background: white;
     box-shadow: 0 0 9px #666;
     border-radius: 6px;
-    height: 274px;
+    height: 230px;
     cursor: pointer;
     margin-left: 25px;
 }
@@ -444,7 +448,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     height: auto;
     float: right;
     margin-right: 50px;
-}
+} 
 .recomendations h3{}
 .highlight{color: #C0262C;display: block;clear: both;}
 .recomended-stats{
@@ -457,20 +461,22 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     display: block;
     width: 50px;
     height: 43px;
-    background: url('sprite.png') 0 -243px;
+    background: url('../img/sprite.png') 0 -243px;
     top: 0;
     right: 0;
 }
 p.blurred{
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: bold;
 }
 .recomendations p{
     margin-left: 8px;
-    margin-top: 0;
-}
+    margin-top: 3px;
+} 
 .recomendations p.desc{
-    font-size: 12px;
-}
+    font-size: 14px;
+    margin-bottom: 10px;
+} 					 
 .progress{
     position: relative;
     width: 250px;
@@ -549,28 +555,28 @@ img.sponsor{}
     display: inline-block;
     margin: 0 -5px -7px 0px;
     padding: 0;
-
-
-
+    
+   
+ 
 }
 
 
 .mosaic	a {
     margin: 0;
-}
+} 
 .mosaic img{
     height: 100px;
     width: 100px;
 }
-
+  
 
 /*
- * flip css
+ * flip css 
  ***********/
 
 .f1_container {
   position: relative;
-
+ 
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -581,16 +587,16 @@ img.sponsor{}
 .f1_card {
   width: 100%;
   height: 100%;
-
+  	
   -webkit-transform-style:preserve-3d;
 	-moz-transform-style:preserve-3d;
 	  -o-transform-style:preserve-3d;
   transform-style: preserve-3d;
-
-
+  
+   
   -webkit-transition: all 1s linear;
 	  -moz-transition:all 1.0s linear;
-	  -o-transition:all 1.0s linear;
+	  -o-transition:all 1.0s linear;	  
   transition: all 1.0s linear;
 }
 .f1_container:hover .f1_card {
@@ -598,13 +604,13 @@ img.sponsor{}
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
-
+ 
 }
 .face {
   position: absolute;
   width: 100%;
   height: 100%;
-
+   
   -webkit-backface-visibility:hidden;
   -moz-backface-visibility:hidden;
   -o-backface-visibility:hidden;
@@ -612,12 +618,12 @@ img.sponsor{}
 }
 .face.back {
   display: block;
-
+   
   -webkit-transform:rotateY(180deg);
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
-
+   
 }
 /*
  * landing
@@ -638,7 +644,7 @@ h5.quote{
     height: 160px;
     margin: auto;
     text-align: center;
-
+  
     position:relative;
     overflow: hidden;
     }
@@ -670,11 +676,11 @@ h5.quote{
 }
 .prospects input[type="submit"].next{
     padding: 9px 14px;
-
+	
 }
 .get-notified{
     margin-top: 20px;
-
+ 
 }
 .slider-questions{
     height: 1220px;
@@ -697,7 +703,7 @@ h5.quote{
     margin-top: 10px;
     padding: 15px 20px;
     font-weight: normal;
-}
+} 
 .need-funding{}
 .need-funding h6{
     padding-top: 30px;
@@ -706,12 +712,12 @@ h5.quote{
     margin-top: 6px;
     display: inline-block;
 }
-
+        
 .window{
-
+    
     overflow: hidden;
     margin: auto;
-
+    
     position: relative;
 }
 .recomendations .window{
@@ -727,26 +733,26 @@ h5.quote{
     cursor:pointer;
 }
 .right{
-    background: url('sprite.png') -2px -512px;
+    background: url('../img/sprite.png') -2px -512px;
     right: 5px;
 }
 .right:hover{
-    background: url('sprite.png') -2px -584px;
-
+    background: url('../img/sprite.png') -2px -584px;
+    
 }
 .right:active{
-    background: url('sprite.png') -2px -656px;
-
+    background: url('../img/sprite.png') -2px -656px;
+    
 }
 .left{
-    background: url('sprite.png') 0 -296px;
+    background: url('../img/sprite.png') 0 -296px;
     left: 5px;
 }
 .left:hover{
-    background: url('sprite.png') 0 -367px;
+    background: url('../img/sprite.png') 0 -367px;
 }
 .left:active{
-    background: url('sprite.png') 0 -440px;
+    background: url('../img/sprite.png') 0 -440px;
 }
 .slider{
     width: 4500px;
@@ -759,9 +765,11 @@ h5.quote{
  *********/
 .bubble{
     position: absolute;
+    bottom: 119px;
+    left: 305px;
 }
 .tuition{
-    background: url('bubbles.png') 0 -65px no-repeat;
+    background: url('../img/bubbles.png') 0 -65px no-repeat;
     height: 101px;
     width: 233px;
     z-index: 10;
@@ -776,7 +784,7 @@ h5.quote{
     margin: 15px auto -14px -10px;
 }
 .approved{
-
+    
     width: 148px;
     height: 48px;
     z-index: 10;
@@ -804,14 +812,14 @@ div.verified-by-addup .approved{
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
 }*/
-
+			 
 
 /*
  * STUDENT DETAIL
  *****************/
 .icon{width:20px;height:20px;display:inline-block;border:none;}
-.checkmark{background: url('sprite.png') -2px -138px;}
-.info-icon{background: url('sprite.png') -2px -75px;}
+.checkmark{background: url('../img/sprite.png') -2px -138px;}
+.info-icon{background: url('../img/sprite.png') -2px -75px;}
 .holder{
     background-color: white;
     height: 350px;
@@ -859,11 +867,11 @@ div.verified-by-addup .approved{
 }
 .student-slider-pics .caption{
     background-color: #E6E6E6;
-}
+}	
 .caption h5{
     text-align: center;
     margin-top: 7px;
-}
+} 
 
 .share-box-wrap{}
 .share-box-wrap ul{}
@@ -959,7 +967,7 @@ div.important img{
     margin-top: 0;
 }
 .verified-by-addup a{
-
+    
     margin-left: 5px;
 }
 .sidebar-profile{}
@@ -979,7 +987,7 @@ div.important img{
 .block ol{}
 .block li{}
 .block li a{
-
+    
 }
 .block p{
     font-size: 12px;
@@ -996,19 +1004,19 @@ div.important img{
 }
 .go-to-rewards{
 	display: block;
-
+    
 	width: 165px;
-
+    
 	margin: 10px auto 3px auto;
 	font-size: 16px;
 	text-decoration: none;
 	text-align: center;
 	padding: 9px 14px;
-
+	
 }
 .go-to-rewards:hover{
 	text-decoration: none;
-
+	
 }
 .how-it-works{
 	color:#3AA0BB;
@@ -1058,9 +1066,9 @@ div.important img{
     top: 28px;
     right: 0px;
 }
-.approved.normal{background: url('bubbles.png') 0 -14px no-repeat;}
+.approved.normal{background: url('../img/bubbles.png') 0 -14px no-repeat;}
 .approved.reflect{
-	background: url('bubbles.png') 0 -180px no-repeat;
+	background: url('../img/bubbles.png') 0 -180px no-repeat;
 }
 .avatar{
     float: left;
@@ -1089,7 +1097,7 @@ div.important img{
 .reward-side ol{
     padding-bottom: 10px;
     padding-top: 10px;
-}
+} 
 .reward-side li{}
 .reward-side ol li{
     display: inline-block;
@@ -1121,7 +1129,7 @@ ul.symbol-line li{
     padding: 0;
 }
 .symbol{
-    background: url('sprite.png') 0 -56px no-repeat;
+    background: url('../img/sprite.png') 0 -56px no-repeat;
     width: 20px;
     height: 17px;
 }
@@ -1151,7 +1159,7 @@ ul.symbol-line li{
 
 .blurr {}
 div.blurr span {
-
+	 
 }
 #blurry{}
 .msg-box{
@@ -1177,7 +1185,7 @@ div.blurr span {
 }
 .msg-header h1 span{}
 .msg-textarea{
-
+	
 }
 .msg-textarea label{}
 .msg-textarea input{}
@@ -1212,7 +1220,6 @@ div.blurr span {
     margin-top: 18px;
 }
 
-
 /*
  * HOW IT WORKS
  **************/
@@ -1242,11 +1249,11 @@ div.blurr span {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('sprite.png') -2px -97px no-repeat;
+    background: url('../img/sprite.png') -2px -97px no-repeat;
     cursor: pointer;
 }
 .ball-active{
-    background: url('sprite.png') -2px -117px no-repeat;
+    background: url('../img/sprite.png') -2px -117px no-repeat;
 }
 #ball1{}
 #ball2{}
@@ -1255,13 +1262,13 @@ div.blurr span {
 #ball5{}
 #ball6{}
 #ball7{}
-#ball8
+#ball8{}
 #ball9{}
 
 .how .bubble{
     width: 182px;
     height: 67px;
-    background: url('bubbles.png') -1px -238px no-repeat;
+    background: url('../img/bubbles.png') -1px -238px no-repeat;
 }
 .step{
     display: none;
@@ -1309,4 +1316,19 @@ div.blurr span {
 #how8{}
 #how9{}
 
-	 
+.picture{
+    width: 500px;
+    float: left;
+    clear: right;
+}
+.picture img{
+    width: 100%;
+}
+.half{
+    width: 400px;
+	
+    float: left;
+}
+
+.twitter-share-button{}
+.left-align{float:left}
