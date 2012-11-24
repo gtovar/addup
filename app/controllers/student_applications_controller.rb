@@ -1,4 +1,5 @@
 class StudentApplicationsController < ApplicationController
+ layout "back_end_application"
   # GET /student_applications
   # GET /student_applications.json
   def index

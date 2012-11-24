@@ -1,5 +1,10 @@
-<h1>Listing student_applications</h1>
-
+<div class="row-fluid">
+  <div class="span3"><h1>Students</h1></div>
+  <div class="span3 pull-right">
+    <br/>
+    <%= link_to 'New Student', new_student_application_path, :class => "btn btn-primary pull-right" %>
+  </div>
+</div>
 <table>
   <tr>
     <th>Last name</th>
@@ -42,4 +47,4 @@
 
 <br />
 
-<%= link_to 'New Student application', new_student_application_path %>
+

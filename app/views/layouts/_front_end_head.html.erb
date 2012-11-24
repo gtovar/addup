@@ -1,8 +1,8 @@
 <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 <meta charset="utf-8" />
-<link rel="stylesheet" href="assets/addup.css">
 <!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-<link rel="shortcut icon" href="assets/favicon.ico">
+<%= stylesheet_link_tag "addup" %>
+<%= favicon_link_tag "favicon.ico" %>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
 <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
@@ -21,5 +21,5 @@ Remove this if you use the .htaccess -->
 
 <!-- Javascript load -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script type="text/javascript" src="assets/addup.js"></script>
+<%= javascript_include_tag "addup" %>
 

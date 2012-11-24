@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Control panel</title>
+    <%= stylesheet_link_tag    "bootstrap" %>
+    <%= javascript_include_tag "bootstrap-dropdown" %>
+    <%= javascript_include_tag "bootstrap-tab" %>
+   <%= javascript_include_tag "bootstrap-tooltip" %>
+   <%= javascript_include_tag "bootstrap" %>
+   <%= csrf_meta_tags %>
+    <%= render 'layouts/back_end_shim' %>
+  </head>
+  <body>
+    <%= render 'layouts/back_end_header' %>
+    <div class="container">
+      <%= yield %>
+      <%= render 'layouts/back_end_footer' %>
+    </div>
+  </body>
+</html>
+

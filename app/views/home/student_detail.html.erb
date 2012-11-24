@@ -1,336 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/addup.css">
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" >
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!--To make html5 compatible with old browsers-->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<%= render "facebook"  %>
+<div id="blurry" class="blurr">
+  <div class="msg-box">
+    <form accept-charset="UTF-8" action="" method="post">
+      <div class="msg-header">
+        <h1><span class="msg-to">TO:</span> <span class="msg-name">Boris Wayne</span> </h1>
+      </div>
+      <div class="msg-textarea">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text">
+        <label for="email">Email Address</label>
+        <input id="email" name="email" type="text">
+        <label for="message">Message</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <div class="msg-footer">
+        <input class="button info-bg-color" name="commit" type="submit" value="ASK A QUESTION">
+        <span class="msg-cancel info-color">Cancel</span>
+      </div>
+    </form>
+  </div>
+</div>
+<div class="center">
+  <div class="two-thirds">
+    <div class="student-stats">
+      <h3 class="bold top-space">Cynthia White <span class="icon checkmark"></span></h3>
+      <div class="bubble approved normal"></div>
+      <h5>MBA Candidate (2nd year out of 4 year program)<span class="icon info-icon"> </span></h5>
+      <div class="bubble tuition">
+        <span class="money">$23,203</span>
+        total cost of annual attendance
+      </div>
+      <h5>Georgetown University</h5>
+      <h5>USA, Houston</h5>
+    </div>
 
-		<title>Add Up - Crowdscholarships that carry on</title>
-		<meta name="description" content="Add Up is a crowdscholarships platform for students to raise funds for their graduate studies in USA top universities." />
-		<meta name="author" content="Add Up - Crowdscholarships LLC" />
+    <div class="holder">
+      <span class="pics arrow left"> </span>
+      <div class="window profile">
+        <div class="student-slider-pics">
+          <ul>
+            <li>
+              <div class="image">
+                <iframe width="580" height="315" src="http://www.youtube.com/embed/x78PnPd-V-A?&rel=0" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <div class="caption">
+                <h5>My cause</h5>
+              </div>
+            </li>
+            <li>
+              <div class="image"><img src="img/campaign/campaign1.jpg" />
+              </div>
+              <div class="caption">
+                <h5>My classmates</h5>
+              </div>
+            </li>
+            <li>
+              <div class="image"><img src="img/campaign/campaign2.jpg" />
+              </div>
+              <div class="caption">
+                <h5>My family</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <span class="pics arrow right"> </span>
+    </div>
+    <div class="social-share">
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
- 
-		
-		 
-		<!-- Javascript load -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script type="text/javascript" src="js/addup.js"></script>
-	</head>
-	<body>
-		 <div id="fb-root"></div>
-<script>
-  window.fbAsyncInit = function() {
-    // init the FB JS SDK
-    FB.init({
-      appId      : '102917279772799', // App ID from the App Dashboard
-      channelUrl : '//WWW.addup.org/channel.html', // Channel File for x-domain communication
-      status     : true, // check the login status upon init?
-      cookie     : true, // set sessions cookies to allow your server to access the session?
-      xfbml      : true  // parse XFBML tags on this page?
-    });
+      <div class="fb-like" data-href="http://www.addup.org/student" data-send="false" data-width="300" data-show-faces="false"></div>
 
-    // Additional initialization code such as adding Event Listeners goes here
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      <a href="mailto:info@addup.org?subject=Cynthia%20White&body=check%20this%20%0Ahttp://www.addup.org" class="button e-mail share"><span class="email-icon"></span> <span>e-mail</span></a>
+    </div>
 
-  };
+    <h5 class="hot highlight top-space">I WILL ADD UP BY...</h5>
+    <div class="important">
+      <div class="important-content">
+        <p>
+          Take care of puppies that live on the streets without any owner that looks after them.
+        </p>
+        <div class="supporting-summary">
+          <span class="supporting hot">Supporting...</span>
+          <img src="img/orgs/wikipedia.png" alt="Wikipedia" />
+        </div>
+      </div>
+    </div>
 
-  // Load the SDK's source Asynchronously
-  (function(d){
-     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-     if (d.getElementById(id)) {return;}
-     js = d.createElement('script'); js.id = id; js.async = true;
-     js.src = "//connect.facebook.net/en_US/all.js";
-     ref.parentNode.insertBefore(js, ref);
-   }(document));
-</script> 
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/all.js#xfbml=1&appId=102917279772799";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+    <h5 class="bold top-space">WHY I NEED YOU TO ADD UP TO MY EDUCATION...</h5>
+    <p>
+      I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
+      Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
+    </p>
 
-		<div id="blurry" class="blurr">
-			<div class="msg-box">
-				<form accept-charset="UTF-8" action="" method="post">
-					<div class="msg-header">
-						<h1><span class="msg-to">TO:</span> <span class="msg-name">Boris Wayne</span> </h1>					
-					</div>
-					<div class="msg-textarea">
-						<label for="name">Full Name</label>
-        		<input id="name" name="name" type="text">
-        		<label for="email">Email Address</label>
-        		<input id="email" name="email" type="text">
-        		<label for="message">Message</label>
-        		<textarea id="message" name="message"></textarea>
-        		 
-					</div>
-					<div class="msg-footer"> 
-						<input class="button info-bg-color" name="commit" type="submit" value="ASK A QUESTION">
-						<span class="msg-cancel info-color">Cancel</span>
-					</div>
-				</form>
-			</div>
-		</div>
-		<div class="header">
-			<div class="center">
-				<ul>
-					<li class="li0">
-						<a href="index.html"><img src="img/logo-head.png" class="logo-head" alt="ADD UP" /></a>
-					</li>
-					<li class="li1">
-						<a href="how.html">How it Works</a>
-					</li>
-					<li class="li2">
-						<a href="about.html">About</a>
-					</li>
-					<li class="li3"></li>
-					<li class="li4">
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="center">
-			<div class="two-thirds">
-				<div class="student-stats">
-					<h3 class="bold top-space">Cynthia White <span class="icon checkmark"></span></h3>
-					<div class="bubble approved normal"></div>
-					<h5>MBA Candidate (2nd year out of 4 year program)<span class="icon info-icon"> </span></h5>
-					<div class="bubble tuition">
-						<span class="money">$23,203</span>
-						total cost of annual attendance
-					</div>
-					<h5>Georgetown University</h5>
-					<h5>USA, Houston</h5>
-				</div>
+    <h5 class="bold top-space">WHY I ABOUT ADDING UP...</h5>
+    <p>
+      I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
+      Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
+    </p>
 
-				<div class="holder">
-					<span class="pics arrow left"> </span>
-					<div class="window profile">
-						<div class="student-slider-pics">
-							<ul>
-								<li>
-									<div class="image">
-										<iframe width="580" height="315" src="http://www.youtube.com/embed/x78PnPd-V-A?&rel=0" frameborder="0" allowfullscreen></iframe>
-									</div>
-									<div class="caption">
-										<h5>My cause</h5>
-									</div>
-								</li>
-								<li>
-									<div class="image"><img src="img/campaign/campaign1.jpg" />
-									</div>
-									<div class="caption">
-										<h5>My classmates</h5>
-									</div>
-								</li>
-								<li>
-									<div class="image"><img src="img/campaign/campaign2.jpg" />
-									</div>
-									<div class="caption">
-										<h5>My family</h5>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-					<span class="pics arrow right"> </span>
-				</div>
-				<div class="social-share">
-					 
-					<div class="fb-like" data-href="http://www.addup.org/student" data-send="false" data-width="300" data-show-faces="false"></div>
-					
-					<a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-					<a href="mailto:info@addup.org?subject=Cynthia%20White&body=check%20this%20%0Ahttp://www.addup.org" class="button e-mail share"><span class="email-icon"></span> <span>e-mail</span></a>				
-				</div>
- 
-				<h5 class="hot highlight top-space">I WILL ADD UP BY...</h5>
-				<div class="important">
-					<div class="important-content">
-						<p>
-							Take care of puppies that live on the streets without any owner that looks after them.
-						</p>
-						<div class="supporting-summary">
-							<span class="supporting hot">Supporting...</span>
-							<img src="img/orgs/wikipedia.png" alt="Wikipedia" />
-						</div>
-					</div>
-				</div>
+    <span class="button info-bg-color msg profile-ask">Ask a Question</span>
+    <div>
+      <h5 class="bold">FACEBOOK COMMENTS</h5>
+      <div class="fb-comments" data-href="http://addup.org" data-num-posts="2" data-width="470"></div>
+    </div>
+  </div>
 
-				<h5 class="bold top-space">WHY I NEED YOU TO ADD UP TO MY EDUCATION...</h5>
-				<p>
-					I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
-					Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
-				</p>
+  <div class="sidebar-profile">
+    <div class="verified-by-addup">
+      <h5><span class="icon checkmark"></span>Verified by ADD UP</h5>
 
-				<h5 class="bold top-space">WHY I ABOUT ADDING UP...</h5>
-				<p>
-					I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
-					Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
-				</p>
+      <p>
+        This student has been carefully verified by the AddUp Team
+      </p>
+      <a class="how-it-works" href="how.html">How it works</a>
+    </div>
 
-				<span class="button info-bg-color msg profile-ask">Ask a Question</span>
-				<div>
-					<h5 class="bold">FACEBOOK COMMENTS</h5>
-					<div class="fb-comments" data-href="http://addup.org" data-num-posts="2" data-width="470"></div>
-				</div>
-			</div>
+    <div class="frame dark-bg profile-side">
+      <div class="block goal-stats">
+        <ol>
+          <li class="numbers">
+            109
+          </li>
+          <li class="labels">
+            addupers
+          </li>
+          <li class="numbers">
+            $1,020
+          </li>
+          <li class="labels">
+            added up of $2,000 goal
+          </li>
+          <li class="numbers">
+            10
+          </li>
+          <li class="labels">
+            days left
+          </li>
+          <li>
+            <a href="rewards.html" class="button action go-to-rewards shadow">Add up to this Student<span class="min-amount">$1 minimum</span></a>
+          </li>
+          <li>
+            <a href="how.htm" class="how-it-works">How ADD UP works</a>
+          </li>
+        </ol>
+      </div>
+      <div class="block teacher">
+        <span> <span class="verified corner-check"> </span></span>
+        <div class="bubble approved reflect"> </div>
+        <b>Endorsed by</b>
+        <h6>Ms. Erika Yellowstone</h6>
+        <div class="avatar"><img src="img/teachers/teacher1.jpg	" />
+        </div>
+        <div class="sponsor-name">
+          <b>Georgetown University</b>
+          <b>Foreign Student Advisor</b>
+          <span class="button info-bg-color msg">Contact</span>
+        </div>
+        <p>
+          “Cynthia is a great student, she always completes here tasks on time and participates in class.”
+        </p>
 
-			<div class="sidebar-profile">
-				<div class="verified-by-addup">
-					<h5><span class="icon checkmark"></span>Verified by ADD UP</h5>
-
-					<p>
-						This student has been carefully verified by the AddUp Team
-					</p>
-					<a class="how-it-works" href="how.html">How it works</a>
-				</div>
-
-				<div class="frame dark-bg profile-side">
-					<div class="block goal-stats">
-						<ol>
-							<li class="numbers">
-								109
-							</li>
-							<li class="labels">
-								addupers
-							</li>
-							<li class="numbers">
-								$1,020
-							</li>
-							<li class="labels">
-								added up of $2,000 goal
-							</li>
-							<li class="numbers">
-								10
-							</li>
-							<li class="labels">
-								days left
-							</li>
-							<li>
-								<a href="rewards.html" class="button action go-to-rewards shadow">Add up to this Student<span class="min-amount">$1 minimum</span></a>
-							</li>
-							<li>
-								<a href="how.htm" class="how-it-works">How ADD UP works</a>
-							</li>
-						</ol>
-					</div>
-					<div class="block teacher">
-						<span> <span class="verified corner-check"> </span></span>
-						<div class="bubble approved reflect"> </div>
-						<b>Endorsed by</b>
-						<h6>Ms. Erika Yellowstone</h6>
-						<div class="avatar"><img src="img/teachers/teacher1.jpg	" />
-						</div>
-						<div class="sponsor-name">
-							<b>Georgetown University</b>
-							<b>Foreign Student Advisor</b>
-							<span class="button info-bg-color msg">Contact</span>
-						</div>
-						<p>
-							“Cynthia is a great student, she always completes here tasks on time and participates in class.”
-						</p>
-
-					</div>
-					<div class="block reward-side">
-						<ol>
-			<!-- 				<li>
-								<a href="rewards.html"> <h5>Add <span>$1</span> or more</h5>
-								<ul class="symbol-line">
-									<li>
-										<span class="icon symbol"> </span>
-									</li>
-									<li>
-										35 addupers
-									</li>
-								</ul>
-								<p>
-									“Every bit helps. Thanks a lot!”
-								</p> </a>
-							</li> -->
-							<li>
-								<a href="rewards.html"> <h5>Add <span>$35</span> or more</h5>
-								<ul class="symbol-line">
-									<li>
-										<span class="icon symbol"> </span>
-									</li>
-									<li>
-										15 addupers
-									</li>
-								</ul>
-								<p>
-									“Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
-								</p> </a>
-							</li>
-<!-- 							<li>
-								<a href="rewards.html"> <h5>Add <span>$305</span> or more</h5>
-								<ul class="symbol-line">
-									<li>
-										<span class="icon symbol"> </span>
-									</li>
-									<li>
-										3 addupers
-									</li>
-								</ul>
-								<p>
-									“Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
-								</p> </a>
-							</li> -->
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="footer">
-			<div class="center">
-				<ul>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="terms.html">Terms of Use</a>
-					</li>
-					<li>
-						<a href="privacy.html">Privacy Policy</a>
-					</li>
-					<li>
-						<a href="companies.html">Matching funds for Companies</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						Add Up media:
-					</li>
-					<li>
-						<a href="http://www.facebook.com/Addup">Facebook</a>
-					</li>
-					<li>
-						<a href="http://www.twitter.com/addup">Twitter</a>
-					</li>
-				</ul>
-				<p class="copyright">
-					2012 CrowdScholarship LLC All rights reserved
-				</p>
-			</div>
-		</div>
-	<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
-window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('9102-424-10-1941');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/9102-424-10-1941/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!-- end olark code -->
-	</body>
-</html>
+      </div>
+      <div class="block reward-side">
+        <ol>
+          <!-- 				<li>
+            <a href="rewards.html"> <h5>Add <span>$1</span> or more</h5>
+              <ul class="symbol-line">
+                <li>
+                  <span class="icon symbol"> </span>
+                </li>
+                <li>
+                  35 addupers
+                </li>
+              </ul>
+              <p>
+                “Every bit helps. Thanks a lot!”
+            </p> </a>
+          </li> -->
+          <li>
+            <a href="rewards.html"> <h5>Add <span>$35</span> or more</h5>
+              <ul class="symbol-line">
+                <li>
+                  <span class="icon symbol"> </span>
+                </li>
+                <li>
+                  15 addupers
+                </li>
+              </ul>
+              <p>
+                “Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
+            </p> </a>
+          </li>
+          <!-- 							<li>
+            <a href="rewards.html"> <h5>Add <span>$305</span> or more</h5>
+              <ul class="symbol-line">
+                <li>
+                  <span class="icon symbol"> </span>
+                </li>
+                <li>
+                  3 addupers
+                </li>
+              </ul>
+              <p>
+                “Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
+            </p> </a>
+          </li> -->
+        </ol>
+      </div>
+    </div>
+  </div>
+</div>

@@ -11,13 +11,12 @@ Addup::Application.routes.draw do
   match "application" => 'student_applications#new', :as => :application_new
   match "contact" => "home#contact", :as => :contact
   match "companies" => "home#companies", :as => :companies
-  match "how" => 'home#how_it_works', :as => :how
   match "howitworks" => 'home#how_it_works', :as => :how
   match 'ipns' => 'donations#ipn', :as => :ipn
 
  resources :student_applications
   get "paypal_express/checkout"
-  get "home/msg"
+  match 'panel' => 'control_panel#index', :as => :panel
   # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:
