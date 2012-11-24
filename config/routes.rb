@@ -1,5 +1,6 @@
 Addup::Application.routes.draw do
-  match "/student/:id" => 'home#student_detail', :as => :student_detail
+ root :to => 'home#landingpage'
+ match "/student/:id" => 'home#student_detail', :as => :student_detail
   match "/student" => 'home#student_detail', :as => :student
   match "reward/:id" => "home#choose_your_reward", :as => :student_detail
   match "terms" => "home#terms", :as => :terms
@@ -12,32 +13,11 @@ Addup::Application.routes.draw do
   match "companies" => "home#companies", :as => :companies
   match "how" => 'home#how_it_works', :as => :how
   match "howitworks" => 'home#how_it_works', :as => :how
-  match "index" => 'home#landingpage', :as => :home
-  resources :student_applications
+  match 'ipns' => 'donations#ipn', :as => :ipn
 
+ resources :student_applications
   get "paypal_express/checkout"
-
-  get "control_panel/index", :as => :control_panel
-
-
-
-
-
   get "home/msg"
-
-  match 'noti' => 'payment_notification#create', :as => :notification
-
-  get "paypal_express/checkout"
-
-  get "javascript/dynamic_careers"
-
-  match 'ipns' => 'donation#ipn', :as => :ipn
-  get "home/dommie"
-  match 'get_careers/:id' => 'javascript#get_careers', :as => :carreras
-
-  match 'slider' => 'home#dommie_slider', :as => :slider
-  match 'paypal' => 'home#dommie_paypal', :as => :paypal
-  get "paypal_express/checkout", :as => :pay
   # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:
@@ -89,7 +69,6 @@ Addup::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'home#landingpage'
 
   # See how all your routes lay out with "rake routes"
 
