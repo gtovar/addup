@@ -49,7 +49,6 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.integer :bank_account
       t.integer :abbarouting
       t.string :swift
-			t.string :campaing
 
       t.timestamps
     end

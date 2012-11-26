@@ -75,6 +75,7 @@ ActiveRecord::Schema.define(:version => 20121123213430) do
     t.integer  "bank_account"
     t.integer  "abbarouting"
     t.string   "swift"
+    t.string   "campaing"
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
   end
