@@ -3,7 +3,7 @@
   <div class="msg-box">
     <form accept-charset="UTF-8" action="" method="post">
       <div class="msg-header">
-        <h1><span class="msg-to">TO:</span> <span class="msg-name">Boris Wayne</span> </h1>
+        <h1><span class="msg-to">TO:</span> <span class="msg-name"><%= @student.first_name + '  ' + @student.last_name  %></span> </h1>
       </div>
       <div class="msg-textarea">
         <label for="name">Full Name</label>
@@ -23,15 +23,15 @@
 <div class="center">
   <div class="two-thirds">
     <div class="student-stats">
-      <h3 class="bold top-space">Cynthia White <span class="icon checkmark"></span></h3>
+      <h3 class="bold top-space"><%= @student.first_name + '  ' + @student.last_name  %><span class="icon checkmark"></span></h3>
       <div class="bubble approved normal"></div>
-      <h5>MBA Candidate (2nd year out of 4 year program)<span class="icon info-icon"> </span></h5>
+      <h5><%= @student.degree + '(' + @student.current_year + ' year out of ' + @student.length_of_program + ' years program)' %><span class="icon info-icon"> </span></h5>
       <div class="bubble tuition">
-        <span class="money">$23,203</span>
+        <span class="money"><%= @student.total_annual_cost_of_attendance %></span>
         total cost of annual attendance
       </div>
-      <h5>Georgetown University</h5>
-      <h5>USA, Houston</h5>
+      <h5><%= @student.university %></h5>
+      <h5>USD,<%= ' ' + @student.city_check %> </h5>
     </div>
 
     <div class="holder">
@@ -79,25 +79,19 @@
     <div class="important">
       <div class="important-content">
         <p>
-          Take care of puppies that live on the streets without any owner that looks after them.
+          <%= @student.cause %>
         </p>
-        <div class="supporting-summary">
-          <span class="supporting hot">Supporting...</span>
-          <img src="img/orgs/wikipedia.png" alt="Wikipedia" />
-        </div>
       </div>
     </div>
 
     <h5 class="bold top-space">WHY I NEED YOU TO ADD UP TO MY EDUCATION...</h5>
     <p>
-      I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
-      Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
+      <%= @student.answer1 %>
     </p>
 
     <h5 class="bold top-space">WHY I ABOUT ADDING UP...</h5>
     <p>
-      I come from a small town called Ingersoll, so moving to Toronto was nothing short of exciting. During my lifetime, I have aspired to be many things. When I was five, I wanted to be a firetruck, I was devastated when I discovered that that could not be my future.
-      Right now, I have decided that I am going to work in the Film Industry. The idea of being able to create the kind of films that I would want to watch thrills me. Ideally, I think it would be the height of awesome to make comedies as I love making people laugh. My biggest accomplishment is probably getting out of bed each morning because I love sleeping.
+      <%= @student.answer2 %>
     </p>
 
     <span class="button info-bg-color msg profile-ask">Ask a Question</span>
@@ -114,26 +108,26 @@
       <p>
         This student has been carefully verified by the AddUp Team
       </p>
-      <a class="how-it-works" href="how.html">How it works</a>
+      <%= link_to "How it works", how_path %>
     </div>
 
     <div class="frame dark-bg profile-side">
       <div class="block goal-stats">
         <ol>
           <li class="numbers">
-            109
+           <%= @student.donations.count %>
           </li>
           <li class="labels">
             addupers
           </li>
           <li class="numbers">
-            $1,020
+            <%=  @student.donations.sum(:mc_gross).round %>
           </li>
           <li class="labels">
-            added up of $2,000 goal
+            <%= 'added up of ' + @student.crowdfundig_goal_usd.round.to_s + " goal" %>
           </li>
           <li class="numbers">
-            10
+            <%= (Date.today-@student.created_at.to_date).round-@student.campaing.to_i %>
           </li>
           <li class="labels">
             days left
@@ -142,7 +136,7 @@
             <a href="rewards.html" class="button action go-to-rewards shadow">Add up to this Student<span class="min-amount">$1 minimum</span></a>
           </li>
           <li>
-            <a href="how.htm" class="how-it-works">How ADD UP works</a>
+          <%= link_to "How ADD UP works", how_path %>
           </li>
         </ol>
       </div>
@@ -150,16 +144,16 @@
         <span> <span class="verified corner-check"> </span></span>
         <div class="bubble approved reflect"> </div>
         <b>Endorsed by</b>
-        <h6>Ms. Erika Yellowstone</h6>
-        <div class="avatar"><img src="img/teachers/teacher1.jpg	" />
+        <h6><%= @student.job + ' ' + @student.name_sponsor %></h6>
+        <div class="avatar"><%= image_tag @student.p1_url %>
         </div>
         <div class="sponsor-name">
-          <b>Georgetown University</b>
+          <b><%= @student.university %></b>
           <b>Foreign Student Advisor</b>
           <span class="button info-bg-color msg">Contact</span>
         </div>
         <p>
-          “Cynthia is a great student, she always completes here tasks on time and participates in class.”
+          “<%= @student.quote  %>”
         </p>
 
       </div>
