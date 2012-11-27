@@ -1,9 +1,16 @@
 class HomeController < ApplicationController
 
   def landingpage
-  end
+    @students = StudentApplication.order("id ASC").each_slice(3).to_a
+
+    respond_to do |format|
+      format.html
+      format.json {render json: @students}
+    end
+     end
 
   def student_detail
+    @student = StudentApplication.find(params[:id])
   end
 
   def choose_your_reward
