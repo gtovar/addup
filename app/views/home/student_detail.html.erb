@@ -48,15 +48,15 @@
               </div>
             </li>
             <li>
-              <div class="image"><img src="img/campaign/campaign1.jpg" />
-              </div>
+              <div class="image"><%= image_tag @student.p3_url %>
+            </div>
               <div class="caption">
                 <h5>My classmates</h5>
               </div>
             </li>
             <li>
-              <div class="image"><img src="img/campaign/campaign2.jpg" />
-              </div>
+              <div class="image"><%= image_tag @student.p4_url %>
+            </div>
               <div class="caption">
                 <h5>My family</h5>
               </div>
@@ -104,18 +104,16 @@
   <div class="sidebar-profile">
     <div class="verified-by-addup">
       <h5><span class="icon checkmark"></span>Verified by ADD UP</h5>
-
       <p>
         This student has been carefully verified by the AddUp Team
       </p>
       <%= link_to "How it works", how_path %>
     </div>
-
     <div class="frame dark-bg profile-side">
       <div class="block goal-stats">
         <ol>
           <li class="numbers">
-           <%= @student.donations.count %>
+            <%= @student.donations.count %>
           </li>
           <li class="labels">
             addupers
@@ -127,16 +125,19 @@
             <%= 'added up of ' + @student.crowdfundig_goal_usd.round.to_s + " goal" %>
           </li>
           <li class="numbers">
-            <%= (Date.today-@student.created_at.to_date).round-@student.campaing.to_i %>
+            <%= ((Date.today-@student.created_at.to_date).round-@student.campaing.to_i).abs %>
           </li>
           <li class="labels">
             days left
           </li>
           <li>
-            <a href="rewards.html" class="button action go-to-rewards shadow">Add up to this Student<span class="min-amount">$1 minimum</span></a>
+            <%= link_to  reward_path(@student.id) , :class => "button action go-to-rewards shadow" do  %>
+              Add up to this Student
+              <span class="min-amount">$1 minimum</span>
+            <% end %>
           </li>
           <li>
-          <%= link_to "How ADD UP works", how_path %>
+            <%= link_to "How ADD UP works", how_path %>
           </li>
         </ol>
       </div>
@@ -146,63 +147,36 @@
         <b>Endorsed by</b>
         <h6><%= @student.job + ' ' + @student.name_sponsor %></h6>
         <div class="avatar"><%= image_tag @student.p1_url %>
-        </div>
-        <div class="sponsor-name">
-          <b><%= @student.university %></b>
-          <b>Foreign Student Advisor</b>
-          <span class="button info-bg-color msg">Contact</span>
-        </div>
-        <p>
-          “<%= @student.quote  %>”
-        </p>
-
       </div>
+      <div class="sponsor-name">
+        <b><%= @student.university %></b>
+        <b>Foreign Student Advisor</b>
+        <span class="button info-bg-color msg">Contact</span>
+      </div>
+      <p>
+        “<%= @student.quote  %>”
+      </p>
+
+    </div>
+    <% @donations.each_with_index do |d,i| %>
       <div class="block reward-side">
         <ol>
-          <!-- 				<li>
-            <a href="rewards.html"> <h5>Add <span>$1</span> or more</h5>
-              <ul class="symbol-line">
-                <li>
-                  <span class="icon symbol"> </span>
-                </li>
-                <li>
-                  35 addupers
-                </li>
-              </ul>
-              <p>
-                “Every bit helps. Thanks a lot!”
-            </p> </a>
-          </li> -->
           <li>
-            <a href="rewards.html"> <h5>Add <span>$35</span> or more</h5>
+            <%= link_to  (reward_path(@student.id)) do %>
+              <h5>Add <span>$<%= d[1] %></span> or more</h5>
               <ul class="symbol-line">
                 <li>
                   <span class="icon symbol"> </span>
                 </li>
                 <li>
-                  15 addupers
+                  <%= d[0] %> addupers
                 </li>
               </ul>
-              <p>
-                “Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
-            </p> </a>
+            <% end %>
           </li>
-          <!-- 							<li>
-            <a href="rewards.html"> <h5>Add <span>$305</span> or more</h5>
-              <ul class="symbol-line">
-                <li>
-                  <span class="icon symbol"> </span>
-                </li>
-                <li>
-                  3 addupers
-                </li>
-              </ul>
-              <p>
-                “Every bit helps. With this I’ll take outsome of the hungriest and loneliest puppies to get sunshine, bath, and plenty of food.
-            </p> </a>
-          </li> -->
         </ol>
       </div>
-    </div>
+    <% end %>
   </div>
+</div>
 </div>

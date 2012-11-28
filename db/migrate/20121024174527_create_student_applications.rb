@@ -26,10 +26,10 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.integer :method_of_payment
       t.string  :pay_of_the_order_of
       t.string  :name_check
-			t.string  :adress_check
+	  t.string  :adress_check
       t.string  :zipcode_check
       t.string :state_check
-			t.string :city_check
+	  t.string :city_check
       t.string :students_university_id_reference
       t.boolean :answer3
       t.string :p1
@@ -49,7 +49,7 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.integer :bank_account
       t.integer :abbarouting
       t.string :swift
-			t.string :campaing
+      t.string :campaing
 
       t.timestamps
     end

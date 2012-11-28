@@ -1,16 +1,23 @@
 class HomeController < ApplicationController
 
   def landingpage
-    @students = StudentApplication.order("id ASC").each_slice(3).to_a
+    @allstudents = StudentApplication.order("id ASC")
+    @students = @allstudents.each_slice(3).to_a
+    @banner = @allstudents.limit(12)
 
     respond_to do |format|
       format.html
       format.json {render json: @students}
     end
-     end
+  end
 
   def student_detail
     @student = StudentApplication.find(params[:id])
+    d20      = Donation.addupers(params[:id],20,50)
+    d50      = Donation.addupers(params[:id],50,75)
+    d75      = Donation.addupers(params[:id],75,100)
+    d100     = Donation.addupers(params[:id],100,10000000)
+    @donations = [[d20,"20"],[d50,"50"],[d75,"75"],[d100,"100"]]
   end
 
   def choose_your_reward

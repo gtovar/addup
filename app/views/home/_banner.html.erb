@@ -10,179 +10,22 @@
   </div>
   <div class="frame-mosaic">
     <div class="mosaic">
-
       <ul>
-        <li>
+        <% @banner.each_with_index do |a,i|%>
+       <li>
           <div class="f1_container">
-            <div id="card1" class="f1_card">
+            <%= ('<div id="card' + i.to_s +  '" class="f1_card">').html_safe %>
               <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student1.jpg"/>
-                </a>
+                <%= link_to image_tag(a.p1_url), student_path(a.id)%>
               </div>
               <div class="back face">
-                <img src="assets/students/student92.jpg"/>
+                 <%= link_to image_tag(a.p2_url), student_path(a.id)%>
               </div>
             </div>
           </div>
         </li>
-        <li>
-          <div class="f1_container">
-            <div id="card2" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student2.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/orgs/squared/khan_14.png"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card3" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student3.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student6.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card4" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student4.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student8.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-
-        <li>
-          <div class="f1_container">
-            <div id="card5" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student5.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student7.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card6" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student6.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assetsstudents/student91.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card7" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student7.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/orgs/squared/khan_14.png"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card8" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student8.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/orgs/squared/khan_14.png"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div id="card9" class="f1_container">
-            <div class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student9.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student2.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card10" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student91.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student1.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card11" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student92.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student3.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
-        <li>
-          <div class="f1_container">
-            <div id="card12" class="f1_card">
-              <div class="front face">
-                <a href="student.html">
-                  <img src="assets/students/student8.jpg"/>
-                </a>
-              </div>
-              <div class="back face">
-                <img src="assets/students/student3.jpg"/>
-              </div>
-            </div>
-          </div>
-        </li>
+      <% end %>
       </ul>
-
     </div>
   </div>
 </div>

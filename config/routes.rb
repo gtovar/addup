@@ -1,7 +1,7 @@
 Addup::Application.routes.draw do
  root :to => 'home#landingpage'
   match "/student/:id" => 'home#student_detail', :as => :student
-  match "reward/:id" => "home#choose_your_reward", :as => :student_detail
+  match "reward/:id" => "home#choose_your_reward", :as => :reward
   match "terms" => "home#terms", :as => :terms
   match "privacy" => "home#privacy", :as => :privacy
   match "about" => "home#about", :as => :about
