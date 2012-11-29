@@ -1,86 +1,44 @@
 <div class="center">
 
   <div class="three-fifths">
-    <div class="student-stats">
-      <h3 class="bold top-space">Cynthia White <span class="icon checkmark"></span></h3>
-      <div class="bubble approved normal">
+    <div class="student-stats" >
+      <h3 class="bold top-space"><%= @student.first_name + '  ' + @student.last_name  %><span class="icon checkmark"></span></h3>
+      <div class="bubble approved normal"></div>
+      <h5><%= @student.degree + '(' + @student.current_year + ' year out of ' + @student.length_of_program + ' years program)' %><span class="icon info-icon"> </span></h5>
+      <div class="bubble tuition">
+        <span class="money"><%= @student.total_annual_cost_of_attendance %></span>
+        total cost of annual attendance
       </div>
-      <h5>MBA Candidate (2nd year out of 4 year program)</h5>
-      <h5>Georgetown University</h5>
-      <h5>USA, Houston</h5>
+      <h5><%= @student.university %></h5>
+      <h5>USA,<%= ' ' + @student.city_check %> </h5>
     </div>
 
-    <form accept-charset="UTF-8" action="paypal.php" method="post">
+    <%= form_tag(checkout_path(@student.id), :method => 'post', :multipart => false) do %>
       <ol class="choose-rewards">
         <li>
           <h5 class="bold">Great! Every contribution Adds up!</h5>
           <h6>Enter the amount to add up</h6>
           <div class="money-input info-bg-color">
             <span class="currency info-color">$</span>
-            <input class="super-input money" autocomplete="off" class="text" type="text" />
-            <!-- 								<h6><span class="tiny-tip">$1</span> or more.</h6> -->
+            <%= text_field_tag "money",nil, :class => "super-input money" %>
             <h6 class="tiny-tip">$1 or more</h6>
           </div>
         </li>
         <li>
           <ol class="rewards">
-            <li class="reward no_thx">
-              <input alt="0.00" class="radio" name="" title="No Reward" type="radio" value="">
-              <label class="no-reward" for="backing_backer_reward_id_">$25</label>
-              <p class="description">
-                They can because they think they can.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$50</strong> or more</label>
-              <p class="description">
-                Try not to become a man of success but a man of value.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$75</strong> or more</label>
-              <p class="description">
-                The talent of success is nothing more than doing what you can do, well.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$100</strong> or more</label>
-              <p class="description">
-                Opportunity, sooner or later, comes to all who work and wish.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$250</strong> or more</label>
-              <p class="description">
-                Ability is of little account without opportunity.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$500</strong> or more</label>
-              <p class="description">
-                Every artist was first an amateur.
-              </p>
-            </li>
-            <li class="reward">
-              <input alt="$5.00" class="radio" id="" name="" title="$5.00" type="radio" value="986696">
-              <label for=""><strong>$1000</strong> or more</label>
-              <p class="description">
-                I can't believe it! I'm going to Las Vegas to celebrate
-              </p>
-            </li>
-
+            <% @donations.each do |d|  %>
+              <li class="reward no_thx">
+                <%= radio_button_tag('money', d,false,:class=>'radio')  %>
+                <label class="no-reward" for="backing_backer_reward_id_">$<%= d %></label>
+              </li>
+            <% end %>
           </ol>
         </li>
         <li>
           <div class="checkout_actions_wrap">
             <div class="checkout_actions">
-<%= image_tag "paypal.png"%>
-              <input class="button action shadow" name="continue" type="submit" value="Continue to PayPal">
+              <%= image_tag "paypal.png"%>
+              <%= submit_tag "Continue to Paypal",:class => "button action shadow" %>
               <span class="info-color transfer">or with Bank Transfer</span>
             </div>
           </div>
@@ -95,9 +53,9 @@
             <input class="button action shadow" name="continue" type="submit" value="Bank Transfer">
           </div>
         </li>
-
       </ol>
-    </form>
+    <% end%>
+
   </div>
 </div>
 <div class="sidebar">
@@ -151,4 +109,11 @@
     </ul>
   </div>
 </div>
+<script type="text/javascript">
+  $(document).ready(function(){
+      $(':radio').click(function(){
+        $('#money').val(($(this).val()));
+        });
+      });
+</script>
 

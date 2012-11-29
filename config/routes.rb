@@ -1,21 +1,21 @@
 Addup::Application.routes.draw do
  root :to => 'home#landingpage'
-  match "/student/:id" => 'home#student_detail', :as => :student
-  match "reward/:id" => "home#choose_your_reward", :as => :reward
-  match "terms" => "home#terms", :as => :terms
-  match "privacy" => "home#privacy", :as => :privacy
-  match "about" => "home#about", :as => :about
-  match "thanks" => "home#thanks", :as => :thanks
-  match "success" => "home#thankstransf", :as => :success
-  match "application" => 'student_applications#new', :as => :application_new
-  match "contact" => "home#contact", :as => :contact
-  match "companies" => "home#companies", :as => :companies
-  match "howitworks" => 'home#how_it_works', :as => :how
-  match 'ipns' => 'donations#ipn', :as => :ipn
+  match "/student/:id" => 'home#student_detail', :as      => :student
+  match "reward/:id"   => "home#choose_your_reward", :as  => :reward
+  match "terms"        => "home#terms", :as               => :terms
+  match "privacy"      => "home#privacy", :as             => :privacy
+  match "about"        => "home#about", :as               => :about
+  match "thanks"       => "home#thanks", :as              => :thanks
+  match "success/:id"      => "home#thankstransf", :as        => :success
+  match "application"  => 'student_applications#new', :as => :application_new
+  match "contact"      => "home#contact", :as             => :contact
+  match "companies"    => "home#companies", :as           => :companies
+  match "howitworks"   => 'home#how_it_works', :as        => :how
+  match 'ipns'         => 'donations#ipn', :as            => :ipn
+  match "checkout/:id"    => 'home#checkout', :as => :checkout
 
  resources :student_applications
-  get "paypal_express/checkout"
-  match 'panel' => 'control_panel#index', :as => :panel
+ match 'panel' => 'control_panel#index', :as => :panel
   # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:
