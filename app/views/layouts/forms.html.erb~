@@ -13,7 +13,7 @@
 <div class="custumheader" >
   <div class="controls controls-row">
     <div class="span4" style="padding-top:15px;">
-      <%= link_to image_tag('logo-head.png'),root_path %>
+      <%= link_to image_tag "logo-head.png", root_path %>
     </div>
     <h1 class="pull-right" style="padding:5px" > Student Application </h1>
   </div>

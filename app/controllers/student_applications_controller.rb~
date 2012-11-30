@@ -1,5 +1,5 @@
 class StudentApplicationsController < ApplicationController
-layout "forms"
+
   # GET /student_applications
   # GET /student_applications.json
   def index

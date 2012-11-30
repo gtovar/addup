@@ -1,28 +1,8 @@
 <div class="prospects need-funding">
-  <form accept-charset="UTF-8" action="" method="post">
-    <div class="slider-questions">
-      <div class="inquiry">
-        <h6 class="action-text">Need funding? Want to include your University?</h6>
-        <span class="button info-bg-color">Apply Now</span>
-      </div>
-      <div class="inquiry">
-        <h6 class="action-text">Enter your email</h6>
-        <input class="email" name="email" type="text">
-        <span class="button info-bg-color next">Submit</span>
-      </div>
-      <div class="inquiry">
-        <h6 class="action-text">Which University do you wish to see on Add Up?</h6>
-        <select name="universities">
-          <option value="harvard">Harvard</option>
-          <option value="stanford">Stanford</option>
-          <option value="Berkeley" selected="selected">Berkeley</option>
-          <option value="utexas">University of Texas</option>
-        </select>
-        <input class="button info-bg-color next" name="commit" type="submit" value="Done!">
-      </div>
-      <div class="inquiry">
-        <h6 class="action-text">Thanks! We will contact you soon with more information</h6>
-      </div>
+  <div class="slider-questions">
+    <div class="inquiry">
+      <h6 class="action-text">Need funding? Want to include your University?</h6><br/>
+      <%= link_to "Apply Now",application_path, :class => "button info-bg-color", :style => "text-decoration: none;" %>
     </div>
-  </form>
+  </div>
 </div>

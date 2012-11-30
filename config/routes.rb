@@ -6,15 +6,16 @@ Addup::Application.routes.draw do
   match "privacy"      => "home#privacy", :as             => :privacy
   match "about"        => "home#about", :as               => :about
   match "thanks"       => "home#thanks", :as              => :thanks
-  match "success/:id"      => "home#thankstransf", :as        => :success
+  match "success/:id"  => "home#thankstransf", :as        => :success
   match "application"  => 'student_applications#new', :as => :application_new
   match "contact"      => "home#contact", :as             => :contact
   match "companies"    => "home#companies", :as           => :companies
   match "howitworks"   => 'home#how_it_works', :as        => :how
   match 'ipns'         => 'donations#ipn', :as            => :ipn
-  match "checkout/:id"    => 'home#checkout', :as => :checkout
-
+  match "checkout/:id" => 'home#checkout', :as => :checkout
+  match "student_application" => 'student_applications#new', :as => :application
  resources :student_applications
+
  match 'panel' => 'control_panel#index', :as => :panel
   # The priority is based upon order of creation:
 

@@ -36,7 +36,7 @@
                 <span class="highlight bold"><%= r.donations.sum(:mc_gross).round %></span>Added Up
               </p>
               <p class="goals">
-                <span class="highlight bold"><%= ((Date.today-r.created_at.to_date).round-r.campaing.to_i).abs %></span>days left
+                <span class="highlight bold"><%= ((Date.today-r.created_at.to_date).round-r.time_frame.to_i).abs %></span>days left
               </p>
             </a>
             </li>

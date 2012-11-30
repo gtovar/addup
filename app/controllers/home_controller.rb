@@ -3,6 +3,7 @@ class HomeController < ApplicationController
     @allstudents = StudentApplication.order("id ASC")
     @students = @allstudents.each_slice(3).to_a
     @banner = @allstudents.limit(12)
+    @random = StudentApplication.first(:order => "RANDOM()")
 
     respond_to do |format|
       format.html
@@ -37,6 +38,7 @@ class HomeController < ApplicationController
   end
 
   def about
+    @count = Donation.count
   end
 
   def contact
@@ -56,4 +58,6 @@ class HomeController < ApplicationController
    @record =  Donation.create!(:student_application_id => params[:id],:mc_gross => params[:money])
   end
 
+  def student
+  end
 end

@@ -125,7 +125,7 @@
             <%= 'added up of ' + @student.crowdfundig_goal_usd.round.to_s + " goal" %>
           </li>
           <li class="numbers">
-            <%= ((Date.today-@student.created_at.to_date).round-@student.campaing.to_i).abs %>
+            <%= ((Date.today-@student.created_at.to_date).round-@student.time_frame.to_i).abs %>
           </li>
           <li class="labels">
             days left
