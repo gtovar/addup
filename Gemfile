@@ -9,7 +9,7 @@ gem 'fog'
 gem 'pg'
 gem 'carrierwave'
 gem 'rmagick'
-
+gem 'mail_form'
 
 # Gems used only for assets and not required
 # in production environments by default.

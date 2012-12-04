@@ -1,4 +1,8 @@
 Addup::Application.routes.draw do
+  get "contact_form/new"
+
+  get "contact_form/create"
+
  root :to => 'home#landingpage'
   match "/student/:id" => 'home#student_detail', :as      => :student
   match "reward/:id"   => "home#choose_your_reward", :as  => :reward
