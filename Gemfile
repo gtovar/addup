@@ -10,6 +10,8 @@ gem 'pg'
 gem 'carrierwave'
 gem 'rmagick'
 gem 'mail_form'
+gem 'hominid'
+gem 'devise'
 
 # Gems used only for assets and not required
 # in production environments by default.

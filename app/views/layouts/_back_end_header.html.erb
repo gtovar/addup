@@ -4,8 +4,12 @@
       <%= link_to "ADDUP", panel_path, :class=>"brand" %>
       <div class="nav-collapse collapse">
         <ul class="nav pull-right">
-          <li><%= link_to "Students", student_applications_path %></li>
-          <li><%= link_to "Donations", root_path %></li>
+          <% if admin_signed_in? %>
+            <li><%= link_to "Signed in as #{current_admin.email}. Not you?",  panel_path%></li>
+            <li><%= link_to "Sign out", destroy_admin_session_path, :method=> :delete, :style => "color:white" %></li>
+            <li><%= link_to "Students", student_applications_path %></li>
+            <li><%= link_to "Donations", root_path %></li>
+          <% end %>
         </ul>
       </div>
     </div>

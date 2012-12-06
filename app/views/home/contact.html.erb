@@ -2,16 +2,17 @@
   <h3 class="info-color bold top-space">Get in touch!</h3>
   <p class="three-fifths">Have questions about Add Up or need customer support? We would love to hear from you! Please fill out this quick form below so we can send your inquiry to the right person of the Add Up team. We will get back to you ASAP.</p>
 
-  <form accept-charset="UTF-8" action="" method="post">
+  <%= form_tag(contact_path,:method => "post", :multipart => false) do %>
     <label for="name">Full Name</label>
-    <input id="name" name="name" type="text">
+    <%= text_field_tag "name", nil, :id => "name" %>
     <label for="email">Email Address</label>
-    <input id="email" name="email" type="text">
+     <%= text_field_tag "email", nil, :id => "email" %>
     <label for="message">Message</label>
-    <textarea id="message" name="message"></textarea>
-    <input class="button info-bg-color" name="commit" type="submit" value="Submit">
-  </form>
-  <h5 class="bold">Mailing Address</h5>
+    <%= text_area_tag "message", nil, :id => "message" %>
+    <%= submit_tag "Submit",:class => "button info-bg-color" %>
+ <% end %>
+
+    <h5 class="bold">Mailing Address</h5>
   <h5 class="zero">CrowdScholarship LLC</h5>
   <h5 class="zero">200 E Yuma Apt. 7</h5>
   <h5 class="zero">McAllen, TX 78503</h5>

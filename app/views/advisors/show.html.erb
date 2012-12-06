@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+<ul class="thumbnails">
+  <li class="span4">
+    <div class="thumbnail">
+      <%= image_tag @advisor.photo_url %>
+      <h3><%= @advisor.name %></h3>
+      <p><%= @advisor.quote %></p>
+      <dl>
+        <dt>Company:</dt>
+        <dd><%= @advisor.job %></dd>
+        <dt>E-mail:</dt>
+        <dd><%= @advisor.email %></dd>
+      </dl>
+      <%= link_to 'Edit', edit_advisor_path(@advisor), :class => "btn btn-primary" %>
+    </li>
+  </div>
+</ul>
+

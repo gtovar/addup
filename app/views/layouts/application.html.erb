@@ -4,6 +4,8 @@
    <%= render "layouts/front_end_head" %>
   </head>
   <body>
+    <p class = "notice"><%= notice %></p>
+    <p class = "alert"><%= alert %></p>
     <% if  params[:action] != "landingpage" %>
       <%= render "layouts/front_end_header" %>
     <% end %>

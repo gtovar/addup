@@ -1,15 +1,23 @@
 class HomeController < ApplicationController
   def landingpage
+    unless params.blank?
+      email = params[:email]
+      h = Hominid::API.new("747ad60d361e1376cf91b3ff8d48a814-us5")
+      begin
+        @response = h.list_subscribe('af0a762abc',email,{:FNAME => '', :LNAME => ''},'html',false, true, true, false)
+      rescue
+        @response = nil
+      end
+    end
     @allstudents = StudentApplication.order("id ASC")
     @students = @allstudents.each_slice(3).to_a
     @banner = @allstudents.limit(12)
     @random = StudentApplication.first(:order => "RANDOM()")
-
-    respond_to do |format|
-      format.html
-      format.json {render json: @students}
-    end
-  end
+       respond_to do |format|
+        format.html
+        format.js
+      end
+ end
 
   def student_detail
     @student   = StudentApplication.find(params[:id])
@@ -42,6 +50,12 @@ class HomeController < ApplicationController
   end
 
   def contact
+    unless params.blank?
+      c = ContactForm.new(:name => params["name"],:email => params["email"], :message => params["message"])
+      if  c.deliver
+        redirect_to root_path
+      end
+    end
   end
 
   def thanks
@@ -60,4 +74,14 @@ class HomeController < ApplicationController
 
   def student
   end
+
+  def companies
+    unless params.blank?
+      c = MatchForm.new(:name => params["name"],:email => params["email"], :message => params["message"], :company => params["company"])
+      if  c.deliver
+        redirect_to root_path
+      end
+    end
+  end
+
 end

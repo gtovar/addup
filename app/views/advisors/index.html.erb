@@ -1,0 +1,35 @@
+<h1>Listing advisors</h1>
+
+<table>
+  <tr>
+    <th>Photo</th>
+    <th>Name</th>
+    <th>Job</th>
+    <th>Quote</th>
+    <th>Email</th>
+    <th>Jobp</th>
+    <th>Feedback</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @advisors.each do |advisor| %>
+  <tr>
+    <td><%= advisor.photo %></td>
+    <td><%= advisor.name %></td>
+    <td><%= advisor.job %></td>
+    <td><%= advisor.quote %></td>
+    <td><%= advisor.email %></td>
+    <td><%= advisor.jobp %></td>
+    <td><%= advisor.feedback %></td>
+    <td><%= link_to 'Show', advisor %></td>
+    <td><%= link_to 'Edit', edit_advisor_path(advisor) %></td>
+    <td><%= link_to 'Destroy', advisor, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Advisor', new_advisor_path %>

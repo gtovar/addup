@@ -3,18 +3,17 @@
   <p>For students, it is invaluable for companies and successful philanthropists to believe in their education and their commitment to help society.</p>
   <p>You can reward their own fundaraising efforts by matching by matching what they raise, dollar for dollar. You can select the criteria for students to qualify for your matching funds, determine a maximum amount to match and even requiere a separate application process.</p>
   <p class="three-fifths">Learn about how your company can match funds for students.</p>
-
-  <form accept-charset="UTF-8" action="" method="post">
+  <%= form_tag(companies_path, :method => "post", :multipart => false) do %>
     <label for="name">Full Name</label>
-    <input id="name" name="name" type="text">
+    <%= text_field_tag "name", nil, :id => "name" %>
     <label for="email">Email Address</label>
-    <input id="email" name="email" type="text">
-    <label for="name">Company</label>
-    <input id="company" name="company" type="text">
+    <%= text_field_tag "email", nil, :id => "email" %>
+    <label for="company">Company</label>
+    <%= text_field_tag "company", nil, :id => "company" %>
     <label for="message">Message</label>
-    <textarea id="message" name="message"></textarea>
-    <input class="button info-bg-color" name="commit" type="submit" value="Submit">
-  </form>
+    <%= text_area_tag "message", nil, :id => "message" %>
+    <%= submit_tag "Submit",:class => "button info-bg-color" %>
+  <% end %>
   <h5 class="bold">Mailing Address</h5>
   <h5 class="zero">CrowdScholarship LLC</h5>
   <h5 class="zero">200 E Yuma Apt. 7</h5>

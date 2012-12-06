@@ -1,0 +1,3 @@
+class Advisor < ActiveRecord::Base
+  attr_accessible :email, :feedback, :job, :jobp, :name, :photo, :quote
+end

@@ -1,9 +1,10 @@
 Addup::Application.routes.draw do
+  resources :advisors
+
+  devise_for :admins, :controllers => { :sessions => "admins/sessions" }
   get "contact_form/new"
-
   get "contact_form/create"
-
- root :to => 'home#landingpage'
+  root :to => 'home#landingpage'
   match "/student/:id" => 'home#student_detail', :as      => :student
   match "reward/:id"   => "home#choose_your_reward", :as  => :reward
   match "terms"        => "home#terms", :as               => :terms

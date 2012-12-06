@@ -1,7 +1,9 @@
 class StudentApplicationsController < ApplicationController
-layout "forms"
+layout "back_end_application", :except => [:new,:create,:show]
   # GET /student_applications
   # GET /student_applications.json
+before_filter :authenticate_admin!, :only => [:index,:destroy]
+
   def index
     @student_applications = StudentApplication.all
 
@@ -9,6 +11,7 @@ layout "forms"
       format.html # index.html.erb
       format.json { render json: @student_applications }
     end
+
   end
 
   # GET /student_applications/1
@@ -17,18 +20,18 @@ layout "forms"
     @student_application = StudentApplication.find(params[:id])
 
     respond_to do |format|
-      format.html # show.html.erb
+      format.html { render :layout => "forms" } # show.html.erb
       format.json { render json: @student_application }
     end
   end
 
-  # GET /student_applications/new
+  # GET /student_applications/new/
   # GET /student_applications/new.json
   def new
     @student_application = StudentApplication.new
 
     respond_to do |format|
-      format.html # new.html.erb
+      format.html { render :layout => "forms"} # new.html.erb
       format.json { render json: @student_application }
     end
   end
