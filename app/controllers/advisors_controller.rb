@@ -2,7 +2,7 @@ class AdvisorsController < ApplicationController
  layout "back_end_application", :except => [:new,:create,:show]
  # GET /advisors
   # GET /advisors.json
- before_filter :authenticate_admin!, :only => [:index,:destroy]
+ before_filter :authenticate_admin!, :only => [:index,:destroy,:edit]
 
  def index
     @advisors = Advisor.all

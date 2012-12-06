@@ -19,9 +19,8 @@ Addup::Application.routes.draw do
   match 'ipns'         => 'donations#ipn', :as            => :ipn
   match "checkout/:id" => 'home#checkout', :as => :checkout
   match "student_application" => 'student_applications#new', :as => :application
- resources :student_applications
-
- match 'panel' => 'control_panel#index', :as => :panel
+  resources :student_applications
+  match 'panel' => 'control_panel#index', :as => :panel
   # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:

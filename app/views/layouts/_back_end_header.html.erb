@@ -8,8 +8,9 @@
             <li><%= link_to "Signed in as #{current_admin.email}. Not you?",  panel_path%></li>
             <li><%= link_to "Sign out", destroy_admin_session_path, :method=> :delete, :style => "color:white" %></li>
             <li><%= link_to "Students", student_applications_path %></li>
-            <li><%= link_to "Donations", root_path %></li>
-          <% end %>
+            <li><%= link_to "Advisors", advisors_path %></li>
+             <li><%= link_to "Donations", root_path %></li>
+         <% end %>
         </ul>
       </div>
     </div>
