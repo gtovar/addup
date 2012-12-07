@@ -10,7 +10,6 @@ Addup::Application.routes.draw do
   match "terms"        => "home#terms", :as               => :terms
   match "privacy"      => "home#privacy", :as             => :privacy
   match "about"        => "home#about", :as               => :about
-  match "thanks"       => "home#thanks", :as              => :thanks
   match "success/:id"  => "home#thankstransf", :as        => :success
   match "application"  => 'student_applications#new', :as => :application_new
   match "contact"      => "home#contact", :as             => :contact

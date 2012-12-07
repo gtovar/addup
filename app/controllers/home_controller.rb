@@ -46,7 +46,7 @@ class HomeController < ApplicationController
   end
 
   def about
-    @count = Donation.where('status = "Complete"').count
+    @count = Donation.where(:status => "Complete").count
   end
 
   def contact
@@ -58,12 +58,10 @@ class HomeController < ApplicationController
     end
   end
 
-  def thanks
-  end
-
   def thankstransf
     @student = StudentApplication.find(params[:id])
-  end
+    @students = StudentApplication.limit(3).order("RANDOM()")
+ end
 
   def checkout
    logger.debug(params[:money])
