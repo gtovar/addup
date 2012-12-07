@@ -46,7 +46,7 @@ class HomeController < ApplicationController
   end
 
   def about
-    @count = Donation.count
+    @count = Donation.where('status = "Complete"').count
   end
 
   def contact
