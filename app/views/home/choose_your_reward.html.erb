@@ -10,13 +10,13 @@
         total cost of annual attendance
       </div>
       <h5><%= @student.university %></h5>
-      <h5>USA,<%= ' ' + @student.city_check %> </h5>
+      <h5><%= ' ' + @student.city_check %>, USA </h5>
     </div>
 
     <%= form_tag(checkout_path(@student.id), :method => 'post', :multipart => false) do %>
       <ol class="choose-rewards">
         <li>
-          <h5 class="bold">Great! Every contribution Adds up!</h5>
+          <h5 class="bold">Great! Every contribution adds up!</h5>
           <h6>Enter the amount to add up</h6>
           <div class="money-input info-bg-color">
             <span class="currency info-color">$</span>
