@@ -78,7 +78,7 @@ ActiveRecord::Schema.define(:version => 20121206173005) do
     t.decimal  "total_annual_cost_of_attendance"
     t.string   "time_frame"
     t.string   "link_or_attachment_of_photos"
-    t.string   "link_of_video"
+    t.text     "link_of_video"
     t.string   "cause"
     t.string   "name_sponsor"
     t.string   "job"

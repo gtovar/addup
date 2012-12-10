@@ -12,7 +12,6 @@ attr_accessible :answer1, :answer2, :answer3, :cause, :crowdfundig_goal_usd, :cu
  mount_uploader :p8, ImageUploader
  mount_uploader :p9, ImageUploader
  mount_uploader :p10, ImageUploader
- mount_uploader :link_of_video, ImageUploader
 
 
 end

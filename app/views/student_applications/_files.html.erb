@@ -42,7 +42,7 @@
         <span class="help-block">
  Please upload a 2 minute video in which you talk about your project to add up to your community. Don't worry, it can be a simple web cam video. The purpose is to explain to donors why you care about adding up to your community and why you have the ability to do so.
         </span>
-        <%= f.file_field :link_of_video %>
+        <%= f.text_area :link_of_video, :rows => 10, :class => "span12", :placeholder => "iframe from Youtube" %>
       </label>
     </div>
 

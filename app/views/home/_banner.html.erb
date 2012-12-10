@@ -11,6 +11,7 @@
   <div class="frame-mosaic">
     <div class="mosaic">
       <ul>
+        <% unless @banner.nil? %>
         <% @banner.each_with_index do |a,i|%>
        <li>
           <div class="f1_container">
@@ -25,6 +26,7 @@
           </div>
         </li>
       <% end %>
+    <% end %>
       </ul>
     </div>
   </div>
