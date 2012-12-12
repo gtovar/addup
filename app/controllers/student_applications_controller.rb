@@ -51,7 +51,7 @@ before_filter :authenticate_admin!, :only => [:index,:destroy]
         format.html { redirect_to @student_application, notice: 'Student application was successfully created.' }
         format.json { render json: @student_application, status: :created, location: @student_application }
       else
-        format.html { render action: "new" }
+        format.html { render action: "new", :layout => "forms" }
         format.json { render json: @student_application.errors, status: :unprocessable_entity }
       end
     end

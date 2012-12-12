@@ -20,6 +20,12 @@
 
   </div><!-- Close tab content -->
 
+  <div class="row-fluid" id="submit"  >
+    <div class="span6">
+      <%= f.submit 'SAVE',:class => "btn btn-large btn-block btn-primary" %>
+    </div>
+  </div>
+
 
 <br/><br/>
 <br/>
@@ -27,7 +33,8 @@
 
 <%end%>
 <script>
-    $('#basic').click(function (e) {
+   $('#submit').hide();
+   $('#basic').click(function (e) {
       e.preventDefault();
       $(this).tab('show');
     });
@@ -45,7 +52,8 @@
     $('#payment').click(function (e) {
       e.preventDefault();
       $(this).tab('show');
-    });
+$('#submit').show();
+  });
     $('#check').hide();
     $('#wire').hide();
     $('#q2').hide();
