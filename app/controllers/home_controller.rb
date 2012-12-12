@@ -12,7 +12,7 @@ class HomeController < ApplicationController
     @allstudents = StudentApplication.order("id ASC")
     @students = @allstudents.each_slice(3).to_a
     @banner = @allstudents.limit(12)
-    @random = StudentApplication.first(:order => "RANDOM()")
+    @random = Advisor.quotes
        respond_to do |format|
         format.html
         format.js
@@ -21,11 +21,11 @@ class HomeController < ApplicationController
 
   def student_detail
     @student   = StudentApplication.find(params[:id])
-    d20        = Donation.addupers(params[:id],20,50)
-    d50        = Donation.addupers(params[:id],50,75)
-    d75        = Donation.addupers(params[:id],75,100)
-    d100       = Donation.addupers(params[:id],100,10000000)
-    @donations = [[d20,"20"],[d50,"50"],[d75,"75"],[d100,"100"]]
+    #d20        = Donation.addupers(params[:id],20,50)
+    #d50        = Donation.addupers(params[:id],50,75)
+    #d75        = Donation.addupers(params[:id],75,100)
+    #d100       = Donation.addupers(params[:id],100,10000000)
+    #@donations = [[d20,"20"],[d50,"50"],[d75,"75"],[d100,"100"]]
   end
 
   def choose_your_reward
@@ -47,6 +47,7 @@ class HomeController < ApplicationController
 
   def about
     @count = Donation.where(:status => "Complete").count
+    @advisors = Advisor.all
   end
 
   def contact

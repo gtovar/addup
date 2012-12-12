@@ -54,7 +54,7 @@ a:hover{text-decoration:underline}
     padding-left: 0;
 }
 div.header div.center{
-    background: url('../img/header.png') no-repeat left center;
+    background: url('header.png') no-repeat left center;
     position: relative;
 }
 .logo-head{
@@ -334,8 +334,8 @@ li.faq{}
     vertical-align: top;
     margin-top: 6px;
 }
-.arrow-hidden{background: url('../img/sprite.png') 0 -39px;}
-.arrow-shown{background: url('../img/sprite.png') 0 -24px;}
+.arrow-hidden{background: url('sprite.png') 0 -39px;}
+.arrow-shown{background: url('sprite.png') 0 -24px;}
 .question{
     font-size: 13px;
     font-weight: bold;
@@ -377,7 +377,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 	  background-color: #888;
 }
 .email-icon{
-    background: url('../img/sprite.png') -2px -496px no-repeat;
+    background: url('sprite.png') -2px -496px no-repeat;
     width: 16px;
     height: 15px;
     display: inline-block;
@@ -461,7 +461,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     display: block;
     width: 50px;
     height: 43px;
-    background: url('../img/sprite.png') 0 -243px;
+    background: url('sprite.png') 0 -243px;
     top: 0;
     right: 0;
 }
@@ -733,26 +733,26 @@ h5.quote{
     cursor:pointer;
 }
 .right{
-    background: url('../img/sprite.png') -2px -512px;
+    background: url('sprite.png') -2px -512px;
     right: 5px;
 }
 .right:hover{
-    background: url('../img/sprite.png') -2px -584px;
+    background: url('sprite.png') -2px -584px;
     
 }
 .right:active{
-    background: url('../img/sprite.png') -2px -656px;
+    background: url('sprite.png') -2px -656px;
     
 }
 .left{
-    background: url('../img/sprite.png') 0 -296px;
+    background: url('sprite.png') 0 -296px;
     left: 5px;
 }
 .left:hover{
-    background: url('../img/sprite.png') 0 -367px;
+    background: url('sprite.png') 0 -367px;
 }
 .left:active{
-    background: url('../img/sprite.png') 0 -440px;
+    background: url('sprite.png') 0 -440px;
 }
 .slider{
     width: 4500px;
@@ -769,7 +769,7 @@ h5.quote{
     left: 305px;
 }
 .tuition{
-    background: url('../img/bubbles.png') 0 -65px no-repeat;
+    background: url('bubbles.png') 0 -65px no-repeat;
     height: 101px;
     width: 233px;
     z-index: 10;
@@ -818,8 +818,8 @@ div.verified-by-addup .approved{
  * STUDENT DETAIL
  *****************/
 .icon{width:20px;height:20px;display:inline-block;border:none;}
-.checkmark{background: url('../img/sprite.png') -2px -138px;}
-.info-icon{background: url('../img/sprite.png') -2px -75px;}
+.checkmark{background: url('sprite.png') -2px -138px;}
+.info-icon{background: url('sprite.png') -2px -75px;}
 .holder{
     background-color: white;
     height: 350px;
@@ -1066,9 +1066,9 @@ div.important img{
     top: 28px;
     right: 0px;
 }
-.approved.normal{background: url('../img/bubbles.png') 0 -14px no-repeat;}
+.approved.normal{background: url('bubbles.png') 0 -14px no-repeat;}
 .approved.reflect{
-	background: url('../img/bubbles.png') 0 -180px no-repeat;
+	background: url('bubbles.png') 0 -180px no-repeat;
 }
 .avatar{
     float: left;
@@ -1129,7 +1129,7 @@ ul.symbol-line li{
     padding: 0;
 }
 .symbol{
-    background: url('../img/sprite.png') 0 -56px no-repeat;
+    background: url('sprite.png') 0 -56px no-repeat;
     width: 20px;
     height: 17px;
 }
@@ -1249,11 +1249,11 @@ div.blurr span {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url('../img/sprite.png') -2px -97px no-repeat;
+    background: url('sprite.png') -2px -97px no-repeat;
     cursor: pointer;
 }
 .ball-active{
-    background: url('../img/sprite.png') -2px -117px no-repeat;
+    background: url('sprite.png') -2px -117px no-repeat;
 }
 #ball1{}
 #ball2{}
@@ -1268,7 +1268,7 @@ div.blurr span {
 .how .bubble{
     width: 182px;
     height: 67px;
-    background: url('../img/bubbles.png') -1px -238px no-repeat;
+    background: url('bubbles.png') -1px -238px no-repeat;
 }
 .step{
     display: none;

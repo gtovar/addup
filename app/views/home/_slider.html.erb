@@ -7,44 +7,43 @@
         <ul>
           <% s.each do |r| %>
             <li>
-              <a href="<%= student_path(r.id) %>">
-              <%= image_tag r.p1_url, :class => "student" %>
-              <div class="recomended-stats">
-                <h6 class="bold"><%= r.first_name + ' ' + r.last_name %>
-                <h6><%= r.city_check %>,&nbsp;USD</h6>
-                <h6><%= r.university %></h6>
-              </div>
-              <span class="corner-check"> </span>
-              <div class="bubble approved normal">
-              </div>
-              <p class="blurred">
-                I will Add Up by
-              </P>
-              <p class="info-color desc">
-                <%= r.cause %>
+              <%= link_to (student_path(r.id)) do %>
+                <%= image_tag r.p1_url, :class => "student" %>
+                <div class="recomended-stats">
+                  <h6 class="bold"><%= r.first_name + ' ' + r.last_name %>
+                  <h6><%= r.city_check %>,&nbsp;USD</h6>
+                  <h6><%= r.university %></h6>
+                </div>
+                <span class="corner-check"> </span>
+                <div class="bubble approved normal">
+                </div>
+                <p class="blurred">
+                  I will Add Up by
+                </P>
+                <p class="info-color desc">
+                  <%= r.cause %>
+                </p>
+                <div class="progress" >
+                  <% p= r.donations.total_x_student  / r.crowdfundig_goal_usd %>
+                  <% p = 249 * p %>
+                  <span class="achieved" style="width:<%= p %>px"> </span>
+                </div>
+                <p class="goals">
+                  <span class="highlight bold"><%= ((r.donations.total_x_student/r.crowdfundig_goal_usd)*100).round %>
+                  %</span>of Goal
               </p>
-              <div class="progress" >
-                <% p= r.donations.sum(:mc_gross).round  / r.crowdfundig_goal_usd %>
-                <% p = 249 * p %>
-                <span class="achieved" style="width:<%= p %>px"> </span>
-              </div>
               <p class="goals">
-                <span class="highlight bold"><%= ((r.donations.sum(:mc_gross)/r.crowdfundig_goal_usd)*100).round %>
-%</span>of Goal
-              </p>
-              <p class="goals">
-                <span class="highlight bold"><%= r.donations.sum(:mc_gross).round %></span>Added Up
+                <span class="highlight bold"><%= r.donations.total_x_student %></span>Added Up
               </p>
               <p class="goals">
                 <span class="highlight bold"><%= ((Date.today-r.created_at.to_date).round-r.time_frame.to_i).abs %></span>days left
               </p>
-            </a>
-            </li>
+            <% end %>
+          </li>
 
-          <% end %>
-        </ul>
-      <% end %>
-    </div>
+        <% end %>
+      </ul>
+    <% end %>
   </div>
 </div>
-
+</div>

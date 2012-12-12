@@ -7,41 +7,19 @@
     <div class="team">
       <h5 class="bold top-space">THE ADD UP TEAM</h5>
       <div class="member">
-        <img src="/assets/team/member1.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member2.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member3.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member4.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
+        <img src="/assets/team/joshuafrancia.jpg" alt="Joshua Francia" width=136px/>
+        <h5>Joshua Francia</h5>
       </div>
     </div>
 
     <div class="team">
       <h5 class="bold top-space">THE ADD UP BOARD OF ADVISORS</h5>
-      <div class="member">
-        <img src="/assets/team/member1.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member2.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member3.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
-      <div class="member">
-        <img src="/assets/team/member4.jpg" alt="Tom Villa"/>
-        <h5>Tom Villa</h5>
-      </div>
+      <% @advisors.each do |a|  %>
+        <div class="member">
+          <%= image_tag a.photo_url, :alt => a.name, :width => 136 %>
+          <h5><%= a.name %></h5>
+        </div>
+      <% end %>
     </div>
 
   </div>

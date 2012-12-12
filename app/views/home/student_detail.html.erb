@@ -50,55 +50,55 @@
             <li>
               <div class="image"><%= image_tag @student.p3_url %>
             </div>
-              <div class="caption">
-                <h5>My classmates</h5>
-              </div>
-            </li>
-            <li>
-              <div class="image"><%= image_tag @student.p4_url %>
+            <div class="caption">
+              <h5>My classmates</h5>
             </div>
-              <div class="caption">
-                <h5>My family</h5>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <span class="pics arrow right"> </span>
+          </li>
+          <li>
+            <div class="image"><%= image_tag @student.p4_url %>
+          </div>
+          <div class="caption">
+            <h5>My family</h5>
+          </div>
+        </li>
+      </ul>
     </div>
-    <div class="social-share">
+  </div>
+  <span class="pics arrow right"> </span>
+</div>
+<div class="social-share">
 
-      <div class="fb-like" data-href="http://www.addup.org/student" data-send="false" data-width="300" data-show-faces="false"></div>
+  <div class="fb-like" data-href="http://www.addup.org/student" data-send="false" data-width="300" data-show-faces="false"></div>
 
-      <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      <a href="mailto:info@addup.org?subject=Cynthia%20White&body=check%20this%20%0Ahttp://www.addup.org" class="button e-mail share"><span class="email-icon"></span> <span>e-mail</span></a>
-    </div>
+  <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <a href="mailto:info@addup.org?subject=Cynthia%20White&body=check%20this%20%0Ahttp://www.addup.org" class="button e-mail share"><span class="email-icon"></span> <span>e-mail</span></a>
+</div>
 
-    <h5 class="hot highlight top-space">I WILL ADD UP BY...</h5>
-    <div class="important">
-      <div class="important-content">
-        <p>
-          <%= @student.cause %>
-        </p>
-      </div>
-    </div>
-
-    <h5 class="bold top-space">ABOUT ME AND MY EDUCATIONAL GOALS...</h5>
+<h5 class="hot highlight top-space">I WILL ADD UP BY...</h5>
+<div class="important">
+  <div class="important-content">
     <p>
-      <%= @student.answer1 %>
+      <%= @student.cause %>
     </p>
+  </div>
+</div>
 
-    <h5 class="bold top-space">WHY I CARE ABOUT ADDING UP...</h5>
-    <p>
-      <%= @student.answer2 %>
-    </p>
+<h5 class="bold top-space">ABOUT ME AND MY EDUCATIONAL GOALS...</h5>
+<p>
+  <%= @student.answer1 %>
+</p>
 
-    <span class="button info-bg-color msg profile-ask">Ask a Question</span>
-    <div>
-      <h5 class="bold">FACEBOOK COMMENTS</h5>
-      <div class="fb-comments" data-href="http://addup.org" data-num-posts="2" data-width="470"></div>
-    </div>
+<h5 class="bold top-space">WHY I CARE ABOUT ADDING UP...</h5>
+<p>
+  <%= @student.answer2 %>
+</p>
+
+<span class="button info-bg-color msg profile-ask">Ask a Question</span>
+<div>
+  <h5 class="bold">FACEBOOK COMMENTS</h5>
+  <div class="fb-comments" data-href="http://addup.org" data-num-posts="2" data-width="470"></div>
+</div>
   </div>
 
   <div class="sidebar-profile">
@@ -158,25 +158,7 @@
       </p>
 
     </div>
-    <% @donations.each_with_index do |d,i| %>
-      <div class="block reward-side">
-        <ol>
-          <li>
-            <%= link_to  (reward_path(@student.id)) do %>
-              <h5>Add <span>$<%= d[1] %></span> or more</h5>
-              <ul class="symbol-line">
-                <li>
-                  <span class="icon symbol"> </span>
-                </li>
-                <li>
-                  <%= d[0] %> addupers
-                </li>
-              </ul>
-            <% end %>
-          </li>
-        </ol>
-      </div>
-    <% end %>
+
   </div>
 </div>
 </div>

@@ -76,7 +76,7 @@ ul li{
     padding: 0;
 }
 .li1{}
-.li2{}       
+.li2{}
 .li3{}
 .li4{
     text-align: right;
@@ -104,7 +104,7 @@ ul li{
 .footer a:hover{text-decoration:underline}
 .footer p{
 }
-.copyright{font-size: 12px;margin-top: 20px;}	     
+.copyright{font-size: 12px;margin-top: 20px;}
 
 
 .info-color{color: #3AA0BB}
@@ -122,7 +122,7 @@ form{
     margin-bottom: 40px;
     display: block;
     clear: both;
-}     	
+}
 label{
     display: block;
     font-size: 14px;
@@ -134,7 +134,7 @@ form input[type="text"], form input[type="password"], form select, form textarea
     display: block;
     margin-top: 3px;
     padding-left: 6px;
-}   	
+}
 input[type="text"] {
     width: 280px;
     height: 28px;
@@ -159,7 +159,7 @@ input[type="submit"] {}
     display: block;
     clear: both;
 }
-.team h5{}	 
+.team h5{}
 .member{
     float: left;
     margin: 10px 40px 10px 0;
@@ -171,7 +171,7 @@ input[type="submit"] {}
 }
 .sidebar{
     float: left;
-    
+
     width: 230px;
     height: auto;
     border: none;
@@ -199,8 +199,8 @@ input[type="submit"] {}
     padding-bottom: 7px;
     display: block;
 }
- 			 
- 
+
+
 .student-stats{
     position: relative;
 }
@@ -218,7 +218,7 @@ ol.choose-rewards li{
 }
 .choose-rewards h5{}
 .choose-rewards h6{
-   
+
 }
 .money-input{
     border-radius: 7px;
@@ -237,7 +237,7 @@ ol.choose-rewards li{
 }
 form input[type='text'].super-input{
     height: auto;
-	
+
     font-size: 48px;
     line-height: 1em;
     border-radius: 5px;
@@ -248,10 +248,10 @@ form input[type='text'].super-input{
 }
 .tiny-tip{
      color: white;
-    
-    
+
+
      vertical-align: middle;
-    
+
      display: inline-block;
      margin-top: -25px;
 }
@@ -321,7 +321,7 @@ input[type="radio"] {}
 .faqs{}
 h6.faqs{
     color: #999999;
-} 
+}
 ul.faqs{}
 li.faq{}
 .faq-question{}
@@ -330,7 +330,7 @@ li.faq{}
 .icon-expand{
     width: 13px;
     height: 10px;
-    display: inline-block;    
+    display: inline-block;
     vertical-align: top;
     margin-top: 6px;
 }
@@ -404,7 +404,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 }
 .recomendations{
     width: 960px;
-	
+
     height: 290px;
     background-color: #F7F7F7;
     position: relative;
@@ -448,7 +448,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     height: auto;
     float: right;
     margin-right: 50px;
-} 
+}
 .recomendations h3{}
 .highlight{color: #C0262C;display: block;clear: both;}
 .recomended-stats{
@@ -472,11 +472,11 @@ p.blurred{
 .recomendations p{
     margin-left: 8px;
     margin-top: 3px;
-} 
+}
 .recomendations p.desc{
     font-size: 14px;
     margin-bottom: 10px;
-} 					 
+}
 .progress{
     position: relative;
     width: 250px;
@@ -555,28 +555,28 @@ img.sponsor{}
     display: inline-block;
     margin: 0 -5px -7px 0px;
     padding: 0;
-    
-   
- 
+
+
+
 }
 
 
 .mosaic	a {
     margin: 0;
-} 
+}
 .mosaic img{
     height: 100px;
     width: 100px;
 }
-  
+
 
 /*
- * flip css 
+ * flip css
  ***********/
 
 .f1_container {
   position: relative;
- 
+
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -587,16 +587,16 @@ img.sponsor{}
 .f1_card {
   width: 100%;
   height: 100%;
-  	
+
   -webkit-transform-style:preserve-3d;
 	-moz-transform-style:preserve-3d;
 	  -o-transform-style:preserve-3d;
   transform-style: preserve-3d;
-  
-   
+
+
   -webkit-transition: all 1s linear;
 	  -moz-transition:all 1.0s linear;
-	  -o-transition:all 1.0s linear;	  
+	  -o-transition:all 1.0s linear;
   transition: all 1.0s linear;
 }
 .f1_container:hover .f1_card {
@@ -604,13 +604,13 @@ img.sponsor{}
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
- 
+
 }
 .face {
   position: absolute;
   width: 100%;
   height: 100%;
-   
+
   -webkit-backface-visibility:hidden;
   -moz-backface-visibility:hidden;
   -o-backface-visibility:hidden;
@@ -618,12 +618,12 @@ img.sponsor{}
 }
 .face.back {
   display: block;
-   
+
   -webkit-transform:rotateY(180deg);
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
-   
+
 }
 /*
  * landing
@@ -644,7 +644,7 @@ h5.quote{
     height: 160px;
     margin: auto;
     text-align: center;
-  
+
     position:relative;
     overflow: hidden;
     }
@@ -676,11 +676,11 @@ h5.quote{
 }
 .prospects input[type="submit"].next{
     padding: 9px 14px;
-	
+
 }
 .get-notified{
     margin-top: 20px;
- 
+
 }
 .slider-questions{
     height: 1220px;
@@ -703,7 +703,7 @@ h5.quote{
     margin-top: 10px;
     padding: 15px 20px;
     font-weight: normal;
-} 
+}
 .need-funding{}
 .need-funding h6{
     padding-top: 30px;
@@ -712,12 +712,12 @@ h5.quote{
     margin-top: 6px;
     display: inline-block;
 }
-        
+
 .window{
-    
+
     overflow: hidden;
     margin: auto;
-    
+
     position: relative;
 }
 .recomendations .window{
@@ -738,11 +738,11 @@ h5.quote{
 }
 .right:hover{
     background: url('sprite.png') -2px -584px;
-    
+
 }
 .right:active{
     background: url('sprite.png') -2px -656px;
-    
+
 }
 .left{
     background: url('sprite.png') 0 -296px;
@@ -784,7 +784,7 @@ h5.quote{
     margin: 15px auto -14px -10px;
 }
 .approved{
-    
+
     width: 148px;
     height: 48px;
     z-index: 10;
@@ -812,7 +812,7 @@ div.verified-by-addup .approved{
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
 }*/
-			 
+
 
 /*
  * STUDENT DETAIL
@@ -867,11 +867,11 @@ div.verified-by-addup .approved{
 }
 .student-slider-pics .caption{
     background-color: #E6E6E6;
-}	
+}
 .caption h5{
     text-align: center;
     margin-top: 7px;
-} 
+}
 
 .share-box-wrap{}
 .share-box-wrap ul{}
@@ -967,7 +967,7 @@ div.important img{
     margin-top: 0;
 }
 .verified-by-addup a{
-    
+
     margin-left: 5px;
 }
 .sidebar-profile{}
@@ -987,7 +987,7 @@ div.important img{
 .block ol{}
 .block li{}
 .block li a{
-    
+
 }
 .block p{
     font-size: 12px;
@@ -1004,19 +1004,19 @@ div.important img{
 }
 .go-to-rewards{
 	display: block;
-    
+
 	width: 165px;
-    
+
 	margin: 10px auto 3px auto;
 	font-size: 16px;
 	text-decoration: none;
 	text-align: center;
 	padding: 9px 14px;
-	
+
 }
 .go-to-rewards:hover{
 	text-decoration: none;
-	
+
 }
 .how-it-works{
 	color:#3AA0BB;
@@ -1097,7 +1097,7 @@ div.important img{
 .reward-side ol{
     padding-bottom: 10px;
     padding-top: 10px;
-} 
+}
 .reward-side li{}
 .reward-side ol li{
     display: inline-block;
@@ -1159,7 +1159,7 @@ ul.symbol-line li{
 
 .blurr {}
 div.blurr span {
-	 
+
 }
 #blurry{}
 .msg-box{
@@ -1185,7 +1185,7 @@ div.blurr span {
 }
 .msg-header h1 span{}
 .msg-textarea{
-	
+
 }
 .msg-textarea label{}
 .msg-textarea input{}
@@ -1326,9 +1326,21 @@ div.blurr span {
 }
 .half{
     width: 400px;
-	
+
     float: left;
 }
 
 .twitter-share-button{}
 .left-align{float:left}
+
+
+
+#ticker {
+  width: 610px;
+  margin:0 auto 0 auto;
+	height: 80px;
+	overflow: hidden;
+}
+#ticker li {
+	height: 80px;
+}

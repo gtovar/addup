@@ -1,16 +1,39 @@
+<% content_for :javascripts do %>
+
+<% end %>
+
 <div class="center">
   <%= image_tag "logo.png", :class=>"logo", :alt=>"ADD UP" %>
   <%= render "banner" %>
   <h1 class="action-text bold start">Start Adding Up!</h1>
-
   <%= render "slider" %>
   <% if @random != nil %>
-     <p class="quote">"<%= @random.quote  %>"</p>
-   <h5 class="quote">- <%= @random.name_sponsor  %></h5>
-  <%else%>
-   <p class="quote">"Your Favorite Quote"</p>
-    <h5 class="quote">-  ower of quote </h5>
-<%end%>
+   <ul id="ticker">
+   <% @random.each do |q| %>
+    <li>
+       <p class="quote">"<%= q.quote  %>"</p>
+      <h5 class="quote">- <%= q.name  %></h5>
+     </li>
+  <% end %>
+  </ul>
+ <% else %>
+    <p class="quote">"Your Favorite Quote"</p>
+    <h5 class="quote">- Owner quote  %></h5>
+  <%end%>
   <%= render "notified1" %>
   <%= render "notified" %>
+
 </div>
+
+<% content_for :scripts do %>
+  <script>
+function tick(){
+	$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+}
+setInterval(function(){ tick () }, 5000);
+</script>
+<% end %>
+
+
+
+

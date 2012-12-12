@@ -1,86 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
-		<meta charset="utf-8" />
-		<link rel="stylesheet" href="assets/addup.css">
-			<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
- <link rel="shortcut icon" href="assets/favicon.ico">
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<% content_for :javascripts do %>
+ 
+<% end %>
 
-		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-		Remove this if you use the .htaccess -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-		<!--To make html5 compatible with old browsers-->
-		<!--[if lt IE 9]>
-		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
+<div class="center">
+  <%= image_tag "logo.png", :class=>"logo", :alt=>"ADD UP" %>
+  <%= render "banner" %>
+  <h1 class="action-text bold start">Start Adding Up!</h1>
+  <%= render "slider" %>
+  <% if @random != nil %>
+    <% @random.each do |q| %>
+      <p class="quote">"<%= q.quote  %>"</p>
+      <h5 class="quote">- <%= q.name  %></h5>
+    <% end %>
+  <% else %>
+    <p class="quote">"Your Favorite Quote"</p>
+    <h5 class="quote">- Owner quote  %></h5>
+  <%end%>
+  <%= render "notified1" %>
+  <%= render "notified" %>
 
-		<title>Add Up - Crowdscholarships that carry on</title>
-		<meta name="description" content="Add Up is a crowdscholarships platform for students to raise funds for their graduate studies in USA top universities." />
-		<meta name="author" content="Add Up - Crowdscholarships LLC" />
+<ul id="ticker">
+	<li>
+		jqBarGraph is jQuery plugin that gives you freedom to easily display your data as graphs. There are three types of graphs: simple, multi and stacked.
+	</li>
+	<li>
+		Learn how to create image gallery in 4 lines of Jquery
+	</li>
+	<li>
+		jqFancyTransitions is easy-to-use jQuery plugin for displaying your photos as slideshow with fancy transition effects.
+	</li>
+	<li>
+		mooBarGraph is AJAX graph plugin for MooTools which support two types of graphs, simple bar and stacked bar graph.
+	</li>
+</ul>
 
-		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+  
+</div>
 
-		<!-- Javascript load -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-		<script type="text/javascript" src="assets/addup.js"></script>
-	</head>
-    <body>
-    	<div class="center">
-        <img src="assets/logo.png" class="logo" alt="ADD UP"/>
+<% content_for :scripts do %>
+  <script>
+function tick(){
+	$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+}
+setInterval(function(){ tick () }, 5000);
+</script>
+<% end %>
 
-        <%= render "banner" %>
 
-        <h1 class="action-text bold start">Start Adding Up!</h1>
 
-        <%= render "slider" %>
 
-        <p class="quote">"This is a great way to use crowdsourcing. Since early times and early days, ADD UP has always been a great tool."</p>
-        <h5 class="quote">- The Wall Street Journal</h5>
-
-        <%= render "notified" %>
-      </div>
-
-		<div class="footer">
-			<div class="center">
-				<ul>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="terms.html">Terms of Use</a>
-					</li>
-					<li>
-						<a href="privacy.html">Privacy Policy</a>
-					</li>
-					<li>
-						<a href="companies.html">Matching funds for Companies</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						Add Up media:
-					</li>
-					<li>
-						<a href="http://www.facebook.com/Addup">Facebook</a>
-					</li>
-					<li>
-						<a href="http://www.twitter.com/addup">Twitter</a>
-					</li>
-				</ul>
-				<p class="copyright">
-					2012 CrowdScholarship LLC All rights reserved
-				</p>
-			</div>
-		</div>
-		<!-- begin olark code --><script data-cfasync="false" type='text/javascript'>/*{literal}<![CDATA[*/
-window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){f[z]=function(){(a.s=a.s||[]).push(arguments)};var a=f[z]._={},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={0:+new Date};a.P=function(u){a.p[u]=new Date-a.p[0]};function s(){a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{b.contentWindow[g].open()}catch(w){c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{var t=b.contentWindow[g];t.write(p());t.close()}catch(x){b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
-/* custom configuration goes here (www.olark.com/documentation) */
-olark.identify('9102-424-10-1941');/*]]>{/literal}*/</script><noscript><a href="https://www.olark.com/site/9102-424-10-1941/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript><!-- end olark code -->
-
-    </body>
-</html>

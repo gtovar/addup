@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-   <%= render "layouts/front_end_head" %>
+    <%= render "layouts/front_end_head" %>
+    <%= yield :javascripts %>
   </head>
   <body>
     <p class = "notice"><%= notice %></p>
@@ -11,5 +12,7 @@
     <% end %>
     <%= yield %>
     <%= render "layouts/front_end_footer" %>
+    <%= yield :scripts %>
+
   </body>
 </html>
