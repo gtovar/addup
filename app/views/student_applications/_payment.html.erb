@@ -2,7 +2,7 @@
   <div class = "row-fluid">
 
     <div class = "span4">
-      <label><strong>Method of payment</strong><br/>
+      <label><strong>Method of payment to the university</strong><br/>
         <%= f.select :method_of_payment, options_for_select([["Please select",nil],["Check",1],["Wire transfer", 2]], :class => "input-large") %>
       </label>
     </div>
@@ -104,9 +104,10 @@
         <%= f.text_field :students_university_id_reference ,  :class => "input-xxlarge", :placeholder => "i.e Student's complete Name and University ID Number" %>
       </div>
     </label>
-
-    <label><strong>Do you have family members who studied in the US before you?</strong><br/></label>
-    <%= f.check_box :answer3 %>&nbsp;Yes
   </div>
-
+  <div class="row-fluid">
+    <div class="span6">
+      <%= f.submit 'SAVE',:class => "btn btn-large btn-block btn-primary" %>
+    </div>
+  </div>
 </div>

@@ -1,7 +1,8 @@
 <div class="center">
   <%= image_tag "logo.png", :class=>"logo", :alt=>"ADD UP" %>
   <%= render "banner" %>
- <h1 class="action-text bold start">Start Adding Up!</h1>
+  <h1 class="action-text bold start">Start Adding Up!</h1>
+
   <%= render "slider" %>
   <% if @random != nil %>
      <p class="quote">"<%= @random.quote  %>"</p>

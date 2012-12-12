@@ -63,7 +63,8 @@
     <div class="span3">
       <label><strong>Crowdfunding goal</strong>
         <div class="input-prepend">
-          <span class="add-on">$</span><%= f.text_field :crowdfundig_goal_usd ,  :class => "span9", :placeholder => "i.e $3,000" %>
+          <span class="add-on">$</span>
+          <%= f.number_field :crowdfundig_goal_usd , :min => 100, :max => 10000, :step => 1000, :class => "span9" %>
         <span class="add-on">.00</span>
       </label>
     </div>
@@ -81,7 +82,7 @@
 </label>
 <div class="span3">
   <label><strong>Time frame for Add Up Campaign </strong>
-    <%= f.number_field :time_frame, :in=>30...90,:step => 30, :placeholder => "i.e 60 days" %>
+    <%= f.select :time_frame, options_for_select([["i.e 60 days",nil],["30 days",30],["45 days", 45],["60 days",60]], :class => "input-large") %>
   </label>
 </div>
 </div>
