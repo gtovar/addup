@@ -37,47 +37,47 @@
    $('#basic').click(function (e) {
       e.preventDefault();
       $(this).tab('show');
-    });
+      $('#submit').hide();
+ });
 
-    $('#files').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-
-    $('#questions').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-    });
-
-    $('#payment').click(function (e) {
-      e.preventDefault();
-      $(this).tab('show');
-$('#submit').show();
+  $('#files').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    $('#submit').hide();
   });
-    $('#check').hide();
-    $('#wire').hide();
-    $('#q2').hide();
 
-    $("#student_application_method_of_payment").change(function () {
-      var valor =  $(this).val();
-      if (valor == 0){
-        $('#check').fadeOut('slow');
-        $('#wire').fadeOut('slow');
-        $('#q2').fadeOut('slow');
-        }else if (valor == 1) {
-        $('#check').fadeIn('slow');
-        $('#wire').fadeOut('slow');
-        $('#q2').fadeIn('slow');
-        }else if (valor == 2){
-        $('#check').fadeOut('slow');
-        $('#wire').fadeIn('slow');
-        $('#q2').fadeIn('slow');
-      }
+  $('#questions').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+    $('#submit').hide();
+ });
 
+ $('#payment').click(function (e) {
+   e.preventDefault();
+   $(this).tab('show');
+   $('#submit').show();
+ });
 
-    }
-    );
+ $('#check').hide();
+ $('#wire').hide();
+ $('#q2').hide();
 
+ $("#student_application_method_of_payment").change(function () {
+   var valor =  $(this).val();
+   if (valor == 0){
+     $('#check').fadeOut('slow');
+     $('#wire').fadeOut('slow');
+     $('#q2').fadeOut('slow');
+     }else if (valor == 1) {
+     $('#check').fadeIn('slow');
+     $('#wire').fadeOut('slow');
+     $('#q2').fadeIn('slow');
+     }else if (valor == 2){
+     $('#check').fadeOut('slow');
+     $('#wire').fadeIn('slow');
+     $('#q2').fadeIn('slow');
+   };
+    });
 
     $(document).ready(function(){
       $("#tooltip").click(function(event){
