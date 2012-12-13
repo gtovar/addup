@@ -54,4 +54,7 @@ class CreateStudentApplications < ActiveRecord::Migration
     end
   end
 
+  def down
+    drop_table :student_applications
+  end
 end
