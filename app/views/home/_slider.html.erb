@@ -8,7 +8,7 @@
           <% s.each do |r| %>
             <li>
               <%= link_to (student_path(r.id)) do %>
-                <%= image_tag r.p1_url, :class => "student" %>
+                <%= image_tag r.p1.sliderhome.url.to_s, :class => "student" %>
                 <div class="recomended-stats">
                   <h6 class="bold"><%= r.first_name + ' ' + r.last_name %>
                   <h6><%= r.city_check %>,&nbsp;USD</h6>
