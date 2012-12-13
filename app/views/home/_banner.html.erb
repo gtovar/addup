@@ -17,10 +17,10 @@
           <div class="f1_container">
             <%= ('<div id="card' + i.to_s +  '" class="f1_card">').html_safe %>
               <div class="front face">
-                <%= link_to image_tag(a.p1_url), student_path(a.id)%>
+                <%= link_to image_tag(a.p1.mosaichome.url), student_path(a.id)%>
               </div>
               <div class="back face">
-                 <%= link_to image_tag(a.p2_url), student_path(a.id)%>
+                 <%= link_to image_tag(a.p2.mosaichome.url.to_s), student_path(a.id)%>
               </div>
             </div>
           </div>

@@ -20,7 +20,7 @@
       <h5 class="bold top-space">THE ADD UP BOARD OF ADVISORS</h5>
       <% @advisors.each do |a|  %>
         <div class="member">
-          <%= image_tag a.photo_url, :alt => a.name, :width => 136 %>
+          <%= image_tag a.photo.thumbabout.url.to_s, :alt => a.name, :width => 136 %>
           <h5><%= a.name %></h5>
         </div>
       <% end %>
