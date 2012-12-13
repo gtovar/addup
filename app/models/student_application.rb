@@ -15,6 +15,8 @@ attr_accessible :answer1, :answer2, :answer3, :cause, :crowdfundig_goal_usd, :cu
 
 validates :p1, :p2, :p3, :p4, :first_name, :last_name, :university, :crowdfundig_goal_usd, :time_frame, :quote, :job, :name_sponsor, :link_of_video, :presence => true
 
+validates :answer1,:answer2, :length => {:maximum => 800}
+
 validates :crowdfundig_goal_usd, :numericality => {:only_integer => true, :greater_than => 100, :less_than => 10000}
 
 end
