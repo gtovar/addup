@@ -4,6 +4,7 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.string  :last_name
       t.string  :first_name
       t.string  :nationality
+      t.string  :city
       t.string  :email
       t.string  :university
       t.string  :degree

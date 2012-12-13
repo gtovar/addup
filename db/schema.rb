@@ -78,6 +78,7 @@ ActiveRecord::Schema.define(:version => 20121213160656) do
     t.string   "last_name"
     t.string   "first_name"
     t.string   "nationality"
+    t.string   "city"
     t.string   "email"
     t.string   "university"
     t.string   "degree"
