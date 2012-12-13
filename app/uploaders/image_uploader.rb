@@ -36,8 +36,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   # end
 
   # Create different versions of your uploaded files
-
-  version :sliderdetail do
+   version :sliderdetail do
      process :resize_to_fill => [580, 315]
    end
 
@@ -47,10 +46,6 @@ class ImageUploader < CarrierWave::Uploader::Base
 
    version :mosaichome do
      process :resize_to_fill => [100,100]
-   end
-
-   version :sliderhome do
-     process :resize_to_fill => [71,71]
    end
 
   # Add a white list of extensions which are allowed to be uploaded.
