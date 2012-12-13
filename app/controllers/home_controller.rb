@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
+
   def landingpage
     unless params.blank?
       email = params[:email]
