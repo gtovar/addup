@@ -1,7 +1,7 @@
 <div id="basic" class="tab-pane fade in active">
   <div class = "row-fluid">
     <div class = "span3">
-      <label><strong>Personal information</strong>
+      <label><strong>Personal information*</strong>
         <%= f.text_field :last_name, :class => "input-large", :placeholder => "Last Name" %>
       </label>
     </div>
@@ -30,7 +30,7 @@
 
   <div class="row-fluid">
     <div class="span3">
-      <label><strong>University</strong>
+      <label><strong>University*</strong>
         <%= f.text_field :university, :class => "input-large", :placeholder => "University" %>
       </label>
     </div>
@@ -61,7 +61,7 @@
       </label>
     </div>
     <div class="span3">
-      <label><strong>Crowdfunding goal</strong>
+      <label><strong>Crowdfunding goal*</strong>
         <div class="input-prepend">
           <span class="add-on">$</span>
           <%= f.text_field :crowdfundig_goal_usd , :class => "span9" %>
@@ -81,8 +81,8 @@
   </div>
 </label>
 <div class="span3">
-  <label><strong>Time frame for Add Up Campaign </strong>
-    <%= f.select :time_frame, options_for_select([["i.e 60 days",nil],["30 days",30],["45 days", 45],["60 days",60]], :class => "input-large") %>
+  <label><strong>Time frame for Add Up Campaign* </strong>
+    <%= f.select :time_frame, options_for_select([["i.e 60 days",nil],["30 days","30"],["45 days", "45"],["60 days","60"]], :class => "input-large") %>
   </label>
 </div>
 </div>
