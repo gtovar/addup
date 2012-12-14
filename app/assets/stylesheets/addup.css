@@ -765,7 +765,7 @@ h5.quote{
  *********/
 .bubble{
     position: absolute;
-    bottom: 119px;
+    bottom: 100px;
     left: 305px;
 }
 .tuition{
@@ -1241,7 +1241,7 @@ div.blurr span {
     position: absolute;
     width: 184px;
     height: 15px;
-    bottom: 190px;
+    bottom: 170px;
     left: 50%;
     margin-left: -92px;
 }
