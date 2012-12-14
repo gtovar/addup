@@ -120,7 +120,7 @@ ActiveRecord::Schema.define(:version => 20121213160656) do
     t.string   "name_of_university"
     t.string   "email_of_confirmation"
     t.string   "name_of_bank"
-    t.integer  "bank_account"
+    t.string   "additional_information"
     t.integer  "abbarouting"
     t.string   "swift"
     t.datetime "created_at",                       :null => false

@@ -1,9 +1,9 @@
 <%= form_for @student_application, :multipart => true  do |f| %>
   <% if @student_application.errors.any? %>
-    <div id="error_explanation" class="alert alert-error" >
+    <div id="error_explanation" class="alert alert-error errores" >
       <h2><%= pluralize(@student_application.errors.count, "error") %> prohibited this Student application from being saved:</h2>
 
-      <ul>
+      <ul >
         <% @student_application.errors.full_messages.each do |msg| %>
           <li><%= msg %></li>
         <% end %>

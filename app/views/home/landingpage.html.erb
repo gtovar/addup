@@ -12,7 +12,7 @@
    <% @random.each do |q| %>
     <li>
        <p class="quote">"<%= q.quote  %>"</p>
-      <h5 class="quote">- <%= q.name  %></h5>
+       <h5 class="quote">- <%= "#{q.name}, #{q.jobp}, #{q.job}"  %></h5>
      </li>
   <% end %>
   </ul>

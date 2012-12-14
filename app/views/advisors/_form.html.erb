@@ -1,6 +1,6 @@
 <%= form_for(@advisor) do |f| %>
   <% if @advisor.errors.any? %>
-    <div id="error_explanation">
+    <div id="error_explanation" class="alert alert-error" >
       <h2><%= pluralize(@advisor.errors.count, "error") %> prohibited this advisor from being saved:</h2>
 
       <ul>

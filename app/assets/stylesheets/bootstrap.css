@@ -5826,10 +5826,14 @@ ul {
 .footer a:hover{text-decoration:underline}
 .footer p{
 }
-.copyright{font-size: 12px;margin-top: 20px;}	  
+.copyright{font-size: 12px;margin-top: 20px;}
 
 .center{
     width: 960px;
     margin: 0 auto;
     height: 100%;
+}
+
+.errores ul li{
+  display: block;
 }

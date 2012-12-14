@@ -8,10 +8,12 @@
       <dl>
         <dt>Company:</dt>
         <dd><%= @advisor.job %></dd>
+        <dt>Job Position:</dt>
+        <dd><%= @advisor.jobp %></dd>
         <dt>E-mail:</dt>
         <dd><%= @advisor.email %></dd>
       </dl>
-      <%= link_to 'Edit', edit_advisor_path(@advisor), :class => "btn btn-primary" %>
+      <%= link_to 'Home', root_path, :class => "btn btn-primary" %>
     </li>
   </div>
 </ul>

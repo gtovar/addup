@@ -1338,9 +1338,9 @@ div.blurr span {
 #ticker {
   width: 610px;
   margin:0 auto 0 auto;
-	height: 80px;
-	overflow: hidden;
+  height: 100px;
+  overflow: hidden;
 }
 #ticker li {
-	height: 80px;
+  height: 80px;
 }
