@@ -96,8 +96,9 @@
 <div class="row-fluid">
   <div class="span3">
     <label><strong>Time frame for Add Up Campaign* </strong>
-      <%= f.select :time_frame, options_for_select([["i.e 60 days",nil],["30 days","30"],["45 days", "45"],["60 days","60"]], :class => "input-large") %>
+      <%= f.select :time_frame, options_for_select([["30 days","30"],["45 days", "45"],["60 days","60"]], @student_application.time_frame), :class => "input-large", :prompt => "i.e 60 days" %>
     </label>
   </div>
 </div>
 </div>
+

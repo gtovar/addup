@@ -766,7 +766,7 @@ h5.quote{
 .bubble{
     position: absolute;
     bottom: 100px;
-    left: 305px;
+    left: 100px;
 }
 .tuition{
     background: url('bubbles.png') 0 -65px no-repeat;
@@ -799,8 +799,8 @@ div.recomendations .approved.reflect{
 	  top: 32px;
 }
 div.student-stats .approved{
-	  left: 162px;
-    top: 26px;
+  left: 138px;
+  top: 26px;
 }
 div.verified-by-addup .approved{
     right: 105px;
@@ -1068,7 +1068,7 @@ div.important img{
 }
 .approved.normal{background: url('bubbles.png') 0 -14px no-repeat;}
 .approved.reflect{
-	background: url('bubbles.png') 0 -180px no-repeat;
+	background: url('bubbles.png') 0 -180px no-repeat left;
 }
 .avatar{
     float: left;
