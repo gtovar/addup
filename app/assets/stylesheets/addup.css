@@ -766,7 +766,6 @@ h5.quote{
 .bubble{
     position: absolute;
     bottom: 100px;
-    left: 305px;
 }
 .tuition{
     background: url('bubbles.png') 0 -65px no-repeat;
