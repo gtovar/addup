@@ -1278,7 +1278,7 @@ div.blurr span {
     font-weight: bold;
     line-height: 2em;
 }
-.number{color: #3AA0BB;font-size: 24px;font-weight: bold;top: 0px;vertical-align: middle;}
+.number{color: #3AA0BB;font-size: 24px;font-weight: bold;top: 0px;vertical-align: middle;font-size:18px;margin-right: 2px;}
 #step1{}
 #step2{}
 #step3{}
@@ -1303,7 +1303,7 @@ div.blurr span {
 }
 .how-step p{
     color: #41474C;
-    width: 642px;
+    width: 650px;
     margin: 0 auto;
 }
 #how1{}
