@@ -46,7 +46,7 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.string  :name_of_university
       t.string  :email_of_confirmation
       t.string  :name_of_bank
-      t.integer :bank_account
+      t.string  :additional_information
       t.integer :abbarouting
       t.string  :swift
 
