@@ -5,11 +5,12 @@
     <%= yield :javascripts %>
   </head>
   <body>
-    <p class = "notice"><%= notice %></p>
-    <p class = "alert"><%= alert %></p>
+    <% if alert != nil %>
+      <p class = "alert"><%= alert %></p>
+    <% end %>
     <% if  params[:action] != "landingpage" %>
       <%= render "layouts/front_end_header" %>
-    <% end %>
+   <% end %>
     <%= yield %>
     <%= render "layouts/front_end_footer" %>
     <%= yield :scripts %>

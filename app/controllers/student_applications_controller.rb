@@ -48,7 +48,7 @@ before_filter :authenticate_admin!, :only => [:index,:destroy]
 
     respond_to do |format|
       if @student_application.save
-        format.html { redirect_to @student_application, notice: 'Student application was successfully created.' }
+        format.html { redirect_to student_path(@student_application), notice: ' Share with everyone on facebook and twitter your student application was successfully created.' }
         format.json { render json: @student_application, status: :created, location: @student_application }
       else
         format.html { render action: "new", :layout => "forms" }

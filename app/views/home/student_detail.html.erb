@@ -21,10 +21,13 @@
   </div>
 </div>
 <div class="center">
-  <div class="two-thirds">
+ <% if notice != nil %>
+  <p id="notice" class="alert alert-success"><%= notice %></p>
+<% end%>
+ <div class="two-thirds">
     <div class="student-stats">
       <h3 class="bold top-space"><%= @student.first_name + '  ' + @student.last_name  %><span class="icon checkmark"></span></h3>
-      <div class="bubble approved normal"></div>
+      <div class="bubble approved normal" style="left:160px;"></div>
       <h5><%= @student.degree + '(' + @student.current_year + ' year out of ' + @student.length_of_program + ' years program)' %><span class="icon info-icon"> </span></h5>
       <div class="bubble tuition">
         <span class="money"><%= @student.total_annual_cost_of_attendance %></span>
@@ -39,7 +42,8 @@
       <div class="window profile">
         <div class="student-slider-pics">
           <ul>
-            <li>
+            <% if @student.link_of_video.length >= 105  %>
+              <li>
               <div class="image">
                 <%= @student.link_of_video.html_safe %>
               </div>
@@ -47,21 +51,26 @@
                 <h5>My cause</h5>
               </div>
             </li>
-            <li>
+          <% end %>
+          <% if  @student.p3 != nil %>
+          <li>
               <div class="image"><%= image_tag @student.p3.sliderdetail.url.to_s %>
             </div>
             <div class="caption">
               <h5>My classmates</h5>
             </div>
           </li>
+           <% end %>
+           <% if @student.p4 != nil %>
           <li>
             <div class="image"><%= image_tag @student.p4.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
             <h5>My family</h5>
           </div>
-        </li>
-      </ul>
+          </li>
+        <% end %>
+        </ul>
     </div>
   </div>
   <span class="pics arrow right"> </span>
