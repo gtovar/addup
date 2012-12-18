@@ -12,6 +12,7 @@ gem 'rmagick'
 gem 'mail_form'
 gem 'hominid'
 gem 'devise'
+gem 'addressable'
 
 # Gems used only for assets and not required
 # in production environments by default.
