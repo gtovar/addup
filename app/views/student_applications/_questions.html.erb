@@ -3,8 +3,15 @@
     <div class="span7">
       <label><strong>Briefly share how you will add up to your community</strong></label>
       <%= f.text_field :cause ,  :class => "input-xxlarge", :placeholder => "I will add up by…(20 word maximum)" %>
+     <label><strong>About me and my educational goals...</strong>
+        <%= f.text_area :answer1 , :rows => 10,  :class => "input-xxlarge" %>
+      </label>
+      <label><strong>Why I care about adding...</strong>
+        <%= f.text_area :answer2 , :rows => 10, :class => "input-xxlarge" %>
+      </label>
+      <br/>
       <div class ="controls">
-        <label><strong>Your sponsor for the community service project* </strong> </label>
+        <label><strong>Your sponsor for the community service project</strong></label>
         <span class="help-block">Name, title, e-mail and quote from a person from the organization / person that will be benefitted by your project or who knows you and your project firsthand.</span>
         <div class="controls controls-row" >
           <%= f.text_field :name_sponsor , :class => "input-large", :placeholder => "Name*"%>
@@ -13,13 +20,7 @@
         </div>
         <%= f.text_field :quote, :class => "input-xxlarge", :placeholder => "Quote*" %>
       </div>
-      <label><strong>About me and my educational goals...</strong>
-        <%= f.text_area :answer1 , :rows => 10,  :class => "input-xxlarge", :placeholder => "max 800 characters" %>
-      </label>
-      <label><strong>Why I care about adding...</strong>
-        <%= f.text_area :answer2 , :rows => 10, :class => "input-xxlarge", :placeholder => "max 800 characters" %>
-      </label>
-    </div>
+         </div>
 
     <div class="span5">
         <i class="icon-hand-right"></i><strong>&nbsp;Ideas of social community projects</strong>

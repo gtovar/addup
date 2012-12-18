@@ -13,7 +13,7 @@ attr_accessible :answer1, :answer2, :answer3, :cause, :crowdfundig_goal_usd, :cu
  mount_uploader :p9, ImageUploader
  mount_uploader :p10, ImageUploader
 
-validates :p1, :p2, :p3, :p4, :first_name, :last_name,:nationality,:city, :university, :crowdfundig_goal_usd, :time_frame, :quote, :job, :name_sponsor, :presence => true
+validates :p1, :p2, :p3, :p4, :first_name, :last_name,:nationality,:city, :university, :crowdfundig_goal_usd, :time_frame, :presence => true
 
 validates :answer1,:answer2, :length => {:maximum => 800}
 
