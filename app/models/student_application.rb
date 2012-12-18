@@ -20,7 +20,7 @@ validates :p1, :p2, :p3, :p4, :first_name, :last_name,:nationality,:city, :unive
 
 validates :answer1,:answer2, :length => {:maximum => 800}
 
-validates :crowdfundig_goal_usd, :numericality => {:only_integer => true, :greater_than => 100, :less_than => 10000}
+validates :crowdfundig_goal_usd, :numericality => {:greater_than => 100, :less_than => 10000}
 
 def youtube
   uri = Addressable::URI.parse(self.link_of_video)
