@@ -84,4 +84,8 @@ class HomeController < ApplicationController
     end
   end
 
+  def application
+
+  end
+
 end
