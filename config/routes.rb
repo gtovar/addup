@@ -20,6 +20,7 @@ Addup::Application.routes.draw do
   match "student_application" => 'student_applications#new', :as => :application
   resources :student_applications
   match 'panel' => 'control_panel#index', :as => :panel
+  match 'applynow' => 'home#application', :as => :applynow
   # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:
