@@ -23,7 +23,7 @@ class CreateStudentApplications < ActiveRecord::Migration
       t.string  :quote
       t.text    :answer1
       t.text    :answer2
-      t.integer :univesity_bank_account
+      t.string :univesity_bank_account
       t.integer :method_of_payment
       t.string  :pay_of_the_order_of
       t.string  :name_check
