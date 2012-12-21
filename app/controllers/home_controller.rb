@@ -84,8 +84,7 @@ class HomeController < ApplicationController
     end
   end
 
-  def application
+  def newform
 
   end
-
 end
