@@ -1,3 +1,4 @@
+
 <div class="center">
   <progress value="50%" max="200">50%</progress>
 <% payment_service_for "Donation #{@counts.to_s}" , 'matt@addup.org',
@@ -5,7 +6,7 @@
   :currency => 'USD',
   :service => :paypal,
   :html => { :id => 'paypal_details' } do |service| %>
-<!--
+<!--pro_1348679274_biz@hotmail.com 'matt@addup.org'
 service.customer :first_name => 'Alicia',
                      :last_name => 'Villareal',
                      :phone => 205-553-3278,
@@ -15,7 +16,7 @@ service.customer :first_name => 'Alicia',
 <% service.item_name       "#{@student.first_name}  #{@student.last_name}"
 service.invoice           @record.invoice
 service.tax                "0.00"
-service.return_url         url_for(success_path(params[:id]))
+service.return_url         url_for(success_url(params[:id]))
 service.cancel_return_url  url_for(:only_path => false, :controller => 'home', :action => 'landingpage') %>
 <% submit_tag 'Make Payment'%>
 <% end %>

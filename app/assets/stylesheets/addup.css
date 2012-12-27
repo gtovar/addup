@@ -1372,12 +1372,16 @@ color            : black;
 border           : none;
 border-radius    : 7px;
 cursor           : pointer;
-width            : 151px;
+width            : 150px;
 float            : left;
 margin-right     : 5px;
 border: #B3B3B3 solid 1px;
-
 }
+
+.last{
+ margin-right : -5px;
+}
+
 
 .guide h1 {
 text-align       : left;
@@ -1407,6 +1411,67 @@ float: left;
 .second-step{
   background-image : url('30px-08.png');
 }
+
+.three-step{
+  background-image : url('30px-12.png');
+}
+
+.four-step{
+  background-image : url('30px-02.png');
+}
+.five-step{
+  background-image : url('30px-29.png');
+}
+
+.custum-form{
+ height : 450px;
+ float: left;
+ width: 100%;
+ margin-top: 30px;
+}
+
+#start {
+ width: 100%;
+}
+
+#start ul
+{
+  margin-bottom: 87px;
+}
+
+#start ul li{
+display: block;
+background-image: url("30px-36.png");
+background-repeat: no-repeat;
+padding-left: 20px;
+background-size: 14px 14px;
+background-position: 3px;
+}
+
+.start-content-info{
+  width: 600px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+.start-content-contact{
+ background-color: #F8F8F8;
+ margin-top: 20px;
+  width: 300px;
+  float:right;
+  padding:5px;
+}
+
+
+.start-content-contact a {
+text-decoration: none;
+}
+
+.about-you{
+
+}
+
+
 
 [class^="icon-"],
 [class*=" icon-"] {
