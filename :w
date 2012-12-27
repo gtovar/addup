@@ -42,7 +42,7 @@
       <div class="window profile">
         <div class="student-slider-pics">
           <ul>
-            <% if @student.link_of_video  %>
+            <% if @student.link_of_video.length >= 2  %>
               <li>
               <div class="image">
                 <%= %{<iframe width="560" height="315" src="http://www.youtube.com/embed/#{@student.link_of_video}" frameborder="0" allowfullscreen></iframe>}.html_safe %>
