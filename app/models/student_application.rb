@@ -24,7 +24,9 @@ validates :crowdfundig_goal_usd, :numericality => {:greater_than => 100, :less_t
 
 def youtube
   uri = Addressable::URI.parse(self.link_of_video)
- self.link_of_video =  uri.query_values["v"].to_s
+if uri.query_values["v"].to_s
+  self.link_of_video =  uri.query_values["v"].to_s
+end
 end
 
 end
