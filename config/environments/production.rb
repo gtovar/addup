@@ -72,7 +72,7 @@ Addup::Application.configure do
  # :password => '9QD9TF6X6WP2JHNN',
  # :signature => 'FcWxV21C7fd0v3bYYYRCpSSRl31AP2pyV.V-zEP9C37J33DpJBpZQVW'
  # )
-  ActiveMerchant::Billing::Base.mode = :production
+  ActiveMerchant::Billing::Base.mode = :test
   ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
   :login => 'pro_1348679274_biz_api1.hotmail.com',
   :password => '1348679316',
