@@ -23,8 +23,9 @@ validates :answer1,:answer2, :length => {:maximum => 800}
 validates :crowdfundig_goal_usd, :numericality => {:greater_than => 100, :less_than => 10000}
 
 def youtube
-  uri = Addressable::URI.parse(self.link_of_video)
-if uri.query_values["v"].to_s
+
+if  Addressable::URI.parse(self.link_of_video)
+uri = Addressable::URI.parse(self.link_of_video)
   self.link_of_video =  uri.query_values["v"].to_s
 end
 end
