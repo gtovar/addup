@@ -4,7 +4,7 @@ class DonationsController < ApplicationController
   def ipn
     notify = Paypal::Notification.new(request.raw_post)
     donationstudent = Donation.find_by_invoice(notify.invoice)
-donationstudent.create(:status => 'Complete',:transaction_id => notify.transaction_id,:received_at => Date.today,:invoice => notify.invoice,:currency => notify.currency,:params => params)
+Donation.create(:status => 'Complete',:transaction_id => notify.transaction_id,:received_at => Date.today,:invoice => notify.invoice,:currency => notify.currency,:params => params)
     if notify.acknowledge
       begin
         if notify.complete? and donationstudent.invoice == notify.invoice
