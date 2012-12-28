@@ -16,7 +16,7 @@ service.customer :first_name => 'Alicia',
 <% service.item_name       "#{@student.first_name}  #{@student.last_name}"
 service.invoice           @record.invoice
 service.tax                "0.00"
-service.notify_url url_for(:only_path => false, :action => 'ipn', :controller => 'donations')
+service.notify_url url_for(ipn_url)
 service.return_url         url_for(success_url(params[:id]))
 service.cancel_return_url  url_for(:only_path => false, :controller => 'home', :action => 'landingpage') %>
 <% submit_tag 'Make Payment'%>
