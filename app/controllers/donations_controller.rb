@@ -19,6 +19,5 @@ class DonationsController < ApplicationController
       end
     end
 
-    render :nothing
   end
 end
