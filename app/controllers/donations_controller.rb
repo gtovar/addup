@@ -11,6 +11,11 @@ class DonationsController < ApplicationController
         else
           logger.error("Failed to verify Paypal's notification, please investigate")
         end
+      rescue => e
+        donationstudent.status = 'failed'
+        raise
+      ensure
+        donationstudent.save
       end
     end
 
