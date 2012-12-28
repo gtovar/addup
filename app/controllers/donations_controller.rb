@@ -15,7 +15,7 @@ class DonationsController < ApplicationController
         donation.status = 'Pending'
         raise
       ensure
-        @payment.save
+       # @payment.save
       end
     end
   end
