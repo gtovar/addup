@@ -3,7 +3,7 @@ class DonationsController < ApplicationController
 
   def ipn
     notify = Paypal::Notification.new(request.raw_post)
-    donationstudent = Donation.find_by_invoice(notify.invoice).where(status: 'Pending')
+    donationstudent = Donation.find_by_invoice_and_status(notify.invoice,'Pending')
     if notify.acknowledge
       begin
         if notify.complete? and donationstudent.invoice == notify.invoice
