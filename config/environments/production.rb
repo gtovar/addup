@@ -66,18 +66,18 @@ Addup::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   config.after_initialize do
- # ActiveMerchant::Billing::Base.mode = :production
- # ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
- # :login => 'matt_api1.addup.org',
- # :password => '9QD9TF6X6WP2JHNN',
- # :signature => 'FcWxV21C7fd0v3bYYYRCpSSRl31AP2pyV.V-zEP9C37J33DpJBpZQVW'
- # )
-  ActiveMerchant::Billing::Base.mode = :test
+  ActiveMerchant::Billing::Base.mode = :production
   ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
-  :login => 'pro_1348679274_biz_api1.hotmail.com',
-  :password => '1348679316',
-  :signature => 'AqZLhTZ21kbLi5GQVoo9uK7ZPaFLApfcv9XQNGEqUD9F2V0UDtz3btJh'
+  :login => 'matt_api1.addup.org',
+  :password => '9QD9TF6X6WP2JHNN',
+  :signature => 'FcWxV21C7fd0v3bYYYRCpSSRl31AP2pyV.V-zEP9C37J33DpJBpZQVW'
   )
+ # ActiveMerchant::Billing::Base.mode = :test
+ # ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+ # :login => 'pro_1348679274_biz_api1.hotmail.com',
+ # :password => '1348679316',
+ # :signature => 'AqZLhTZ21kbLi5GQVoo9uK7ZPaFLApfcv9XQNGEqUD9F2V0UDtz3btJh'
+ # )
 
   end
 end
