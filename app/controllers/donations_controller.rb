@@ -11,9 +11,6 @@ class DonationsController < ApplicationController
         else
           logger.error("Failed to verify Paypal's notification, please investigate")
         end
-      rescue => e
-        donationstudent.update_attributes(:status => 'failed')
-        raise
       end
     end
 
