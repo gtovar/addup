@@ -7,17 +7,18 @@ class DonationsController < ApplicationController
     if notify.acknowledge
       begin
         if notify.complete? and donationstudent.invoice == notify.invoice
-          donationstudent.update_attributes(:status => 'Complete',:transaction_id => notify.transaction_id,:received_at => Date.today,:invoice => notify.invoice,:currency => notify.currency,:params => params)
+         donationstudent.update_attributes(:status => 'Complete',:transaction_id => notify.transaction_id,:received_at => Date.today,:invoice => notify.invoice,:currency => notify.currency,:params => params)
         else
           logger.error("Failed to verify Paypal's notification, please investigate")
         end
       rescue => e
-        donationstudent.status = 'Pending'
+        donationstudent.status = 'failed'
         raise
       ensure
-       donationstudent.save
+        donationstudent.save
       end
     end
-  end
 
+    render :nothing
+  end
 end
