@@ -19,7 +19,7 @@ class Donation < ActiveRecord::Base
     record = true
     while record
       random = SecureRandom.hex(10)
-      record = self.class.where(:invoice => random).first
+      record = self.class.where(:invoice => random,:status => 'Pending').first
     end
     self.invoice = random if self.invoice.blank?
     self.invoice

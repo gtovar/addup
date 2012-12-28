@@ -70,7 +70,64 @@
           </div>
           </li>
         <% end %>
-        </ul>
+        <% if @student.p5 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p5.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>Hobbies</h5>
+          </div>
+          </li>
+        <% end %>
+        <% if @student.p6 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p6.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>Social cause</h5>
+          </div>
+          </li>
+        <% end %>
+        <% if @student.p7 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p7.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>About me</h5>
+          </div>
+          </li>
+        <% end %>
+        <% if @student.p8 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p8.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>Photo</h5>
+          </div>
+          </li>
+        <% end %>
+        <% if @student.p9 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p9.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>Photo</h5>
+          </div>
+          </li>
+        <% end %>
+        <% if @student.p10 != nil %>
+          <li>
+            <div class="image"><%= image_tag @student.p10.sliderdetail.url.to_s%>
+          </div>
+          <div class="caption">
+            <h5>Photo</h5>
+          </div>
+          </li>
+        <% end %>
+
+
+
+</ul>
     </div>
   </div>
   <span class="pics arrow right"> </span>
