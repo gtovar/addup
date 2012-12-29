@@ -97,7 +97,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p8.file.exists? %>
+        <% if !@student.p8.nil? && @student.p8.file.exists? %>
           <li>
             <div class="image"><%= image_tag @student.p8.sliderdetail.url.to_s%>
           </div>
