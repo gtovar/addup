@@ -70,7 +70,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p5 %>
+        <% if @student.p5.file? %>
           <li>
             <div class="image"><%= image_tag @student.p5.sliderdetail.url.to_s%>
           </div>
@@ -79,7 +79,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p6 %>
+        <% if @student.p6.file?%>
           <li>
             <div class="image"><%= image_tag @student.p6.sliderdetail.url.to_s%>
           </div>
@@ -88,7 +88,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p7 %>
+        <% if @student.p7.file? %>
           <li>
             <div class="image"><%= image_tag @student.p7.sliderdetail.url.to_s%>
           </div>
@@ -97,7 +97,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p8%>
+        <% if @student.p8.file?%>
           <li>
             <div class="image"><%= image_tag @student.p8.sliderdetail.url.to_s%>
           </div>
@@ -106,7 +106,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p9 %>
+        <% if @student.p9.file? %>
           <li>
             <div class="image"><%= image_tag @student.p9.sliderdetail.url.to_s%>
           </div>
@@ -115,7 +115,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p10 %>
+        <% if @student.p10.flie? %>
           <li>
             <div class="image"><%= image_tag @student.p10.sliderdetail.url.to_s%>
           </div>
