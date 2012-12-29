@@ -88,7 +88,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p7.file.exists? %>
+        <% unless @student.p7.nil? %>
           <li>
             <div class="image"><%= image_tag @student.p7.sliderdetail.url.to_s%>
           </div>
@@ -97,7 +97,7 @@
           </div>
           </li>
         <% end %>
-        <% if !@student.p8.nil? && @student.p8.file.exists? %>
+        <% unless @student.p8.nil?  %>
           <li>
             <div class="image"><%= image_tag @student.p8.sliderdetail.url.to_s%>
           </div>
@@ -115,7 +115,7 @@
           </div>
           </li>
         <% end %>
-        <% if @student.p10.file.exists? %>
+        <% unless @student.p10.nil? %>
           <li>
             <div class="image"><%= image_tag @student.p10.sliderdetail.url.to_s%>
           </div>
