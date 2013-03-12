@@ -1337,12 +1337,12 @@ div.blurr span {
 #ticker {
   width: 610px;
   margin: 30px auto 60px auto;
-  height: 120px;
+  height: 150px;
   overflow: hidden;
 }
 
 #ticker li {
-  height: 100px;
+  height: 130px;
 }
 
 .alert {
