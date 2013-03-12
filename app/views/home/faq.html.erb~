@@ -1,8 +1,26 @@
 <div class="center">
-<h3 class="top-space">
+<h1 class="top-space">
 Add Up FAQ’s
-</h3>
-<h4>(Updated 02/03/2013)</h4>
+</h1>
+      <div id="accordion2" class="accordion">
+        <div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Short on Time? Do it Online!</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseOne">
+            <div class="accordion-inner">
+              <ul>
+                <li>Subtitles for<a data-original-title="Visit Official Site" href="http://www.khanacademy.org/contribute" rel="tooltip" data-placement="bottom" target="_blank" id="tooltip"> Kahn Academy Videos </a>Create an online pledge or petition for your social cause. (i.e Stop Bullying:Speak Up at Facebook)</li>
+                <li>Commit to use social network to promote your social cause via daily, weekly or monthly posts.</li>
+                <li>Start a social media campaign for your cause.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+<p>Last modified: 02/03/2013</p>
 <h5>Why Add Up was created?</h5>
 <p>Add Up seeks to recognize and motivate the community service efforts of international students studying for their higher education degrees in the US.</p>
 <p>Many intelligent and talented students earn their degrees and yet lack the confidence to utilize their skills and abilities in ways that can make a positive impact on their society. With the incentive of getting complementary funds towards their university’s cost of attendance, Addup.org invites students to reflect on and identify their skills and abilities, what change they are passionate about making in their community, and how they can use those talents to contribute to that change. The tangible benefit may come in dollar signs, but the security gained from knowing that people believe in them and their capacity to have a positive impact on others is the real reward that carries on.</p>
@@ -73,7 +91,7 @@ Students
 <h5>Do I have to repay the money I receive through Add Up?</h5>
 <p>Not entirely. Though the money collected through AddUp.org is a donation/gift from sponsors, you pledge to donate at least 40% of what you raise to other students through Add Up in the future (within 5 years of graduating) by signing the Honor Code. This is how Add Up encourages sponsors to be more generous with their donations, since they know that their donation will carry on.</p>
 <h5>What happens if I don’t fulfill my commitments?</h5>
-<p>Legally, nothing. However, Add Up takes your personal commitment and Honor Code seriously. If you wish to use Add Up to raise money in the future, you will not be allowed to do so. We will publish on the website and in our newsletters updates of students who have fulfilled their commitments, so your sponsors, family and friends will know whether you fulfilled them or not. It is common courtesy and a way to maintain good relationships to follow through on your commitments.</p> 
+<p>Legally, nothing. However, Add Up takes your personal commitment and Honor Code seriously. If you wish to use Add Up to raise money in the future, you will not be allowed to do so. We will publish on the website and in our newsletters updates of students who have fulfilled their commitments, so your sponsors, family and friends will know whether you fulfilled them or not. It is common courtesy and a way to maintain good relationships to follow through on your commitments.</p>
 <h3>Sponsors</h3>
 <h5>Why should I add up to someone's education?</h5>
 <p>Maybe you are a family member or friend (or friend of a friend) of a student and you would like to empower them in their educational and service endeavors.</p>
@@ -133,3 +151,6 @@ Add Up 101
 <p>Once your campaign launches, utilize the social media tools available through Add Up. Copy the link to your student profile page to a Tweet, Google+ or Facebook post and ask your friends to share it with their friends. Better yet, utilize the Causes app on Facebook (http://www.causes.com/?</h5>utm_campaign=canvas&utm_medium=canvas&utm_source=fb) and copy a link to your Add Up page in the description.</p>
 <p>Spread the word the old fashioned way and talk to everyone you know whom you might not reach through social media. </p>
 <p>Write an update every few days to build excitement and encourage your sponsors to continue reaching out to their networks. Whether it’s because of who you are or how you’re planning to add up, people will want to help. Remember - stay engaged!</p>
+      </div>
+
+</div>

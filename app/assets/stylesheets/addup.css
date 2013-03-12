@@ -67,6 +67,10 @@ div.header div.center{
     margin: 0 auto;
     height: 100%;
 }
+
+div.center h5 {
+  color: #3AA0BB;
+}
 ul{
     list-style: none;
 }
