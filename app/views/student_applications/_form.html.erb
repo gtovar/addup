@@ -17,6 +17,8 @@
     <%= render :partial => "files",:locals => {:f => f} %>
     <%= render :partial => "questions",:locals => {:f => f} %>
     <%= render :partial => "payment",:locals => {:f => f} %>
+    <%= render :partial => "honor", :locals => {:f => f} %>
+    <%= render :partial => "fee", :locals => {:f => f} %>
 
   </div><!-- Close tab content -->
 
@@ -30,8 +32,8 @@
 <br/><br/>
 <br/>
 <br/>
-
 <%end%>
+
 <script>
    $('#submit').hide();
    $('#basic').click(function (e) {
@@ -57,6 +59,20 @@
    $(this).tab('show');
    $('#submit').show();
  });
+
+ $('#honor').click(function (e) {
+   e.preventDefault();
+   $(this).tab('show');
+   $('#submit').show();
+ });
+
+ $('#fee').click(function (e) {
+   e.preventDefault();
+   $(this).tab('show');
+   $('#submit').show();
+ });
+
+
 
  $('#check').hide();
  $('#wire').hide();

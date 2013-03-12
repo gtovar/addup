@@ -581,6 +581,7 @@ a:hover {
 
 p {
   margin: 0 0 10px;
+text-align: justify;
 }
 
 .lead {
@@ -5773,37 +5774,85 @@ a.badge:hover {
   position: fixed;
 }
 
-.custumheader{
-  background-image: url('header.png') ;
-  height: 87px;
-  width: 100% ;
-  background-position: 0px 17px;
-background-repeat: no-repeat;
-margin-bottom:10px;
-}
+/*
+ * RESET
+ *******/
+html,body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,p,blockquote,fieldset,input,hr {margin:0; padding:0;font-weight:normal;}
+h1,h2,h3,h4,h5,h6,pre,code,address,caption,cite,code,em,strong,th {font-size:1em; font-weight:normal; font-style:normal;}
+ul,ol {list-style:none;}
+fieldset,img,hr {border:none;}
+caption,th {text-align:left;}
+table {border-collapse:collapse; border-spacing:0;}
+td {vertical-align:top;}
+
+/*
+ * GENERAL
+ *********/
+body{font-family: 'Istok Web', sans-serif;
+	font-size:100%;
+color: #41474C;}
+h1{font-size: 48px;font-family: inherit}
+h2{font-size: 36px;font-family: inherit}
+h3{font-size: 24px;font-family: inherit;clear: left;}
+h4{font-size: 21px;font-family: inherit}
+h5{font-size: 18px;font-family: inherit;clear: both;}
+h6{font-size: 14px;font-family: inherit}
+.top-space{margin-top: 20px;}
+p{font-size: 14px;font-family: inherit;margin-top: 7px;}
+.bold{font-weight:bold;}
 
 
-.f1{
-    margin-top: 50px;
-    background-color: #41474C;
-    font-size: 14px;
-    height: 40px;
-    padding-top: 10px;
-    display: block;
+.header{
+    color: #C0262C;
     width: 100%;
+    height: 94px;
+}
+.header a{
+    color: #C0262C;
+    font-size: 14px;
+    text-decoration: none;
+}
+a:hover{text-decoration:underline}
+.header ul{
+    width: 960px;
+    border: none;
+    position: absolute;
+    left: 0px;
+    top: 17px;
+}
+.header li{
+    width: 187px;
+    padding-left: 0;
+}
+div.header div.center{
+    background: url('header.png') no-repeat left center;
+    position: relative;
+}
+.logo-head{
+    width: 130px;
+    display: inline;
     float: left;
-    color: #cccccc;
+}
+.center{
+    width: 960px;
+    margin: 0 auto;
+    height: 100%;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.li1{}
+.li2{}
+.li3{}
+.li4{
+    text-align: right;
 }
 
-
-ul li {
-display: inline-block;
-margin: 0;
-}
-
-ul {
-    list-style: none outside none;
-}
 .footer{
     margin-top: 50px;
     background-color: #41474C;
@@ -5827,12 +5876,6 @@ ul {
 .footer p{
 }
 .copyright{font-size: 12px;margin-top: 20px;}
-
-.center{
-    width: 960px;
-    margin: 0 auto;
-    height: 100%;
-}
 
 .errores ul li{
   display: block;

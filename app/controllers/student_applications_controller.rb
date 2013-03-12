@@ -20,7 +20,7 @@ before_filter :authenticate_admin!, :only => [:index,:destroy]
     @student_application = StudentApplication.find(params[:id])
 
     respond_to do |format|
-      format.html { render :layout => "forms" } # show.html.erb
+      format.html # show.html.erb
       format.json { render json: @student_application }
     end
   end
@@ -31,7 +31,7 @@ before_filter :authenticate_admin!, :only => [:index,:destroy]
     @student_application = StudentApplication.new
 
     respond_to do |format|
-      format.html { render :layout => "forms"} # new.html.erb
+      format.html # new.html.erb
       format.json { render json: @student_application }
     end
   end
@@ -51,7 +51,7 @@ before_filter :authenticate_admin!, :only => [:index,:destroy]
         format.html { redirect_to student_path(@student_application), notice: ' Share with everyone on facebook and twitter your student application was successfully created.' }
         format.json { render json: @student_application, status: :created, location: @student_application }
       else
-        format.html { render action: "new", :layout => "forms" }
+        format.html { render action: "new" }
         format.json { render json: @student_application.errors, status: :unprocessable_entity }
       end
     end

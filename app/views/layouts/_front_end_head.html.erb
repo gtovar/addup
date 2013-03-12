@@ -1,25 +1,16 @@
 <link href='http://fonts.googleapis.com/css?family=Istok+Web' rel='stylesheet' type='text/css'>
 <meta charset="utf-8" />
-<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
-<%= stylesheet_link_tag "addup" %>
 <%= favicon_link_tag "favicon.ico" %>
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-Remove this if you use the .htaccess -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <!--To make html5 compatible with old browsers-->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
-
-<title>Add Up - Crowdscholarships that carry on</title>
+<title> <%= yield :title %></title>
 <meta name="description" content="Add Up is a crowdscholarships platform for students to raise funds for their graduate studies in USA top universities." />
 <meta name="author" content="Add Up - Crowdscholarships LLC" />
-
 <meta name="viewport" content="width=device-width; initial-scale=1.0" />
 
 <!-- Javascript load -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<%= javascript_include_tag "addup" %>
 

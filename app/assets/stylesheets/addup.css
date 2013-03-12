@@ -507,6 +507,7 @@ img.sponsor{}
     display: block;
     background-color: #41474c;
     color: white;
+    margin-top: 25px;
 }
 .summary{
     width: 425px;
@@ -516,6 +517,7 @@ img.sponsor{}
 .summary h2{
     font-size: 31px;
     font-weight: bold;
+    line-height: 35px;
 }
 .summary ol{}
 .summary li{}
@@ -1323,25 +1325,24 @@ div.blurr span {
 .picture img{
     width: 100%;
 }
+
 .half{
     width: 400px;
-
     float: left;
 }
 
 .twitter-share-button{}
 .left-align{float:left}
 
-
-
 #ticker {
   width: 610px;
-  margin:0 auto 0 auto;
-  height: 100px;
+  margin: 30px auto 60px auto;
+  height: 120px;
   overflow: hidden;
 }
+
 #ticker li {
-  height: 80px;
+  height: 100px;
 }
 
 .alert {
@@ -1531,3 +1532,4 @@ text-decoration: none;
 .icon-star {
   background-position: -120px 0;
 }
+

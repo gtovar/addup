@@ -1,6 +1,17 @@
 <% content_for :title do %>
   Student application
 <% end %>
+<%= content_for :header do %>
+ <li class="li1"></li>
+  <li class="li2"></li>
+  <li class="li3"> </li>
+  <li class="li4">Student Application</li>
+<% end %>
+
+<%= content_for :javascripts do %>
+  <%= stylesheet_link_tag    "bootstrap", :media => "all" %>
+  <%= javascript_include_tag "bootstrap" %>
+<% end %>
 
 <div class="center">
   <ul class="nav nav-tabs" id="myTab">
@@ -8,6 +19,8 @@
     <li><a href="#questions" data-toggle="tab">Questions <span class="badge badge-info">2</span></a></li>
     <li><a href="#fs" data-toggle="tab">Files <span class="badge badge-info">3</span></a></li>
     <li><a href="#payment" data-toggle="tab">Payment  <span class="badge badge-info">4</span></a></li>
+    <li><a href="#honor" data-toggle="tab">Honor code <span class="badge badge-info">5</span></a></li>
+    <li><a href="#fee" data-toggle="tab">Aplication fee <span class="badge badge-info">6</span></a></li>
   </ul>
   <%= render 'form' %>
 </div>

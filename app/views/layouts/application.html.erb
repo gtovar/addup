@@ -3,17 +3,25 @@
   <head>
     <%= render "layouts/front_end_head" %>
     <%= yield :javascripts %>
-  </head>
+    <%= render :partial => 'layouts/addupassets' unless content_for? :javascripts %>
+ </head>
   <body>
     <% if alert != nil %>
       <p class = "alert"><%= alert %></p>
     <% end %>
-    <% if  params[:action] != "landingpage" %>
-      <%= render "layouts/front_end_header" %>
-   <% end %>
-    <%= yield %>
+    <div class="header">
+      <div class="center">
+        <ul>
+          <li class="li0"><%= link_to image_tag('logo.png'),root_path %></li>
+          <%= yield :header %>
+          <%= render :partial => 'layouts/front_end_header'unless content_for? :header %>
+        </ul>
+      </div>
+    </div>
+      <div class="container">
+        <%= yield %>
+      </div>
     <%= render "layouts/front_end_footer" %>
     <%= yield :scripts %>
-
   </body>
 </html>

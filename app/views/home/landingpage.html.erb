@@ -1,38 +1,37 @@
-<% content_for :javascripts do %>
-
+<% content_for :title do %>
+  Add Up - Crowdscholarships that carry on
 <% end %>
-
 <div class="center">
-  <%= image_tag "logo.png", :class=>"logo", :alt=>"ADD UP" %>
-  <%= render "banner" %>
-  <h1 class="action-text bold start">Start Adding Up!</h1>
-  <%= render "slider" %>
-  <% if @random != nil %>
-   <ul id="ticker">
-   <% @random.each do |q| %>
-    <li>
-       <p class="quote">"<%= q.quote  %>"</p>
-       <h5 class="quote">- <%= "#{q.name}, #{q.jobp}, #{q.job}"  %></h5>
-     </li>
-  <% end %>
-  </ul>
- <% else %>
-    <p class="quote">"Your Favorite Quote"</p>
-    <h5 class="quote">- Owner quote  %></h5>
-  <%end%>
-  <%= render "notified1" %>
-  <%= render "notified" %>
+<% image_tag "logo.png", :class=>"logo", :alt=>"ADD UP" %>
+<%= render "banner" %>
+<h1 class="action-text bold start">Start Adding Up!</h1>
+<%= render "slider" %>
+<% if @random != nil %>
+       <ul id="ticker">
+       <% @random.each do |q| %>
+         <li>
+         <p class="quote">"<%= q.quote  %>"</p>
+         <h5 class="quote">- <%= "#{q.name}, #{q.jobp}, #{q.job}"  %></h5>
+         </li>
+       <% end %>
+       </ul>
+     <% else %>
+       <p class="quote">"Your Favorite Quote"</p>
+       <h5 class="quote">- Owner quote  %></h5>
+     <%end%>
+     <%= render "notified1" %>
+     <%= render "notified" %>
 
-</div>
+   </div>
 
-<% content_for :scripts do %>
-  <script>
-function tick(){
-	$('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
-}
-setInterval(function(){ tick () }, 5000);
-</script>
-<% end %>
+   <% content_for :scripts do %>
+     <script>
+       function tick(){
+         $('#ticker li:first').slideUp( function () { $(this).appendTo($('#ticker')).slideDown(); });
+       }
+       setInterval(function(){ tick () }, 5000);
+     </script>
+   <% end %>
 
 
 
