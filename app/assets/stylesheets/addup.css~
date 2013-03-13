@@ -23,7 +23,7 @@ body{font-family: 'Istok Web', sans-serif;
 	font-size:100%;
 color: #41474C;}
 h1{font-size: 48px;font-family: inherit}
-h2{font-size: 36px;font-family: inherit}
+h2{font-size: 36px;font-family: inherit; line-height: 35px;}
 h3{font-size: 24px;font-family: inherit;clear: left;}
 h4{font-size: 21px;font-family: inherit}
 h5{font-size: 18px;font-family: inherit;clear: both;}
@@ -67,6 +67,10 @@ div.header div.center{
     margin: 0 auto;
     height: 100%;
 }
+
+div.center h5 {
+  color: #3AA0BB;
+}
 ul{
     list-style: none;
 }
@@ -76,7 +80,7 @@ ul li{
     padding: 0;
 }
 .li1{}
-.li2{}       
+.li2{}
 .li3{}
 .li4{
     text-align: right;
@@ -104,7 +108,7 @@ ul li{
 .footer a:hover{text-decoration:underline}
 .footer p{
 }
-.copyright{font-size: 12px;margin-top: 20px;}	     
+.copyright{font-size: 12px;margin-top: 20px;}
 
 
 .info-color{color: #3AA0BB}
@@ -122,7 +126,7 @@ form{
     margin-bottom: 40px;
     display: block;
     clear: both;
-}     	
+}
 label{
     display: block;
     font-size: 14px;
@@ -134,7 +138,7 @@ form input[type="text"], form input[type="password"], form select, form textarea
     display: block;
     margin-top: 3px;
     padding-left: 6px;
-}   	
+}
 input[type="text"] {
     width: 280px;
     height: 28px;
@@ -159,7 +163,7 @@ input[type="submit"] {}
     display: block;
     clear: both;
 }
-.team h5{}	 
+.team h5{}
 .member{
     float: left;
     margin: 10px 40px 10px 0;
@@ -171,7 +175,7 @@ input[type="submit"] {}
 }
 .sidebar{
     float: left;
-    
+
     width: 230px;
     height: auto;
     border: none;
@@ -199,8 +203,8 @@ input[type="submit"] {}
     padding-bottom: 7px;
     display: block;
 }
- 			 
- 
+
+
 .student-stats{
     position: relative;
 }
@@ -218,7 +222,7 @@ ol.choose-rewards li{
 }
 .choose-rewards h5{}
 .choose-rewards h6{
-   
+
 }
 .money-input{
     border-radius: 7px;
@@ -237,7 +241,7 @@ ol.choose-rewards li{
 }
 form input[type='text'].super-input{
     height: auto;
-	
+
     font-size: 48px;
     line-height: 1em;
     border-radius: 5px;
@@ -248,10 +252,10 @@ form input[type='text'].super-input{
 }
 .tiny-tip{
      color: white;
-    
-    
+
+
      vertical-align: middle;
-    
+
      display: inline-block;
      margin-top: -25px;
 }
@@ -321,7 +325,7 @@ input[type="radio"] {}
 .faqs{}
 h6.faqs{
     color: #999999;
-} 
+}
 ul.faqs{}
 li.faq{}
 .faq-question{}
@@ -330,7 +334,7 @@ li.faq{}
 .icon-expand{
     width: 13px;
     height: 10px;
-    display: inline-block;    
+    display: inline-block;
     vertical-align: top;
     margin-top: 6px;
 }
@@ -404,7 +408,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 }
 .recomendations{
     width: 960px;
-	
+
     height: 290px;
     background-color: #F7F7F7;
     position: relative;
@@ -448,7 +452,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     height: auto;
     float: right;
     margin-right: 50px;
-} 
+}
 .recomendations h3{}
 .highlight{color: #C0262C;display: block;clear: both;}
 .recomended-stats{
@@ -472,11 +476,11 @@ p.blurred{
 .recomendations p{
     margin-left: 8px;
     margin-top: 3px;
-} 
+}
 .recomendations p.desc{
     font-size: 14px;
     margin-bottom: 10px;
-} 					 
+}
 .progress{
     position: relative;
     width: 250px;
@@ -507,6 +511,7 @@ img.sponsor{}
     display: block;
     background-color: #41474c;
     color: white;
+    margin-top: 25px;
 }
 .summary{
     width: 425px;
@@ -516,6 +521,7 @@ img.sponsor{}
 .summary h2{
     font-size: 31px;
     font-weight: bold;
+    line-height: 35px;
 }
 .summary ol{}
 .summary li{}
@@ -555,28 +561,28 @@ img.sponsor{}
     display: inline-block;
     margin: 0 -5px -7px 0px;
     padding: 0;
-    
-   
- 
+
+
+
 }
 
 
 .mosaic	a {
     margin: 0;
-} 
+}
 .mosaic img{
     height: 100px;
     width: 100px;
 }
-  
+
 
 /*
- * flip css 
+ * flip css
  ***********/
 
 .f1_container {
   position: relative;
- 
+
   width: 100px;
   height: 100px;
   z-index: 1;
@@ -587,16 +593,16 @@ img.sponsor{}
 .f1_card {
   width: 100%;
   height: 100%;
-  	
+
   -webkit-transform-style:preserve-3d;
 	-moz-transform-style:preserve-3d;
 	  -o-transform-style:preserve-3d;
   transform-style: preserve-3d;
-  
-   
+
+
   -webkit-transition: all 1s linear;
 	  -moz-transition:all 1.0s linear;
-	  -o-transition:all 1.0s linear;	  
+	  -o-transition:all 1.0s linear;
   transition: all 1.0s linear;
 }
 .f1_container:hover .f1_card {
@@ -604,13 +610,13 @@ img.sponsor{}
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
- 
+
 }
 .face {
   position: absolute;
   width: 100%;
   height: 100%;
-   
+
   -webkit-backface-visibility:hidden;
   -moz-backface-visibility:hidden;
   -o-backface-visibility:hidden;
@@ -618,12 +624,12 @@ img.sponsor{}
 }
 .face.back {
   display: block;
-   
+
   -webkit-transform:rotateY(180deg);
   -moz-transform:rotateY(180deg);
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
-   
+
 }
 /*
  * landing
@@ -644,7 +650,7 @@ h5.quote{
     height: 160px;
     margin: auto;
     text-align: center;
-  
+
     position:relative;
     overflow: hidden;
     }
@@ -676,11 +682,11 @@ h5.quote{
 }
 .prospects input[type="submit"].next{
     padding: 9px 14px;
-	
+
 }
 .get-notified{
     margin-top: 20px;
- 
+
 }
 .slider-questions{
     height: 1220px;
@@ -703,7 +709,7 @@ h5.quote{
     margin-top: 10px;
     padding: 15px 20px;
     font-weight: normal;
-} 
+}
 .need-funding{}
 .need-funding h6{
     padding-top: 30px;
@@ -712,12 +718,12 @@ h5.quote{
     margin-top: 6px;
     display: inline-block;
 }
-        
+
 .window{
-    
+
     overflow: hidden;
     margin: auto;
-    
+
     position: relative;
 }
 .recomendations .window{
@@ -738,11 +744,11 @@ h5.quote{
 }
 .right:hover{
     background: url('sprite.png') -2px -584px;
-    
+
 }
 .right:active{
     background: url('sprite.png') -2px -656px;
-    
+
 }
 .left{
     background: url('sprite.png') 0 -296px;
@@ -765,8 +771,7 @@ h5.quote{
  *********/
 .bubble{
     position: absolute;
-    bottom: 119px;
-    left: 305px;
+    bottom: 100px;
 }
 .tuition{
     background: url('bubbles.png') 0 -65px no-repeat;
@@ -784,7 +789,7 @@ h5.quote{
     margin: 15px auto -14px -10px;
 }
 .approved{
-    
+
     width: 148px;
     height: 48px;
     z-index: 10;
@@ -799,8 +804,8 @@ div.recomendations .approved.reflect{
 	  top: 32px;
 }
 div.student-stats .approved{
-	  left: 162px;
-    top: 26px;
+  left: 138px;
+  top: 26px;
 }
 div.verified-by-addup .approved{
     right: 105px;
@@ -812,7 +817,7 @@ div.verified-by-addup .approved{
   -o-transform:rotateY(180deg);
   transform: rotateY(180deg);
 }*/
-			 
+
 
 /*
  * STUDENT DETAIL
@@ -834,7 +839,7 @@ div.verified-by-addup .approved{
 }
 .profile{}
 .student-slider-pics{
-    width: 2160px;
+    width: 5800px;
     position: absolute;
 }
 .student-slider-pics ul{}
@@ -867,11 +872,11 @@ div.verified-by-addup .approved{
 }
 .student-slider-pics .caption{
     background-color: #E6E6E6;
-}	
+}
 .caption h5{
     text-align: center;
     margin-top: 7px;
-} 
+}
 
 .share-box-wrap{}
 .share-box-wrap ul{}
@@ -967,7 +972,7 @@ div.important img{
     margin-top: 0;
 }
 .verified-by-addup a{
-    
+
     margin-left: 5px;
 }
 .sidebar-profile{}
@@ -987,7 +992,7 @@ div.important img{
 .block ol{}
 .block li{}
 .block li a{
-    
+
 }
 .block p{
     font-size: 12px;
@@ -1004,19 +1009,19 @@ div.important img{
 }
 .go-to-rewards{
 	display: block;
-    
+
 	width: 165px;
-    
+
 	margin: 10px auto 3px auto;
 	font-size: 16px;
 	text-decoration: none;
 	text-align: center;
 	padding: 9px 14px;
-	
+
 }
 .go-to-rewards:hover{
 	text-decoration: none;
-	
+
 }
 .how-it-works{
 	color:#3AA0BB;
@@ -1097,7 +1102,7 @@ div.important img{
 .reward-side ol{
     padding-bottom: 10px;
     padding-top: 10px;
-} 
+}
 .reward-side li{}
 .reward-side ol li{
     display: inline-block;
@@ -1159,7 +1164,7 @@ ul.symbol-line li{
 
 .blurr {}
 div.blurr span {
-	 
+
 }
 #blurry{}
 .msg-box{
@@ -1185,7 +1190,7 @@ div.blurr span {
 }
 .msg-header h1 span{}
 .msg-textarea{
-	
+
 }
 .msg-textarea label{}
 .msg-textarea input{}
@@ -1241,7 +1246,7 @@ div.blurr span {
     position: absolute;
     width: 184px;
     height: 15px;
-    bottom: 190px;
+    bottom: 170px;
     left: 50%;
     margin-left: -92px;
 }
@@ -1278,7 +1283,7 @@ div.blurr span {
     font-weight: bold;
     line-height: 2em;
 }
-.number{color: #3AA0BB;font-size: 24px;font-weight: bold;top: 0px;vertical-align: middle;}
+.number{color: #3AA0BB;font-size: 24px;font-weight: bold;top: 0px;vertical-align: middle;font-size:18px;margin-right: 2px;}
 #step1{}
 #step2{}
 #step3{}
@@ -1303,7 +1308,7 @@ div.blurr span {
 }
 .how-step p{
     color: #41474C;
-    width: 642px;
+    width: 650px;
     margin: 0 auto;
 }
 #how1{}
@@ -1324,11 +1329,300 @@ div.blurr span {
 .picture img{
     width: 100%;
 }
+
 .half{
     width: 400px;
-	
     float: left;
 }
 
 .twitter-share-button{}
 .left-align{float:left}
+
+#ticker {
+  width: 610px;
+  margin: 30px auto 60px auto;
+  height: 150px;
+  overflow: hidden;
+}
+
+#ticker li {
+  height: 130px;
+}
+
+.alert {
+  padding: 8px 35px 8px 14px;
+  margin-bottom: 20px;
+  color: #c09853;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  background-color: #fcf8e3;
+  border: 1px solid #fbeed5;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.alert-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border-color: #d6e9c6;
+}
+
+/*
+ * style gilberto
+ **************/
+
+.guide{
+padding          : 10px 18px;
+color            : black;
+border           : none;
+border-radius    : 7px;
+cursor           : pointer;
+width            : 150px;
+float            : left;
+margin-right     : 5px;
+border: #B3B3B3 solid 1px;
+}
+
+.last{
+ margin-right : -5px;
+}
+
+
+.guide h1 {
+text-align       : left;
+font-size        : 13px;
+font-weight      : bold ;
+float: left;
+}
+
+.guide h2 {
+text-align       : left;
+font-size        : 10px;
+font-weight      : bold ;
+float: left;
+}
+
+.master-step {
+  margin           : 0 auto 5px auto;
+  width            : 25px;
+  height           : 25px;
+  background-size  : 25px 25px;
+}
+
+.first-step{
+  background-image : url('30px-40.png');
+}
+
+.second-step{
+  background-image : url('30px-08.png');
+}
+
+.three-step{
+  background-image : url('30px-12.png');
+}
+
+.four-step{
+  background-image : url('30px-02.png');
+}
+.five-step{
+  background-image : url('30px-29.png');
+}
+
+.custum-form{
+ height : 450px;
+ float: left;
+ width: 100%;
+ margin-top: 30px;
+}
+
+#start {
+ width: 100%;
+}
+
+#start ul
+{
+  margin-bottom: 87px;
+}
+
+
+
+.start-content-info{
+  width: 600px;
+  margin-bottom: 50px;
+  float:left;
+}
+
+.start-content-contact{
+ background-color: #F8F8F8;
+ margin-top: 20px;
+  width: 300px;
+  float:right;
+  padding:5px;
+}
+
+
+.start-content-contact a {
+text-decoration: none;
+}
+
+.about-you{
+
+}
+
+
+
+[class^="icon-"],
+[class*=" icon-"] {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-top: 1px;
+  *margin-right: .3em;
+  line-height: 14px;
+  vertical-align: text-top;
+  background-image: url("img/glyphicons-halflings.png");
+  background-position: 14px 14px;
+  background-repeat: no-repeat;
+}
+
+/* White icons with optional class, or on hover/active states of certain elements */
+
+.icon-white,
+.nav-tabs > .active > a > [class^="icon-"],
+.nav-tabs > .active > a > [class*=" icon-"],
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"] {
+  background-image: url("img/glyphicons-halflings-white.png");
+}
+
+.icon-white,
+.nav-tabs > .active > a > [class^="icon-"],
+.nav-tabs > .active > a > [class*=" icon-"],
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"] {
+  background-image: url("img/glyphicons-halflings-white.png");
+}
+
+.icon-chevron-right {
+  margin-top: 2px;
+  background-position: -456px -72px;
+  float: right;
+}
+
+
+.icon-star {
+  background-position: -120px 0;
+}
+
+
+.hiw{
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 100%;
+margin-bottom: 40px;
+}
+.hiw h1{}
+.hiw div{}
+.how-step2{
+width: 780px;
+margin-top: 60px;
+position: absolute;
+left: 0px;
+top: 10px;
+margin-left: 152px;
+display: block !important;
+margin-bottom: 150px;
+float: left;
+}
+.diagram{
+    margin-left: 25px;
+    display: inline-block;
+}
+.how-step2 h2{
+font-size: 40px;
+color: #3AA0BB;
+margin-bottom: 9px;
+float: left;
+width: 500px;
+}
+.how-step2 span{}
+.how-step2 p{
+font-size: 16px;
+color: #767574; 
+line-height: 23px;
+float: left;
+width: 500px;
+}
+.row{
+    display: block !important;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.how-step2 img{
+    vertical-align: top;
+    width: 255px;
+}
+.numeracion{
+height: 330px;
+font-size: 310px;
+display: inline-block;
+zoom: 1;
+color: #e8e6d9;
+vertical-align: top;
+margin-left: -20px;
+}
+#row1{}
+#row2{
+    height: 390px;
+}
+#row3{
+    margin-bottom: 30px;
+}
+#row4{
+    height: 400px;
+}
+#row5{
+    height: 475px;
+}
+#row6{
+    height: 500px;
+}
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+ 
+.clearfix {
+display: inline-block;
+}
+ 
+html[xmlns] .clearfix {
+display: block;
+}
+ 
+* html .clearfix {
+height: 1%;
+}
+

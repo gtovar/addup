@@ -92,4 +92,6 @@ class HomeController < ApplicationController
       format.html
     end
   end
+  def introduction
+  end
 end

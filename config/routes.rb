@@ -22,7 +22,8 @@ Addup::Application.routes.draw do
   match 'panel' => 'control_panel#index', :as => :panel
   match 'newform' => 'home#newform', :as => :newform
   match "faq" => 'home#faq', :as => :faq
-  # The priority is based upon order of creation:
+match 'introduction' => 'home#introduction', :as => :introduction
+# The priority is based upon order of creation:
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

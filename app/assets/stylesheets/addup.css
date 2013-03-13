@@ -23,7 +23,7 @@ body{font-family: 'Istok Web', sans-serif;
 	font-size:100%;
 color: #41474C;}
 h1{font-size: 48px;font-family: inherit}
-h2{font-size: 36px;font-family: inherit}
+h2{font-size: 36px;font-family: inherit; line-height: 35px;}
 h3{font-size: 24px;font-family: inherit;clear: left;}
 h4{font-size: 21px;font-family: inherit}
 h5{font-size: 18px;font-family: inherit;clear: both;}
@@ -409,7 +409,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 .recomendations{
     width: 960px;
 
-    height: 290px;
+    height: 320px;
     background-color: #F7F7F7;
     position: relative;
 }
@@ -428,7 +428,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     background: white;
     box-shadow: 0 0 9px #666;
     border-radius: 6px;
-    height: 230px;
+    height: 260px;
     cursor: pointer;
     margin-left: 25px;
 }
@@ -1234,7 +1234,7 @@ div.blurr span {
 .how{
     position: relative;
     width: 960px;
-    height: 750px;
+    height: 100%;
 }
 .how .arrow{
     top: 38%;
@@ -1444,14 +1444,7 @@ float: left;
   margin-bottom: 87px;
 }
 
-#start ul li{
-display: block;
-background-image: url("30px-36.png");
-background-repeat: no-repeat;
-padding-left: 20px;
-background-size: 14px 14px;
-background-position: 3px;
-}
+
 
 .start-content-info{
   width: 600px;
@@ -1535,5 +1528,101 @@ text-decoration: none;
 
 .icon-star {
   background-position: -120px 0;
+}
+
+
+.hiw{
+margin-left: auto;
+margin-right: auto;
+display: block;
+width: 100%;
+margin-bottom: 40px;
+}
+.hiw h1{}
+.hiw div{}
+.how-step2{
+width: 780px;
+margin-top: 60px;
+position: absolute;
+left: 0px;
+top: 10px;
+margin-left: 152px;
+display: block !important;
+margin-bottom: 150px;
+float: left;
+}
+.diagram{
+    margin-left: 25px;
+    display: inline-block;
+}
+.how-step2 h2{
+font-size: 40px;
+color: #3AA0BB;
+margin-bottom: 9px;
+float: left;
+width: 500px;
+}
+.how-step2 span{}
+.how-step2 p{
+font-size: 16px;
+color: #767574;
+line-height: 23px;
+float: left;
+width: 500px;
+}
+.row{
+    display: block !important;
+    width: 100%;
+    position: relative;
+    height: auto;
+}
+.how-step2 img{
+    vertical-align: top;
+    width: 255px;
+}
+.numeracion{
+height: 330px;
+font-size: 310px;
+display: inline-block;
+zoom: 1;
+color: #e8e6d9;
+vertical-align: top;
+margin-left: -20px;
+}
+#row1{}
+#row2{
+    height: 390px;
+}
+#row3{
+    margin-bottom: 30px;
+}
+#row4{
+    height: 400px;
+}
+#row5{
+    height: 475px;
+}
+#row6{
+    height: 500px;
+}
+.clearfix:after {
+content: ".";
+display: block;
+clear: both;
+visibility: hidden;
+line-height: 0;
+height: 0;
+}
+
+.clearfix {
+display: inline-block;
+}
+
+html[xmlns] .clearfix {
+display: block;
+}
+
+* html .clearfix {
+height: 1%;
 }
 

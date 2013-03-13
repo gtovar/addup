@@ -11,6 +11,7 @@
   <div class="frame-mosaic">
     <div class="mosaic">
       <ul>
+<!--
         <% unless @banner.nil? %>
         <% @banner.each_with_index do |a,i|%>
        <li>
@@ -26,7 +27,22 @@
         </li>
       <% end %>
     <% end %>
-  </ul>
+    -->
+
+    <% [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19].sample(12).each do |i|%>
+      <li>
+          <div class="f1_container">
+            <%= ('<div id="card' + i.to_s +  '" class="f1_card">').html_safe %>
+              <div class="front face">
+                <%= image_tag("#{i}.jpg")%>
+              </div>
+              <div class="back face">
+                <%= image_tag("#{i+1}.jpg") %>
+              </div>
+            </div>
+        </li>
+      <% end %>
+ </ul>
 </div>
     </div>
   </div>

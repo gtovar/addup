@@ -1,8 +1,8 @@
 <div class="center">
   <h3 class="info-color bold top-space">Match Funds!</h3>
   <p>For students, it is invaluable for companies and successful philanthropists to believe in their education and their commitment to help society.</p>
-  <p>You can reward their own fundraising efforts by matching by matching what they raise, dollar for dollar.</p>
-  <p>You can select the criteria for students to qualify for your matching funds, determine a maximum amount to match and even requiere a separate application process.</p>
+  <p> You can reward their own fundraising efforts by matching what they raise, dollar for dollar.
+  You can select the criteria for students to qualify for your matching funds, determine a maximum amount to match and even requiere a separate application process.</p>
   <p class="three-fifths">Learn about how your company can match funds for students.</p>
   <%= form_tag(companies_path, :method => "post", :multipart => false) do %>
     <label for="name">Full Name</label>
@@ -15,11 +15,5 @@
     <%= text_area_tag "message", nil, :id => "message" %>
     <%= submit_tag "Submit",:class => "button info-bg-color" %>
   <% end %>
-  <h5 class="bold">Mailing Address</h5>
-  <h5 class="zero">CrowdScholarship LLC</h5>
-  <h5 class="zero">200 E Yuma Apt. 7</h5>
-  <h5 class="zero">McAllen, TX 78503</h5>
-  <h5 class="zero">USA</h5>
-
 </div>
 

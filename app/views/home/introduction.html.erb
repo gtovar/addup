@@ -1,0 +1,95 @@
+<%= content_for :javascripts do %>
+  <%= stylesheet_link_tag "addup","bootstrap", :media => "all" %>
+  <%= javascript_include_tag "bootstrap" %>
+<% end %>
+
+<div class="center">
+
+
+     <h2>Share your story and launch a successful crowdfunding campaign!</h2>
+    <p>
+      Before you begin your application, make sure to gather the following things. Once you have these, your application should take no longer than 5 minutes to complete!!
+    </p>
+    <p>
+      NOTE: All good things take time. We are in the BETA version right now, and working on developing the final product.  Therefore, the Add Up application does not have the option of saving your information and coming back to it, so you will need to complete it in one sitting. Thanks for understanding!
+    </p>
+
+
+      <div id="accordion2" class="accordion">
+ <div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">A project/plan for adding up to your community!</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseOne">
+            <div class="accordion-inner">
+              <ul>
+                <li>Look at our social project idea generator for initial ideas to get inspired.</li>
+                <li> <%= render partial: 'student_applications/ideas' %></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+ <div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse2" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">	Basic information	</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse2">
+            <div class="accordion-inner">
+              <ul>
+                <li>Personal information </li>
+                <li>Crowdfunding goal: maximum $10,000 usd </li>
+<li>Total annual cost of attendance of program of study</li>
+<li>Two short responses: Sharing your story and why you care about adding up</li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+ <div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse3" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">		3-5 pictures of you	</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse3">
+            <div class="accordion-inner">
+              <ul>
+                <li> Pictures of you engaged in your hobbies, social activities, interests, with family, friends, etc. The objective is to help sponsors get a feel for who you are.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+ <div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse4" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">	A 2-minute video about your social project and why you care about adding up</li>
+      <p>1.- Upload this video to YouTube at the Addup channel.	</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse4">
+            <div class="accordion-inner">
+              <ul>
+                For instructions of uploading the video to YouTube click <%= link_to "here", faq_path %>.<li>Form of payment for outside scholarships: wire transfer or check </li>
+<ul>
+<li> Wire transfers: Name of bank, University Bank Account, ABA/routing and SWIFT</li>
+<li>Check: Payee’s name, Financial Services Address </li>
+</ul>
+								<li>Student’s University Reference ID </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+             <p>
+          If you want to get an idea of what your profile will look like once it goes live, check out our <%= link_to "\ demo profile" , "http://addupstaging.herokuapp.com/student/7" %>. Don’t forget to also check out our Add Up 101 for tips for launching a successful campaign. </p>
+
+      </ul>
+    </div>
+          <%= link_to "START >", application_path, class: "button info-bg-color", style: "text-decoration: none;" %>
+
+</div>
+
+
