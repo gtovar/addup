@@ -7,7 +7,7 @@ class MatchForm < MailForm::Base
   def headers
     {
       :subject => "My Matching Form",
-      :to => "chavagarza@yahoo.com",
+      :to => "sg@addup.org",
       :from => %("#{name}" <#{email}>)
     }
   end

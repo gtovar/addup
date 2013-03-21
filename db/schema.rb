@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121213160656) do
+ActiveRecord::Schema.define(:version => 20130321173753) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -125,6 +125,7 @@ ActiveRecord::Schema.define(:version => 20121213160656) do
     t.string   "swift"
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
+    t.boolean  "honor_code"
   end
 
 end

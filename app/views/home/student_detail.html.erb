@@ -48,7 +48,6 @@
                 <%= %{<iframe width="560" height="315" src="http://www.youtube.com/embed/#{@student.link_of_video}" frameborder="0" allowfullscreen></iframe>}.html_safe %>
               </div>
               <div class="caption">
-                <h5>My cause</h5>
               </div>
             </li>
           <% end %>
@@ -57,7 +56,6 @@
               <div class="image"><%= image_tag @student.p3.sliderdetail.url.to_s %>
             </div>
             <div class="caption">
-              <h5>My classmates</h5>
             </div>
           </li>
            <% end %>
@@ -66,7 +64,6 @@
             <div class="image"><%= image_tag @student.p4.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>My family</h5>
           </div>
           </li>
         <% end %>
@@ -75,7 +72,6 @@
             <div class="image"><%= image_tag @student.p5.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>Hobbies</h5>
           </div>
           </li>
         <% end %>
@@ -84,7 +80,6 @@
             <div class="image"><%= image_tag @student.p6.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>Social cause</h5>
           </div>
           </li>
         <% end %>
@@ -93,7 +88,6 @@
             <div class="image"><%= image_tag @student.p7.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>About me</h5>
           </div>
           </li>
         <% end %>
@@ -102,7 +96,6 @@
             <div class="image"><%= image_tag @student.p8.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>Photo</h5>
           </div>
           </li>
         <% end %>
@@ -111,7 +104,6 @@
             <div class="image"><%= image_tag @student.p9.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>Photo</h5>
           </div>
           </li>
         <% end %>
@@ -120,7 +112,6 @@
             <div class="image"><%= image_tag @student.p10.sliderdetail.url.to_s%>
           </div>
           <div class="caption">
-            <h5>Photo</h5>
           </div>
           </li>
         <% end %>
@@ -185,7 +176,7 @@
             <%=  @student.donations.sum(:mc_gross).round %>
           </li>
           <li class="labels">
-            <%= 'added up of ' + @student.crowdfundig_goal_usd.round.to_s + " goal" %>
+            <%= 'added up of $' + @student.crowdfundig_goal_usd.round.to_s + " goal" %>
           </li>
           <li class="numbers">
             <%= ((Date.today-@student.created_at.to_date).round-@student.time_frame.to_i).abs %>
@@ -196,7 +187,7 @@
           <li>
             <%= link_to  reward_path(@student.id) , :class => "button action go-to-rewards shadow" do  %>
               Add up to this Student
-              <span class="min-amount">$1 minimum</span>
+              <span class="min-amount">$10 minimum</span>
             <% end %>
           </li>
           <li>

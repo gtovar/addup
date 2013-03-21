@@ -19,7 +19,9 @@
     <%= render :partial => "payment",:locals => {:f => f} %>
     <%= render :partial => "honor", :locals => {:f => f} %>
     <%= render :partial => "fee", :locals => {:f => f} %>
-
+    <div id="ch" >
+      <%= f.check_box :honor_code %> I Agree
+    </div>
   </div><!-- Close tab content -->
 
   <div class="row-fluid" id="submit"  >
@@ -35,41 +37,48 @@
 <%end%>
 
 <script>
-   $('#submit').hide();
+  $('#submit').hide();
+  $('#ch').hide();
+
+
+ $('#hc').click(function(e){$('#ch').show(); $('#submit').hide();});
+$('#b').click(function(e){$('#ch').hide(); $('#submit').hide();});
+$('#q').click(function(e){$('#ch').hide(); $('#submit').hide();});
+$('#f').click(function(e){$('#ch').hide(); $('#submit').hide();});
+$('#p').click(function(e){$('#ch').hide(); $('#submit').hide();});
+$('#a').click(function(e){$('#ch').hide(); $('#submit').show();});
+
+
    $('#basic').click(function (e) {
       e.preventDefault();
       $(this).tab('show');
-      $('#submit').hide();
  });
 
   $('#files').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
-    $('#submit').hide();
   });
 
   $('#questions').click(function (e) {
     e.preventDefault();
     $(this).tab('show');
-    $('#submit').hide();
  });
 
  $('#payment').click(function (e) {
    e.preventDefault();
    $(this).tab('show');
-   $('#submit').show();
  });
+
 
  $('#honor').click(function (e) {
    e.preventDefault();
    $(this).tab('show');
-   $('#submit').show();
  });
 
  $('#fee').click(function (e) {
    e.preventDefault();
    $(this).tab('show');
-   $('#submit').show();
+  $('#submit').show();
  });
 
 
@@ -101,6 +110,7 @@
         $('#tooltip').tooltip('toggle');
       });
     });
+
 
   </script>
 
