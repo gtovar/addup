@@ -195,24 +195,24 @@
           </li>
         </ol>
       </div>
-      <div class="block teacher">
-        <span> <span class="verified corner-check"> </span></span>
-        <div class="bubble approved reflect"> </div>
-        <b>Endorsed by</b>
-        <h6><%= @student.job + ' ' + @student.name_sponsor %></h6>
-        <div class="avatar"><%= image_tag @student.p1_url %>
+      <% unless @student.name_sponsor.nil? %>
+        <div class="block teacher">
+          <span> <span class="verified corner-check"> </span></span>
+          <div class="bubble approved reflect"> </div>
+          <b>Endorsed by</b>
+          <h6><%= @student.job + ' ' + @student.name_sponsor %></h6>
+          <div class="avatar"><%= image_tag @student.p1_url %>
+        </div>
+        <div class="sponsor-name">
+          <b><%= @student.university %></b>
+          <b>Foreign Student Advisor</b>
+          <span class="button info-bg-color msg">Contact</span>
+        </div>
+        <p>
+          “<%= @student.quote  %>”
+        </p>
       </div>
-      <div class="sponsor-name">
-        <b><%= @student.university %></b>
-        <b>Foreign Student Advisor</b>
-        <span class="button info-bg-color msg">Contact</span>
-      </div>
-      <p>
-        “<%= @student.quote  %>”
-      </p>
-
-    </div>
-
+    <% end %>
   </div>
 </div>
 </div>

@@ -28,16 +28,25 @@ community (links to FB and Twitter).
     <div class="team">
       <h5 class="bold top-space">THE ADD UP TEAM</h5>
       <div class="member">
+        <img src="/assets/team/luly.jpg" alt="Lourdes Trevino" width=136px/>
+        <h5>Lourdes Treviño</h5>
+      </div>
+      <div class="member">
+        <img src="/assets/team/salvador.jpg" alt="Salvador Garza" width=136px height=136px/>
+        <h5>Salvador Garza</h5>
+      </div>
+
+      <div class="member">
         <img src="/assets/team/joshuafrancia.jpg" alt="Joshua Francia" width=136px/>
         <h5>Joshua Francia</h5>
       </div>
        <div class="member">
-        <img src="/assets/team/jorgecuadra.jpg" alt="Jorge Cuadra" width=136px/>
+        <img src="/assets/team/jorge.jpg" alt="Jorge Cuadra" width=136px/>
         <h5>Jorge Cuadra</h5>
       </div>
         <div class="member">
-        <img src="/assets/team/eddyhong.jpg" alt="Eddy Hong" width=136px/>
-        <h5>Eddy Hong</h5>
+        <img src="/assets/team/gil.jpg" alt="Gilberto Tovar" width=136px/>
+        <h5>Gilberto Tovar</h5>
       </div>
       <div class="member">
         <img src="/assets/team/mattstengel.jpg" alt= "Matt Stengel"  width=136px/>
@@ -48,10 +57,21 @@ community (links to FB and Twitter).
     <div class="team">
       <h5 class="bold top-space">THE ADD UP BOARD OF ADVISORS</h5>
       <% @advisors.each do |a|  %>
-        <div class="member">
+           <% if a.photo.nil?  %>
+       <div class="member">
           <%= image_tag a.photo.thumbabout.url.to_s, :alt => a.name, :width => 136 %>
           <h5><%= a.name %></h5>
         </div>
+      <% end %>
+      <% end %>
+    </div>
+    <div class="team">
+      <% @advisors.each do |a|  %>
+        <% unless a.photo.nil?  %>
+          <div class="member">
+            <h5><%= a.name %></h5>
+          </div>
+        <% end %>
       <% end %>
     </div>
 

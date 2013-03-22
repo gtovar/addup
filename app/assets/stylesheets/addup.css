@@ -27,7 +27,7 @@ h2{font-size: 36px;font-family: inherit; line-height: 35px;}
 h3{font-size: 24px;font-family: inherit;clear: left;}
 h4{font-size: 21px;font-family: inherit}
 h5{font-size: 18px;font-family: inherit;clear: both;}
-h6{font-size: 18px;font-family: inherit}
+h6{font-size: 14px;font-family: inherit}
 .top-space{margin-top: 20px;}
 p{font-size: 14px;font-family: inherit;margin-top: 7px;}
 .bold{font-weight:bold;}
@@ -90,7 +90,7 @@ ul li{
     margin-top: 50px;
     background-color: #41474C;
     font-size: 14px;
-    height: 114px;
+    height: 145px;
     padding-top: 10px;
     display: block;
     width: 100%;
