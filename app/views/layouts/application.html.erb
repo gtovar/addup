@@ -11,11 +11,9 @@
     <% end %>
     <div class="header">
       <div class="center">
-        <ul>
-          <li class="li0"><%= link_to image_tag('logo.png'),root_path %></li>
+          <div class="logoh"><%= link_to image_tag('logo.png'),root_path %></div>
           <%= yield :header %>
           <%= render :partial => 'layouts/front_end_header'unless content_for? :header %>
-        </ul>
       </div>
     </div>
       <div class="container">

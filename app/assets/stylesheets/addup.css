@@ -90,7 +90,7 @@ ul li{
     margin-top: 50px;
     background-color: #41474C;
     font-size: 14px;
-    height: 145px;
+    height: 160px;
     padding-top: 10px;
     display: block;
     width: 100%;
@@ -1625,4 +1625,21 @@ display: block;
 * html .clearfix {
 height: 1%;
 }
+
+
+.logoh {
+width: 192px;
+float: left;
+margin-top: 20px;
+color: #C0262C;
+font-size: 10px;
+}
+
+.lnkh a{
+width: 192px;
+float: left;
+margin-top:30px;
+font-size:14px;
+}
+
 
