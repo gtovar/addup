@@ -104,3 +104,19 @@ ul li{
 .errores ul li{
   display: block;
 }
+.logoh {
+width: 192px;
+float: left;
+margin-top: 20px;
+color: #C0262C;
+font-size: 10px;
+}
+
+.lnkh a{
+width: 192px;
+float: left;
+margin-top:30px;
+font-size:14px;
+}
+
+
