@@ -23,6 +23,7 @@ Addup::Application.routes.draw do
   match 'newform' => 'home#newform', :as => :newform
   match "faq" => 'home#faq', :as => :faq
 match 'introduction' => 'home#introduction', :as => :introduction
+match 'sponsors' => 'home#home_sponsors', :as => :how_sponsors
 # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:

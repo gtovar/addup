@@ -46,6 +46,9 @@ class HomeController < ApplicationController
   def privacy
   end
 
+def how_sponsors
+end
+
   def about
     @count = Donation.where(:status => "Complete").count
     @advisors = Advisor.all

@@ -90,7 +90,7 @@ ul li{
     margin-top: 50px;
     background-color: #41474C;
     font-size: 14px;
-    height: 114px;
+    height: 160px;
     padding-top: 10px;
     display: block;
     width: 100%;
@@ -316,7 +316,7 @@ input[type="radio"] {}
     padding-bottom: 15px;
 }
 .checkout_faqs{
-    margin-top: 180px;
+    margin-top: 0px;
 }
 .shadow{
     box-shadow: 0 2px 1px #333;
@@ -409,7 +409,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
 .recomendations{
     width: 960px;
 
-    height: 290px;
+    height: 320px;
     background-color: #F7F7F7;
     position: relative;
 }
@@ -428,7 +428,7 @@ p.super{font-size:18px;float: none;margin-bottom: 10px;}
     background: white;
     box-shadow: 0 0 9px #666;
     border-radius: 6px;
-    height: 230px;
+    height: 260px;
     cursor: pointer;
     margin-left: 25px;
 }
@@ -1234,7 +1234,7 @@ div.blurr span {
 .how{
     position: relative;
     width: 960px;
-    height: 750px;
+    height: 100%;
 }
 .how .arrow{
     top: 38%;
@@ -1565,7 +1565,7 @@ width: 500px;
 .how-step2 span{}
 .how-step2 p{
 font-size: 16px;
-color: #767574; 
+color: #767574;
 line-height: 23px;
 float: left;
 width: 500px;
@@ -1613,16 +1613,33 @@ visibility: hidden;
 line-height: 0;
 height: 0;
 }
- 
+
 .clearfix {
 display: inline-block;
 }
- 
+
 html[xmlns] .clearfix {
 display: block;
 }
- 
+
 * html .clearfix {
 height: 1%;
 }
+
+
+.logoh {
+width: 192px;
+float: left;
+margin-top: 20px;
+color: #C0262C;
+font-size: 10px;
+}
+
+.lnkh a{
+width: 192px;
+float: left;
+margin-top:30px;
+font-size:14px;
+}
+
 
