@@ -1642,7 +1642,7 @@ margin-top:30px;
 font-size:14px;
 }
 
-.how a{
+.how{
 width: 192px;
 float: left;
 margin-top: 30px;
