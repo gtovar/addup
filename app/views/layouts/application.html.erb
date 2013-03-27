@@ -6,7 +6,8 @@
     <%= render :partial => 'layouts/addupassets' unless content_for? :javascripts %>
  </head>
   <body>
-    <% if alert != nil %>
+ <%= render "facebook"  %>
+   <% if alert != nil %>
       <p class = "alert"><%= alert %></p>
     <% end %>
     <div class="header">
