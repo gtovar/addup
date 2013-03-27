@@ -1640,14 +1640,19 @@ width: 192px;
 float: left;
 margin-top:30px;
 font-size:14px;
+display: inline-block;
+
 }
 
-.how{
+.how2{
 width: 192px;
 float: left;
 margin-top: 30px;
 color: #C0262C;
 font-size: 10px;
+position: absolute;
+right: 385px;
+
 }
 
 
@@ -1670,8 +1675,8 @@ font-size: 10px;
     width: 100%;
     margin-top: 0;
 }
-.how:hover{height: 150px;}
-.how:hover .double-menu, .double-menu:hover {display: block;}
+.how2:hover{height: 150px;}
+.how2:hover .double-menu, .double-menu:hover {display: block;}
 .double-menu a{
     width: 100%;
     height: 38px;

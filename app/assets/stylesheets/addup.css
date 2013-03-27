@@ -1640,6 +1640,7 @@ width: 192px;
 float: left;
 margin-top:30px;
 font-size:14px;
+
 }
 
 .how2{
@@ -1648,6 +1649,9 @@ float: left;
 margin-top: 30px;
 color: #C0262C;
 font-size: 10px;
+position: absolute;
+right: 385px;
+display: block;
 }
 
 
