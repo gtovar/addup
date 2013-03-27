@@ -1,5 +1,5 @@
 <div class="lnkh"><%= link_to "About Us", about_path %></div>
-<div class="lnkh">
+<div class="how">
 	<%= link_to "How it Works", how_path %>
 	<div class="double-menu">
 		<span>
