@@ -1635,6 +1635,12 @@ color: #C0262C;
 font-size: 10px;
 }
 
+.lnka {
+width:384px;
+float: left;
+margin-top:30px;
+font-size:14px;
+}
 .lnkh a{
 width: 192px;
 float: left;

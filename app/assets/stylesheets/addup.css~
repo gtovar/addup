@@ -1635,12 +1635,17 @@ color: #C0262C;
 font-size: 10px;
 }
 
+.lnka {
+width:1041px;
+float: left;
+margin-top:30px;
+font-size:14px;
+}
 .lnkh a{
 width: 192px;
 float: left;
 margin-top:30px;
 font-size:14px;
-display: inline-block;
 
 }
 
@@ -1652,7 +1657,7 @@ color: #C0262C;
 font-size: 10px;
 position: absolute;
 right: 385px;
-
+display: block;
 }
 
 
