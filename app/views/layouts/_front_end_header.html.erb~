@@ -3,8 +3,8 @@
 	<%= link_to "How it Works", how_path %>
 	<div class="double-menu">
 		<span>
-			<a href="how-sponsors.html"> </a>
-			<a href="how-students.html"> </a>
+			<%= link_to "How it Works", how_sponsors_path %>
+			<%= link_to "How it Works", how_path %>
 		</span>
 	</div>
 </div>
