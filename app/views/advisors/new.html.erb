@@ -1,3 +1,9 @@
+<%= content_for :javascripts do %>
+  <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag "shared" %>
+  <%= javascript_include_tag "bootstrap" %>
+<% end %>
+
 <% content_for :title do %>
  Board of Advisors
 <% end %>

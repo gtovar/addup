@@ -19,7 +19,7 @@ class AdvisorsController < ApplicationController
     @advisor = Advisor.find(params[:id])
 
     respond_to do |format|
-      format.html { render :layout => "forms" }# show.html.erb
+      format.html { render  }# show.html.erb
       format.json { render json: @advisor }
     end
   end
@@ -30,7 +30,7 @@ class AdvisorsController < ApplicationController
     @advisor = Advisor.new
 
     respond_to do |format|
-      format.html { render :layout => "forms" }# new.html.erb
+      format.html { render }# new.html.erb
       format.json { render json: @advisor }
     end
   end
