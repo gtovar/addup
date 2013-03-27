@@ -1,0 +1,164 @@
+
+<%= content_for :javascripts do %>
+  <%= stylesheet_link_tag "bootstrap", :media => "all" %>
+  <%= stylesheet_link_tag "shared" %>
+  <%= javascript_include_tag "bootstrap" %>
+<% end %>
+
+<div class="center">
+ <%= render "faqslinks" %>
+<div id="accordion2" class="accordion">
+<h2>Students</h2>
+<div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseSix" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Who can create a student profile?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseSix">
+            <div class="accordion-inner">
+<p>While ADD UP aims to be a go-to resource for all students studying in the U.S. at four year, public or private non-profit U.S. universities (http://classifications.carnegiefoundation.org/), right now we are only accepting international students.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseSeven" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Is ADD UP need-based?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseSeven">
+            <div class="accordion-inner">
+<p>No. ADD UP is merit-based. All you need is to be passionate about making a positive impact in your community and a plan to turn that passion into action.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseEight" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What will happen with the scholarship money that my campaign raises?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseEight">
+            <div class="accordion-inner">
+<p>All scholarship money that your campaign raises minus fees (see fees FAQ below) gets paid directly to your university for your tuition and associated costs once your campaign is over. </p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseNine" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">How much does creating a profile cost?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseNine">
+            <div class="accordion-inner">
+<p>You can launch a campaign for only $25.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseTen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What do I need to do in order to create a student profile?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseTen">
+            <div class="accordion-inner">
+<p>In order to appear on the site:</p>
+<p>
+1. You’ll have to prove that you are both a currently enrolled student (by registering using your .edu address) and an international student. </p><p>
+2. You’ll also need to have a service initiative to tell us about. How will you add up to your community?</p><p>
+3. Share a little about yourself. What are you studying/planning to study? What are your educational/career goals?Why is adding up important to you?</p>
+<p>
+4. Lastly, sign the ADD UP Student Honor Code agreeing to fulfill your service commitment, keep your sponsors informed of updates, and your pledge to give back.</p>
+<p>Once you have a service initiative in mind, the whole process only takes a few minutes. When you are ready, start <%= link_to "here", introduction_path %>. Also, don’t forget to check out ADD UP’s <%= link_to "Privacy Policy", privacy_path %>.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseEleven" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What do I need to do in order to have a successful campaign?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseEleven">
+            <div class="accordion-inner">
+<p>If you want tips on how to begin your fundraising campaign, how to enhance your profile, how to choose a funding goal, and how to leverage every aspect of ADD UP to reach or exceed your funding goal, see the FAQ section entitled “ADD UP 101”.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseTwelve" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Is there a limit for how much my campaign can raise?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseTwelve">
+            <div class="accordion-inner">
+<p>Yes: $10,000. In special situations, the limit can be raised. Please email info@addup.org if you need to request a higher limit. </p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseThirteen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Can I run more than one campaign?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseThirteen">
+            <div class="accordion-inner">
+<p>ADD UP limits the number of campaigns to one per school year. If you are studying in an undergraduate four -year program, for example, you could run four campaigns. </p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseFourteen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">How does an ADD UP scholarship affect my financial aid package?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseFourteen">
+            <div class="accordion-inner">
+<p>Policies vary from institution to institution. Therefore, we highly recommend that before using our services you first check with your educational institution to see how receiving outside scholarships will affect your financial aid package. </p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseFiveteen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What happens if I reach my funding goal before my deadline?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseFiveteen">
+            <div class="accordion-inner">
+<p>Your campaign continues to run until your deadline and your scholarship will consist of whatever you were able to raise, even if this exceeds your goal.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseSixteen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What if I don't reach my funding goal?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseSixteen">
+            <div class="accordion-inner">
+<p>Again, your scholarship will consist of whatever you were able to raise regardless of whether or not you meet your funding goal. In this case, your sponsors still deserve updates regarding your service work. Failure to follow through on your project because the funding goal was not reached is against what ADD UP represents (as well as the Honor Code) and will be seriously considered should you apply for a scholarship in another year.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapseSeventeen" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Can I change my funding goal or my deadline after launching?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapseSeventeen">
+            <div class="accordion-inner">
+<p>No.
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse18" data-parent="#accordionSeventeen" data-toggle="collapse" class="accordion-toggle">Can my campaign be modified after launching?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse18">
+            <div class="accordion-inner">
+<p>You can add pictures and messages at any time, but you can’t change your funding goal, deadline or service project after you begin raising scholarship funds.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse20" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Can I cancel my campaign?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse20">
+            <div class="accordion-inner">
+<p>You can cancel your campaign only if you have not received any money towards your scholarship. Otherwise, your campaign will operate until its deadline at which time your scholarship money will be sent to your university.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse21" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">How do I get featured on the ADD UP homepage?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse21">
+            <div class="accordion-inner">
+<p>The profiles featured on the ADD UP home page, while at the discretion of the company, typically belong to students who have reached at least 30% of their funding goal within the first 10 days after launching their campaigns. ADD UP cannot promise that everyone meeting this requirement will get featured.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse22" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Can I contact my sponsors directly?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse22">
+            <div class="accordion-inner">
+<p>You will be able to contact your sponsors directly through the social media resources (<%= link_to "Facebook", "https://www.facebook.com/pages/AddupOrg/524068124287608?ref=ts&fref=ts" %>, <%= link_to "Twitter", "http://www.twitter.com/adduporg" %>, Google+) available on ADD UP as well as indirectly through updates to your profile both during your campaign and while you are engaging in your service project at school.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse23" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">When will my university receive the scholarship money my campaign raises?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse23">
+            <div class="accordion-inner">
+<p>Within 15 business days of the completion of your campaign, ADD UP will directly wire to your university the scholarship money you raised in one lump payment.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse24" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What are my responsibilities once my campaign is over?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse24">
+            <div class="accordion-inner">
+<p>Great question! There are three things every ADD UP scholarship recipient does after their campaign and which are specified on the ADD UP Student Honor Code.</p>
+<p>First, add up! Follow through on your service initiative.</p>
+<p>Second, keep your sponsors informed of your service efforts – they want to know! Your ADD UP profile will continue to be available after your campaign is over, so feel free to use the social media resources available on your page to keep your sponsors updated. Blog about your progress, upload pictures, share whatever you’d like with your sponsors. It’s really up to you, but remember the commitment you made of keeping them informed. </p>
+<p>Third, add up to other students’ education in the future! As part of the Honor Code, you pledge to give 40% of what you, the student, were able to raise in your own campaign within five years after your graduation to other students through ADD UP. This is a way for the donation you received to carry on and to keep empowering students to add up to their communities. </p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse26" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">Do I have to repay the money I receive through ADD UP?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse26">
+            <div class="accordion-inner">
+<p>Not entirely. Though the money collected through AddUp.org is a donation/gift from sponsors, you pledge to donate at least 40% of what you raise to other students through ADD UP in the future (within 5 years of graduating) by signing the Honor Code. This is how ADD UP encourages sponsors to be more generous with their donations, since they know that their donation will carry on.</p>
+</div></div></div><div class="accordion-group">
+          <div class="accordion-heading">
+            <a href="#collapse27" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">What happens if I don’t fulfill my commitments?</a>
+          </div>
+          <div class="accordion-body collapse" id="collapse27">
+            <div class="accordion-inner">
+<p>Legally, nothing. However, ADD UP takes your personal commitment and Honor Code seriously. If you wish to use ADD UP to raise money in the future, you will not be allowed to do so. We will publish on the website and in our newsletters updates of students who have fulfilled their commitments, so your sponsors, family and friends will know whether you fulfilled them or not. It is common courtesy and a way to maintain good relationships to follow through on your commitments.</p>
+</div></div></div>
+</div>
+</div>

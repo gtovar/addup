@@ -24,6 +24,13 @@ Addup::Application.routes.draw do
   match "faq" => 'home#faq', :as => :faq
 match 'introduction' => 'home#introduction', :as => :introduction
 match 'sponsors' => 'home#how_sponsors', :as => :how_sponsors
+
+match 'faq-general' => 'home#general', :as => :faq_general
+match 'faq-students' => 'home#students', :as => :faq_students
+match 'faq-sponsors' => 'home#sponsors', :as => :faq_sponsors
+match 'faq-addup101' => 'home#addup101', :as => :faq_addup101
+
+
 # The priority is based upon order of creation:
 
   # The priority is based upon order of creation:

@@ -48,6 +48,14 @@ class HomeController < ApplicationController
 
 def how_sponsors
 end
+def general
+end
+def students
+end
+def sponsors
+end
+def addup101
+end
 
   def about
     @count = Donation.where(:status => "Complete").count
